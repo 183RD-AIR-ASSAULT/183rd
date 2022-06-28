@@ -46,12 +46,15 @@ you can find the 183rd Version at https://github.com/YonVclaw/183rd
 
 All the code in this mod is available in the 183rd Git
 
-
-This mod includes : (With permission)
+<br/><br/>
+# This mod includes : (With permission)
 
 - Spyke - A3U - Arma 3 Utilities https://steamcommunity.com/sharedfiles/filedetails/?id=1560749177
 
-This mod includes : (per expressed permission on each mods steam page)
+
+<br/><br/>
+
+# This mod includes : (per expressed permission on each mods steam page)
 
 
 Fat_Lurch's
@@ -59,16 +62,47 @@ Fat_Lurch's
 - MS_IFF_Strobe https://steamcommunity.com/sharedfiles/filedetails/?id=1543390130
 - Ammocan https://steamcommunity.com/sharedfiles/filedetails/?id=2162698437
 - Vehicle Inventory System https://steamcommunity.com/sharedfiles/filedetails/?id=2161671937
+<br/><br/>
 
 ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057
-Compatibility and optional packages
-- Compat RHS AFRF
-- Compat RHS GREF
-- Compat RHS SAF
-- Compat RHS USA
-- No Action Menu
-- No Crosshair
-- No Uniform Restrictions
-- Particles
-- Realistic Dispersion
-- Tracers (ball)
+  Compatibility and optional packages
+  - Compat RHS AFRF
+  - Compat RHS GREF
+  - Compat RHS SAF
+  - Compat RHS USA
+  - No Action Menu
+  - No Crosshair
+  - No Uniform Restrictions
+  - Particles
+  - Realistic Dispersion
+  - Tracers (ball)
+
+
+<br/><br/>
+<br/><br/>
+
+# Expected Mods
+
+- CBA_A3	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=450814997
+- RHSUSAF	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=843577117
+- RHSAFRF	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=843425103
+- ace	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=463939057
+- RHSGREF	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=843593391
+- RHSSAF	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=843632231
+- Hatchet Framework - Development Version	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1745501106
+- Zeus Enhanced	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1779063631
+- dzn MG Tripod	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1713801249
+- Task Force Arrowhead Radio (BETA!!!)	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=894678801
+- Ctab Devastator Edition	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=2189592034
+- CUP Terrains - Core	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=583496184
+- CUP Terrains - Maps	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=583544987
+- Enhanced Movement	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=333310405
+- ILBE Assault Pack - Rewrite	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1875281645
+- Hatchet H-60 pack - Development Version	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1745501605
+- AH-64D Official Project	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1351428303
+- Project OPFOR	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=735566597
+- Military Gear Pack	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=736829758
+- DUI - Squad Radar	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1638341685
+- KAT - Advanced Medical REWRITE	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=2020940806
+- Zeus Enhanced - ACE3 Compatibility	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=2018593688
+- dzn MG Tripod (RHS)	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1947836596
