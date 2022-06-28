@@ -28,7 +28,7 @@ uiNamespace setVariable ["EMM_multiplayerMenu_enabled", false];
 
 INFO("Auto joining to 183rd Air Assault Unit [183rd] Operations Server");
 
-GVAR(serverAddress) = "172.93.103.5";
+GVAR(serverAddress) = "38.103.170.18";
 GVAR(serverPort) = "2302";
 GVAR(joinTimeout) = diag_tickTime + 5;
 

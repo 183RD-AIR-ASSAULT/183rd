@@ -82,15 +82,12 @@ if (isNull _unit) exitWith {};
         [_unit, "kat_IO_FAST", 06, _order, _overflow] call oeta_common_fnc_addItem;
         [_unit, "kat_IV_16", 06, _order, _overflow] call oeta_common_fnc_addItem;
 
-        _unit playActionNow "Stand";
 
     };
 
     if (OETA_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {
 
         [_unit, QGVAR(Medical_MedicKit_Open_1)] call OETA_common_fnc_stop3dSound;
-
-        _unit playActionNow "Stand";
 
     };
 
