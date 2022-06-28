@@ -74,7 +74,7 @@ if (isNull _unit) exitWith {};
         [_unit, "ACE_morphine", 16, _order, _overflow] call oeta_common_fnc_addItem;
         [_unit, "ACE_adenosine", 8, _order, _overflow] call oeta_common_fnc_addItem;
 
-        _unit playActionNow "Stand";
+
 
     };
 
@@ -82,7 +82,7 @@ if (isNull _unit) exitWith {};
 
         [_unit, QGVAR(Medical_MedicKit_Open_1)] call OETA_common_fnc_stop3dSound;
 
-        _unit playActionNow "Stand";
+
 
     };
 

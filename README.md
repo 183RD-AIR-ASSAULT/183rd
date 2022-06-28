@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="art/Asset 1@2048x.png" width="480">
+    <img src="183rd.png" width="480">
 </p>
 
 <p align="center">
@@ -46,13 +46,29 @@ you can find the 183rd Version at https://github.com/YonVclaw/183rd
 
 All the code in this mod is available in the 183rd Git
 
+
 This mod includes : (With permission)
 
 - Spyke - A3U - Arma 3 Utilities https://steamcommunity.com/sharedfiles/filedetails/?id=1560749177
 
 This mod includes : (per expressed permission on each mods steam page)
+
+
 Fat_Lurch's
 - Turret Enhanced https://steamcommunity.com/sharedfiles/filedetails/?id=1623498241
 - MS_IFF_Strobe https://steamcommunity.com/sharedfiles/filedetails/?id=1543390130
 - Ammocan https://steamcommunity.com/sharedfiles/filedetails/?id=2162698437
 - Vehicle Inventory System https://steamcommunity.com/sharedfiles/filedetails/?id=2161671937
+
+ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057
+Compatibility and optional packages
+- Compat RHS AFRF
+- Compat RHS GREF
+- Compat RHS SAF
+- Compat RHS USA
+- No Action Menu
+- No Crosshair
+- No Uniform Restrictions
+- Particles
+- Realistic Dispersion
+- Tracers (ball)
