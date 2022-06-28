@@ -25,7 +25,7 @@ class CfgPatches {
 
 class CfgFunctions {
 
-    #include "cfgFunctions.hpp"
+    #include "CfgFunctions.hpp"
 };
 
 class Extended_PreInit_EventHandlers {
