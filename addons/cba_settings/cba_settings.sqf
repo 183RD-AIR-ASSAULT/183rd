@@ -1104,29 +1104,6 @@ FORCE SSS_setting_slingLoadWhitelist = "";
 FORCE SSS_setting_useChatNotifications = false;
 
 
-// 183rd BFT
-force force OETA_bft_bftEnabled = true;
-force force OETA_bft_friendlySides_CIVILIAN = [0,2];
-force force OETA_bft_friendlySides_EAST = [3];
-force force OETA_bft_friendlySides_RESISTANCE = [1,3];
-force force OETA_bft_friendlySides_WEST = [2];
-force force OETA_bft_friendlySidesDynamic = true;
-force force OETA_bft_groupIconsInteraction = "hover";
-force force OETA_bft_medicalSystem = "ACE";
-force force OETA_bft_requireItemGPS = true;
-force force OETA_bft_showAIGroups = true;
-force force OETA_bft_showAINames = true;
-force force OETA_bft_showCivilians = false;
-force force OETA_bft_showGroupIcons = true;
-force force OETA_bft_showGroupText = true;
-force force OETA_bft_showLifeState = true;
-force force OETA_bft_showOwnFactionOnly = true;
-force force OETA_bft_showOwnGroup = true;
-force force OETA_bft_showOwnGroupUnits = true;
-force force OETA_bft_showPlayerNames = true;
-force force OETA_bft_showUnitNames = true;
-force force OETA_bft_teamColors = "ACE";
-force force OETA_bft_updateInterval = 0;
 
 // TFAR - Animations
 force radioAnims_cba_ads = true;
@@ -1220,6 +1197,31 @@ oeta_back_to_game_enableAddon = true;
 force oeta_back_to_game_removeBody = true;
 force oeta_back_to_game_teleportToLeader = true;
 force oeta_back_to_game_teleportToVehicle = true;
+
+
+// 183rd BFT
+force force OETA_bft_bftEnabled = true;
+force force OETA_bft_friendlySides_CIVILIAN = [0,2];
+force force OETA_bft_friendlySides_EAST = [3];
+force force OETA_bft_friendlySides_RESISTANCE = [1,3];
+force force OETA_bft_friendlySides_WEST = [2];
+force force OETA_bft_friendlySidesDynamic = true;
+force force OETA_bft_groupIconsInteraction = "hover";
+force force OETA_bft_medicalSystem = "ACE";
+force force OETA_bft_requireItemGPS = true;
+force force OETA_bft_showAIGroups = true;
+force force OETA_bft_showAINames = true;
+force force OETA_bft_showCivilians = false;
+force force OETA_bft_showGroupIcons = true;
+force force OETA_bft_showGroupText = true;
+force force OETA_bft_showLifeState = true;
+force force OETA_bft_showOwnFactionOnly = true;
+force force OETA_bft_showOwnGroup = true;
+force force OETA_bft_showOwnGroupUnits = true;
+force force OETA_bft_showPlayerNames = true;
+force force OETA_bft_showUnitNames = true;
+force force OETA_bft_teamColors = "ACE";
+force force OETA_bft_updateInterval = 0;
 
 // 183RD - Bodybag
 force oeta_bodybag_destroyChance = 20;
