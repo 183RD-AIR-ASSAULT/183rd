@@ -1,4 +1,5 @@
 #define COMPONENT arsenal
+#define COMPONENT_BEAUTIFIED Arsenal
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 #include "\a3\ui_f\hpp\defineResincl.inc"

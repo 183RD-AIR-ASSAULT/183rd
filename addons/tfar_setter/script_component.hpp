@@ -1,4 +1,5 @@
 #define COMPONENT tfar_setter
+#define COMPONENT_BEAUTIFIED TFAR Setter
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

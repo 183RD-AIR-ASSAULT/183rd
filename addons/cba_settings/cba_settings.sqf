@@ -1,16 +1,16 @@
 // 183RD - Role
-force Roles_comm = """76561198000002705""";
-force Roles_eng = """76561198000002705""";
-force Roles_medic = """76561198000002705""";
-force Roles_srcomm = """76561198000002705""";
-force Roles_sreng = """76561198000002705""";
-force Roles_srmedic = """76561198000002705""";
+force Roles_comm = "";
+force Roles_eng = "";
+force Roles_medic = "";
+force Roles_srcomm = "";
+force Roles_sreng = "";
+force Roles_srmedic = "";
 
 // 183RD - Rank
 force ranks_captain = "";
 force ranks_colonel = "";
 force ranks_corporal = "";
-force ranks_lieutenant = """76561198000002705""";
+force ranks_lieutenant = "";
 force ranks_major = "";
 force ranks_sergeant = "";
 
@@ -258,7 +258,7 @@ force ace_medical_spontaneousWakeUpChance = 0.55;
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 20;
 force ace_medical_statemachine_AIUnconsciousness = true;
 force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
-force ace_medical_statemachine_cardiacArrestTime = 360;
+force ace_medical_statemachine_cardiacArrestTime = 480;
 force ace_medical_statemachine_fatalInjuriesAI = 0;
 force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 force ace_medical_treatment_advancedBandages = 2;
@@ -1104,36 +1104,29 @@ FORCE SSS_setting_slingLoadWhitelist = "";
 FORCE SSS_setting_useChatNotifications = false;
 
 
-// TCA BFT
-// FORCE FORCE TCA_bft_groupMarkers_colorsBlacklist = "ColorBLUFOR, ColorOPFOR, ColorIndependent, ColorCivilian, ColorUNKNOWN, Default, ColorWEST, ColorEAST, ColorGUER, ColorCIV, Color1_FD_F, Color2_FD_F, Color3_FD_F, Color4_FD_F, Color5_FD_F, Color6_FD_F";
-// FORCE FORCE TCA_bft_groupMarkers_defaultSetting = 2;
-// FORCE FORCE TCAbft_groupMarkers_enabled = true;
-// FORCE FORCE TCAbft_groupMarkers_fuzzOtherFactions = true;
-// FORCE FORCE TCA_bft_groupMarkers_iconsBlacklist = "unknown, uav";
-// FORCE FORCE TCAbft_groupMarkers_mapSettings_enabled = true;
-// FORCE FORCE TCAbft_groupMarkers_markerShape = "a";
-// FORCE FORCE TCA_bft_groupMarkers_nameOptions = "";
-// FORCE FORCE TCA_bft_groupMarkers_preferredColors = "ColorBlackS, ColorBlueS, ColorGoldS, ColorGreenS, ColorGreyS, ColorRedS, ColorSilverSBlack Squad, Blue Squad, Gold Squad, Green Squad, GrColorBlackS, ColorBlueS, ColorGoldS, ColorGreenS, ColorGreyS, ColorRedS, ColorSilverS";
-// FORCE FORCE TCAbft_groupMarkers_preferredIcons = "inf, motor_inf, mech_inf, air, armor, recon";
-// FORCE FORCE TCAbft_groupMarkers_trackingMode = "weightedAverage";
-// FORCE FORCE TCAbft_groupMarkers_trailingCount = 5;
-// FORCE FORCE TCAbft_groupMarkers_trailingMode = "weightedAverage";
-// FORCE FORCE TCAbft_groupMarkers_trailingWeight = 0.75;
-// FORCE FORCE TCAbft_groupMarkers_updateDelay = 5;
-
-// TCA Miscellaneous
-FORCE FORCE TCAmain_ClearBuildingMarkers_Channel = 0;
-FORCE FORCE TCAmain_ClearBuildingMarkers_Color = "ColorGreen";
-FORCE FORCE TCA_main_ClearBuildingMarkers_Enabled = true;
-FORCE FORCE TCAmain_LoadoutDiaryRecord_Enabled = false;
-FORCE FORCE TCAvehicles_showSpeedLimiterOptions = true;
-FORCE FORCE TCAvehicles_showSpeedLimiterWaitTime = 10;
-
-// TCA Unit markers
-FORCE FORCE TCAunitMarkers_unitMarkers_enabled = true;
-FORCE FORCE TCAunitMarkers_unitMarkers_markAI = true;
-FORCE FORCE TCAunitMarkers_unitMarkers_otherGroups = true;
-FORCE FORCE TCA_unitMarkers_unitMarkers_showToggle = false;
+// 183rd BFT
+force force OETA_bft_bftEnabled = true;
+force force OETA_bft_friendlySides_CIVILIAN = [0,2];
+force force OETA_bft_friendlySides_EAST = [3];
+force force OETA_bft_friendlySides_RESISTANCE = [1,3];
+force force OETA_bft_friendlySides_WEST = [2];
+force force OETA_bft_friendlySidesDynamic = true;
+force force OETA_bft_groupIconsInteraction = "hover";
+force force OETA_bft_medicalSystem = "ACE";
+force force OETA_bft_requireItemGPS = true;
+force force OETA_bft_showAIGroups = true;
+force force OETA_bft_showAINames = true;
+force force OETA_bft_showCivilians = false;
+force force OETA_bft_showGroupIcons = true;
+force force OETA_bft_showGroupText = true;
+force force OETA_bft_showLifeState = true;
+force force OETA_bft_showOwnFactionOnly = true;
+force force OETA_bft_showOwnGroup = true;
+force force OETA_bft_showOwnGroupUnits = true;
+force force OETA_bft_showPlayerNames = true;
+force force OETA_bft_showUnitNames = true;
+force force OETA_bft_teamColors = "ACE";
+force force OETA_bft_updateInterval = 0;
 
 // TFAR - Animations
 force radioAnims_cba_ads = true;
@@ -1176,10 +1169,10 @@ force TFAR_SameLRFrequenciesForSide = true;
 force TFAR_SameSRFrequenciesForSide = true;
 force TFAR_setting_defaultFrequencies_lr_east = "";
 force TFAR_setting_defaultFrequencies_lr_independent = "";
-force TFAR_setting_defaultFrequencies_lr_west = "51,52,53,54,55,56,57,58,59";
+force TFAR_setting_defaultFrequencies_lr_west = "";
 force TFAR_setting_defaultFrequencies_sr_east = "";
 force TFAR_setting_defaultFrequencies_sr_independent = "";
-force TFAR_setting_defaultFrequencies_sr_west = "101,102,103,104,105,106,107,58";
+force TFAR_setting_defaultFrequencies_sr_west = "";
 force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
 force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";

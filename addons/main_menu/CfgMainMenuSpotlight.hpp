@@ -9,22 +9,6 @@ class CfgMainMenuSpotlight {
         actionText = CSTRING(SpotlightHeader);
         condition = QUOTE(true);
     };
-    class GVAR(server2) {
-        text = "183rd Air Assault Unit [183rd] Training";
-        textIsQuote = 0;
-        picture = QUOTE(\z\oeta\addons\media\images\183rd.paa);
-        action = QUOTE(_this call (uiNamespace getVariable QQFUNC(joint)));
-        actionText = CSTRING(SpotlightHeader);
-        condition = QUOTE(true);
-    };
-    class GVAR(server3) {
-        text = "183rd Air Assault Unit [183rd] Events";
-        textIsQuote = 0;
-        picture = QUOTE(\z\oeta\addons\media\images\183rd.paa);
-        action = QUOTE(_this call (uiNamespace getVariable QQFUNC(joine)));
-        actionText = CSTRING(SpotlightHeader);
-        condition = QUOTE(true);
-    };
     delete ApexProtocol;
     delete BootCamp;
     delete EastWind;

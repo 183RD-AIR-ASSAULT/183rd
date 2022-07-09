@@ -28,10 +28,7 @@
         localize "STR_OETA_Interactions_CBA_Global_Sounds_Title",
         localize "STR_OETA_Interactions_CBA_Global_Sounds_Tip"
     ],
-    [
-        COMPONENT_NAME,
-        localize "STR_OETA_Interactions_CBA_Category_core"
-    ],
+    COMPONENT_NAME,
     true,
     1, {}
 ] call CBA_fnc_addSetting;
@@ -47,10 +44,7 @@
         localize "STR_OETA_Interactions_CBA_TapShoulder_AI_Title",
         localize "STR_OETA_Interactions_CBA_TapShoulder_AI_Tip"
     ],
-    [
-        COMPONENT_NAME,
-        localize "STR_OETA_Interactions_CBA_Category_TapShoulder"
-    ],
+    COMPONENT_NAME,
     false,
     1, {}
 ] call CBA_fnc_addSetting;
@@ -62,10 +56,7 @@
         localize "STR_OETA_Interactions_CBA_TapShoulder_Hint_Title",
         localize "STR_OETA_Interactions_CBA_TapShoulder_Hint_Tip"
     ],
-    [
-        COMPONENT_NAME,
-        localize "STR_OETA_Interactions_CBA_Category_TapShoulder"
-    ],
+    COMPONENT_NAME,
     true,
     0, {}
 ] call CBA_fnc_addSetting;
@@ -80,10 +71,7 @@
         localize "STR_OETA_Interactions_CBA_Backpack_Access_Faction_Title",
         localize "STR_OETA_Interactions_CBA_Backpack_Access_Faction_Tip"
     ],
-    [
-        COMPONENT_NAME,
-        localize "STR_OETA_Interactions_CBA_Category_Backpacks"
-    ],
+    COMPONENT_NAME,
     [
         [0,1,2],
         [
@@ -103,10 +91,7 @@
         localize "STR_OETA_Interactions_CBA_Backpack_Access_Friendly_Title",
         localize "STR_OETA_Interactions_CBA_Backpack_Access_Friendly_Tip"
     ],
-    [
-        COMPONENT_NAME,
-        localize "STR_OETA_Interactions_CBA_Category_Backpacks"
-    ],
+    COMPONENT_NAME,
     [
         [0,1],
         [
@@ -125,10 +110,7 @@
         localize "STR_OETA_Interactions_CBA_Backpack_Access_Enemy_Title",
         localize "STR_OETA_Interactions_CBA_Backpack_Access_Enemy_Tip"
     ],
-    [
-        COMPONENT_NAME,
-        localize "STR_OETA_Interactions_CBA_Category_Backpacks"
-    ],
+    COMPONENT_NAME,
     [
         [0,1],
         [
@@ -147,10 +129,7 @@
         localize "STR_OETA_Interactions_CBA_Backpack_Access_Hint_Title",
         localize "STR_OETA_Interactions_CBA_Backpack_Access_Hint_Tip"
     ],
-    [
-        COMPONENT_NAME,
-        localize "STR_OETA_Interactions_CBA_Category_Backpacks"
-    ],
+   COMPONENT_NAME,
     true,
     0, {}
 ] call CBA_fnc_addSetting;
@@ -166,10 +145,7 @@
         localize "STR_OETA_Interactions_CBA_Gear_Access_Enabled_Title",
         localize "STR_OETA_Interactions_CBA_Gear_Access_Enabled_Tip"
     ],
-    [
-        COMPONENT_NAME,
-        localize "STR_OETA_Interactions_CBA_Category_Gear"
-    ],
+    COMPONENT_NAME,
     [
         [0,1],
         [
@@ -188,10 +164,7 @@
         localize "STR_OETA_Interactions_CBA_Gear_Access_Hint_Title",
         localize "STR_OETA_Interactions_CBA_Gear_Access_Hint_Tip"
     ],
-    [
-        COMPONENT_NAME,
-        localize "STR_OETA_Interactions_CBA_Category_Gear"
-    ],
+    COMPONENT_NAME,
     true,
     0, {}
 ] call CBA_fnc_addSetting;

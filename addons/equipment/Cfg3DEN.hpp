@@ -21,7 +21,7 @@ class Cfg3den {
                     h = "5 * (pixelH * pixelGrid * 0.50)";
                     rows = 1;
                     columns = 5;
-                    strings[] = {"None", "ground", "air", "Wint"};
+                    strings[] = {"None", "INF", "BCT", "AIR"};
                 };
             };
         };

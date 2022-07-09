@@ -1,4 +1,6 @@
 #define COMPONENT common
+#define COMPONENT_BEAUTIFIED Common
+
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 #include "\a3\ui_f\hpp\defineCommonGrids.inc"

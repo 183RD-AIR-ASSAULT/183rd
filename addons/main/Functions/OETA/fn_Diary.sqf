@@ -2,43 +2,117 @@
 
 if (!hasInterface) exitWith {};
 
-player createDiaryRecord ["Diary", ["Long Range Frequencies",
+player createDiaryRecord ["Diary", ["Ground Long Range Frequencies",
 "
 <br/><font face='PuristaLight' color='#ffcc00' font size='20' >**LISTENING ON AN UNAUTHORISED FREQUENCY IS STRICTLY PROHIBITED.**</font>
 <br/>
-<br/>Below is a list of the default Long Range Frequencies. Your role specific frequencies are set on your radio automatically. Ensure you're on the correct frequencies at all times.
+<br/>Below is a list of the default Ground Long Range Frequencies. Your role specific frequencies are set on your radio automatically. Ensure you're on the correct frequencies at all times.
 <br/>
-<br/><font face='PuristaLight' color='#ffcc00'> Channel: 1 - Frequency:51 Mhz -- C2</font>
-<br/><font face='PuristaLight' color='#6C8EBF'> Channel: 2 - Frequency:52 Mhz -- CANSOF Net</font>
-<br/><font face='PuristaLight' color='#B85450'> Channel: 3 - Frequency:53 Mhz -- USASOC Net</font>
-<br/><font face='PuristaLight' color='#00FF00'> Channel: 4 - Frequency:54 Mhz -- JSOW Net</font>
-<br/><font face='PuristaLight' color='#ffcc00'> Channel: 5 - Frequency:55 Mhz -- SPARE</font>
-<br/><font face='PuristaLight' color='#FF0000'> Channel: 6 - Frequency:56 Mhz -- CAS - Fires Net</font>
-<br/><font face='PuristaLight' color='#00FF00'> Channel: 7 - Frequency:57 Mhz -- Air Group Net</font>
-<br/><font face='PuristaLight' color='#D60025'> Channel: 8 - Frequency:58 Mhz -- CROSSNET - Common on all radios</font>
+<br/><font face='PuristaLight' color='#D60025'> Channel: 1 - Frequency:30 Mhz -- C2</font>
+<br/><font face='PuristaLight' color='#D60025'> Channel: 2 - Frequency:31 Mhz -- C2 Spare</font>
+<br/><font face='PuristaLight' color='#D60025'> Channel: 3 - Frequency:70 Mhz -- CSB</font>
+<br/><font face='PuristaLight' color='#D60025'> Channel: 4 - Frequency:71 Mhz -- Anvil/font>
+<br/><font face='PuristaLight' color='#D60025'> Channel: 5 - Frequency:72 Mhz -- Hammer</font>
+<br/><font face='PuristaLight' color='#D60025'> Channel: 6 - Frequency:40 Mhz -- AIR 2 GROUND</font>
+<br/><font face='PuristaLight' color='#D60025'> Channel: 7 - Frequency:45 Mhz -- Air 2 AIR</font>
+<br/><font face='PuristaLight' color='#D60025'> Channel: 8 - Frequency:49 Mhz -- Emergency Net - Common on all radios</font>
 "
 ]];
 
 
-player createDiaryRecord ["Diary", ["Short Range Frequencies",
+player createDiaryRecord ["Diary", ["Nightmare Short Range Frequencies",
 "
 <br/><font face='PuristaLight' color='#ffcc00' font size='20' >**LISTENING ON AN UNAUTHORISED FREQUENCY IS STRICTLY PROHIBITED.**</font>
 <br/>
 <br/>Below is a list of the default Short Range Frequencies. Your role specific frequencies are set on your radio automatically. Ensure you're on the correct frequencies at all times.
 <br/>
-<br/><font face='PuristaLight' color='#ffcc00'> Channel: 1 - Frequency:101 Mhz 	-- SQUADNET 01</font>
-<br/><font face='PuristaLight' color='#fffc00'> Channel: 2 - Frequency:102 Mhz 	-- SQUADNET 02</font>
-<br/><font face='PuristaLight' color='#ffcc00'> Channel: 3 - Frequency:103 Mhz 	-- SQUADNET 03</font>
-<br/><font face='PuristaLight' color='#fffc00'> Channel: 4 - Frequency:104 Mhz 	-- SQUADNET 04</font>
-<br/><font face='PuristaLight' color='#ffcc00'> Channel: 5 - Frequency:105 Mhz 	-- SQUADNET 05</font>
-<br/><font face='PuristaLight' color='#fffc00'> Channel: 6 - Frequency:106 Mhz 	-- SQUADNET 06</font>
-<br/><font face='PuristaLight' color='#ffcc00'> Channel: 7 - Frequency:107 Mhz 	-- SQUADNET 07</font>
-<br/><font face='PuristaLight' color='#D60025'> Channel: 8 - Frequency:58 Mhz 	-- CROSSNET - Common on all radios</font>
+<br/><font face='PuristaLight' color='#ffcc00'> HQ</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 1 - Frequency:50 Mhz 		-- PLT NET</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 2 - Frequency:50.1 Mhz 	-- HQ NET 01</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 3 - Frequency:50.2 Mhz 	-- HQ NET 02</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 4 - Frequency:50.3 Mhz 	-- HQ NET 03</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 5 - Frequency:50.4 Mhz 	-- HQ NET 04</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 6 - Frequency:50.5 Mhz 	-- HQ NET 05</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 7 - Frequency:99 Mhz 		-- WMED Medic Radio</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 8 - Frequency:46 Mhz 		-- Emergency Net - Common on all radios</font>
 <br/>
-
+<br/>
+<br/><font face='PuristaLight' color='#ffcc00'> 1st Squad</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 1 - Frequency:50 Mhz 		-- PLT NET</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 2 - Frequency:51 Mhz 		-- 1-1 NET 02</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 3 - Frequency:51.1 Mhz 	-- 1-1-A NET 03</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 4 - Frequency:51.2 Mhz 	-- 1-1-B NET 04</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 5 - Frequency:50.1 Mhz 	-- HQ NET 01</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 6 - Frequency:50.2 Mhz 	-- HQ NET 02</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 7 - Frequency:99 Mhz 		-- WMED Medic Radio</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 8 - Frequency:46 Mhz 		-- Emergency Net - Common on all radios</font>
+<br/>
+<br/>
+<br/><font face='PuristaLight' color='#ffcc00'> 2nd Squad</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 1 - Frequency:50 Mhz 		-- PLT Net</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 2 - Frequency:52 Mhz 		-- 1-2 NET </font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 3 - Frequency:52.1 Mhz 	-- 1-2-A NET </font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 4 - Frequency:52.2 Mhz 	-- 1-2-B NET </font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 5 - Frequency:50.1 Mhz 	-- HQ NET 01</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 6 - Frequency:50.2 Mhz 	-- HQ NET 02</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 7 - Frequency:99 Mhz 		-- WMED Medic Radio</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 8 - Frequency:46 Mhz 		-- Emergency Net - Common on all radios</font>
+<br/>
+<br/>
+<br/><font face='PuristaLight' color='#ffcc00'> 3rd Squad</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 1 - Frequency:50 Mhz 		-- PLT Net</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 2 - Frequency:53 Mhz 		-- 1-3 NET </font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 3 - Frequency:53.1 Mhz 	-- 1-3-A NET </font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 4 - Frequency:53.2 Mhz 	-- 1-3-B NET </font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 5 - Frequency:53.1 Mhz 	-- HQ NET 01</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 6 - Frequency:53.2 Mhz 	-- HQ NET 02</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 7 - Frequency:99 Mhz 		-- WMED Medic Radio</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 8 - Frequency:46 Mhz 		-- Emergency Net - Common on all radios</font>
+<br/>
+<br/>
+<br/><font face='PuristaLight' color='#ffcc00'> 4th Squad</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 1 - Frequency:50 Mhz 		-- PLT Net</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 2 - Frequency:54 Mhz 		-- 1-4 NET </font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 3 - Frequency:54.1 Mhz 	-- 1-4-A NET </font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 4 - Frequency:54.2 Mhz 	-- 1-4-B NET </font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 5 - Frequency:50.1 Mhz 	-- HQ NET 01</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 6 - Frequency:50.2 Mhz 	-- HQ NET 02</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 7 - Frequency:99 Mhz 		-- WMED Medic Radio</font>
+<br/><font face='PuristaLight' color='#B85450'> Channel: 8 - Frequency:46 Mhz 		-- Emergency Net - Common on all radios</font>
+<br/>
 <br/>
 "
 ]];
+player createDiaryRecord ["Diary", ["Aviation Long/Short Range Frequencies",
+"
+<br/><font face='PuristaLight' color='#ffcc00' font size='20' >**LISTENING ON AN UNAUTHORISED FREQUENCY IS STRICTLY PROHIBITED.**</font>
+<br/>
+<br/>Below is a list of the Aviation Long Frequencies. Your role specific frequencies are set on your radio automatically. Ensure you're on the correct frequencies at all times.
+<br/>
+<br/><font face='PuristaLight' color='#6C8EBF'> Channel: 1 - Frequency:40 Mhz 		-- AIR 2 GROUND</font>
+<br/><font face='PuristaLight' color='#6C8EBF'> Channel: 2 - Frequency:41 Mhz 		-- AIR 2 AIR</font>
+<br/><font face='PuristaLight' color='#6C8EBF'> Channel: 3 - Frequency:45 Mhz 		-- AIRBASE</font>
+<br/><font face='PuristaLight' color='#6C8EBF'> Channel: 4 - Frequency:40.1 Mhz 	-- SPARE 01/font>
+<br/><font face='PuristaLight' color='#6C8EBF'> Channel: 5 - Frequency:40.2 Mhz 	-- SPARE 03</font>
+<br/><font face='PuristaLight' color='#6C8EBF'> Channel: 6 - Frequency:40.3 Mhz 	-- SPARE 03</font>
+<br/><font face='PuristaLight' color='#6C8EBF'> Channel: 7 - Frequency:99 Mhz 		-- WMED Medic Radio</font>
+<br/><font face='PuristaLight' color='#6C8EBF'> Channel: 8 - Frequency:49 Mhz 		-- Emergency Net - Common on all radios</font>
+<br/>
+<br/>
+<br/>
+<br/>Below is a list of the Aviation Short Frequencies. Your role specific frequencies are set on your radio automatically. Ensure you're on the correct frequencies at all times.
+<br/>
+<br/><font face='PuristaLight' color='#40FFFF'> Channel: 1 - Frequency:41 Mhz 		-- AIR 2 AIR</font>
+<br/><font face='PuristaLight' color='#40FFFF'> Channel: 2 - Frequency:41.1 Mhz 	-- AIR NET 01</font>
+<br/><font face='PuristaLight' color='#40FFFF'> Channel: 3 - Frequency:41.2 Mhz 	-- AIR NET 02</font>
+<br/><font face='PuristaLight' color='#40FFFF'> Channel: 4 - Frequency:41.3 Mhz 	-- AIR NET 03/font>
+<br/><font face='PuristaLight' color='#40FFFF'> Channel: 5 - Frequency:41.4 Mhz 	-- AIR NET 04</font>
+<br/><font face='PuristaLight' color='#40FFFF'> Channel: 6 - Frequency:45 Mhz 		-- SAIRBASE</font>
+<br/><font face='PuristaLight' color='#40FFFF'> Channel: 7 - Frequency:99 Mhz 		-- WMED Medic Radio</font>
+<br/><font face='PuristaLight' color='#40FFFF'> Channel: 8 - Frequency:49 Mhz 		-- Emergency Net - Common on all radios</font>
+"
+]];
+
 
 player createDiarySubject ["Commands","Commands"];
 

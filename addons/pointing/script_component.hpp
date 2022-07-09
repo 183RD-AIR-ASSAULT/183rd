@@ -1,4 +1,5 @@
 #define COMPONENT pointing
+#define COMPONENT_BEAUTIFIED Pointing
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
