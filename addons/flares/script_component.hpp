@@ -1,4 +1,5 @@
 #define COMPONENT flares
+#define COMPONENT_BEAUTIFIED Flares
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

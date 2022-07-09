@@ -3,7 +3,7 @@
     QGVAR(NAME), \
     "CHECKBOX", \
     [LSTRING(NAME), LSTRING(DOUBLES(NAME,desc))], \
-    format ["183RD %1", localize LSTRING(DisplayName)], \
+    COMPONENT_NAME, \
     DEFAULT, \
     2, \
     { \

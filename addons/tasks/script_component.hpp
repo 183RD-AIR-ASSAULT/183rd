@@ -1,4 +1,5 @@
 #define COMPONENT tasks
+#define COMPONENT_BEAUTIFIED Tasks
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

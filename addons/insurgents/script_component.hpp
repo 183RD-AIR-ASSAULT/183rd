@@ -1,4 +1,5 @@
 #define COMPONENT insurgents
+#define COMPONENT_BEAUTIFIED Insurgents
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 #define DEBUG_SYNCHRONOUS

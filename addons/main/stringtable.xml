@@ -27,7 +27,7 @@
 		<Container name="EditorCategories">
 			<!-- =============================================================================== -->
 			<Key ID="STR_OETA_EdCat">
-				<Original>OETA</Original>
+				<Original>183rd</Original>
 			</Key>
 			<!-- =============================================================================== -->
 		</Container>
@@ -37,7 +37,7 @@
 		<Container name="FactionClasses">
 			<!-- =============================================================================== -->
 			<Key ID="STR_OETA_FactionClass">
-				<Original>OETA</Original>
+				<Original>183rd</Original>
 			</Key>
 			<!-- =============================================================================== -->
 		</Container>

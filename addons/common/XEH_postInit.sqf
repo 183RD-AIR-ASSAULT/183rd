@@ -61,3 +61,7 @@ if (isOETA) then {
         [QGVAR(requestServerSync), [clientOwner]] call CBA_fnc_serverEvent;
     }] call CBA_fnc_execNextFrame;
 }] call CBA_fnc_execNextFrame;
+
+["unit", {
+    oeta_unit = (_this select 0);
+}, true] call CBA_fnc_addPlayerEventHandler;

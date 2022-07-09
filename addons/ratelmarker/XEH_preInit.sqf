@@ -12,6 +12,6 @@ ADDON = true;
     QGVAR(QuickReferenceMarkerMode),
     "LIST",
     LSTRING(QRM_Mode),
-    format [COMPONENT_NAME, localize "str_a3_rscdisplaywelcome_expa_parc_list6_title"],
+    COMPONENT_NAME,
     [[0, 1, 2], [ACELSTRING(Common,Disabled), LSTRING(QRM_VehiclePos), LSTRING(QRM_ViewPos)], 2]
 ] call CBA_fnc_addSetting;
