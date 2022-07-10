@@ -21,6 +21,15 @@ class GVAR(authorized_players) {
     class ADMIN_Devin {
         uid = "76561198020655265";
     };
+    class ADMIN_Digger {
+        uid = "76561198135204306";
+    };
+    class ADMIN_Alex {
+        uid = "76561198300692603";
+    };
+    class ADMIN_Summers {
+        uid = "76561198015722757";
+    };
 };
 
 #include "CfgFunctions.hpp"
