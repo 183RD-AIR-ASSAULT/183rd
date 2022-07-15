@@ -1,15 +1,15 @@
 class CfgDifficultyPresets {
 
-    defaultPreset = QGVAR(Difficulty);
+    defaultPreset = "OETA";
 
     class Custom;
-    class GVAR(Difficulty): Custom {
+    class OETA: Custom {
         displayName = CSTRING(DifficultyName);
 
         description = CSTRING(DifficultyDescription);
         optionDescription = CSTRING(DifficultyDescription);
 
-        levelAI = QGVAR(LevelAI);
+        levelAI = "OETA_LevelAI";
 
         class Options {
             // Simulation

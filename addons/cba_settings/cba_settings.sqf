@@ -99,12 +99,9 @@ FORCE OETA_CreatorActions_Master = true;
 FORCE oeta_interactions_backpack_access_enemy = 0;
 FORCE oeta_interactions_backpack_access_faction = 2;
 FORCE oeta_interactions_backpack_access_friendly = 1;
-oeta_interactions_backpack_access_hint = true;
 FORCE oeta_interactions_gear_access_enabled = 1;
-oeta_interactions_gear_access_hint = true;
 FORCE oeta_interactions_global_sounds = true;
 FORCE oeta_interactions_tapshoulder_ai = false;
-oeta_interactions_tapshoulder_hint = true;
 
 // 183rd - Main
 FORCE OETA_Main_ArsenalSaveLoad = true;
@@ -882,7 +879,7 @@ FORCE tfar_radiocode_independent = "_independent";
 FORCE tfar_radiocode_west = "_bluefor";
 FORCE tfar_radioCodesDisabled = false;
 FORCE TFAR_SameLRFrequenciesForSide = true;
-FORCE TFAR_SameSRFrequenciesForSide = true;
+FORCE TFAR_SameSRFrequenciesForSide = false;
 FORCE TFAR_setting_defaultFrequencies_lr_east = "";
 FORCE TFAR_setting_defaultFrequencies_lr_independent = "";
 FORCE TFAR_setting_defaultFrequencies_lr_west = "";

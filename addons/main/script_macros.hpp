@@ -2,6 +2,8 @@
 #include "\z\ace\addons\main\script_macros.hpp"
 #include "\x\cba\addons\xeh\script_xeh.hpp"
 
+#include "script_version.hpp"
+
 #define DFUNC(module) TRIPLES(ADDON,fnc,module)
 #ifdef DISABLE_COMPILE_CACHE
     #undef PREP
@@ -51,8 +53,8 @@
 #define QCLASS(var1) QUOTE(DOUBLES(PREFIX,var1))
 
 // Extension macros
-#define EXT "TaskForceDagger_mods"
-#define EXT_LOG "TaskForceDagger_mods_log"
+#define EXT "oeta_mods"
+#define EXT_LOG "oeta_mods_log"
 
 // 183RD Debug macros
 #include "\z\oeta\addons\main\script_debug.hpp"

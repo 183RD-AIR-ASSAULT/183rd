@@ -62,6 +62,10 @@ private [
 _ArsenalType = call {
     if (_Type isEqualTo "INF") exitwith {
         _wholekitandkubalte = [
+            "ItemcTab",
+            "ItemAndroid",
+            "ItemcTabHCam",
+            "ItemMicroDAGR",
             "dzn_MG_Tripod_M122A1_M240Mount_Carry",
             "rhs_weap_m240B",
             "rhs_weap_m249",
