@@ -1,6 +1,6 @@
 class CfgAILevelPresets {
     class Custom;
-    class GVAR(LevelAI): Custom {
+    class OETA_LevelAI: Custom {
         displayName = CSTRING(DifficultyName);
 
         skillAI = 0.9;

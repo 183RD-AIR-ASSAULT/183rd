@@ -12,13 +12,16 @@ successful: number of the slot; error: -1 <NUMBER>
 Example:
 
 call OETA_fnc_arsenal;
-
+"ItemcTab",
+"ItemAndroid",
+"ItemcTabHCam",
+"ItemMicroDAGR",
 
 Public: Yes
 */
 
 [
-    ["tfw_rf3080Item","tfw_blade","tfw_whip","tfw_dd","Laserbatteries","LOP_LaserMag","Laserbatteries","ACE_ATragMX","ItemAndroid","ItemMicroDAGR","ItemcTabHCam","ItemcTab","ACE_DAGR","ACE_HuntIR_monitor","uh60_jvmf_tablet","ACE_Kestrel4500","ACE_microDAGR","tun_tablet","ACE_UAVBattery"],
+    ["ItemcTab","ItemAndroid","ItemcTabHCam","ItemMicroDAGR","tfw_rf3080Item","tfw_blade","tfw_whip","tfw_dd","Laserbatteries","LOP_LaserMag","Laserbatteries","ACE_ATragMX","ItemAndroid","ItemMicroDAGR","ItemcTabHCam","ItemcTab","ACE_DAGR","ACE_HuntIR_monitor","uh60_jvmf_tablet","ACE_Kestrel4500","ACE_microDAGR","tun_tablet","ACE_UAVBattery"],
     "Tech",
     "\a3\ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa"
 ] call ACEFUNC(arsenal,addRightPanelButton);

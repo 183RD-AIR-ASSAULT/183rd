@@ -18,6 +18,9 @@ class CfgPatches {
 };
 
 #include "CfgVehicles.hpp"
+#include "CfgBrains.hpp"
+#include "Modes.hpp"
+#include "CfgWeapons.hpp"
 
 class CfgFunctions {
     #include "CfgFunctions.hpp"
@@ -28,3 +31,4 @@ class Extended_PreInit_EventHandlers {
         init = "call compile preProcessFileLineNumbers 'z\oeta\addons\AI\XEH_preInit.sqf'";
     };
 };
+

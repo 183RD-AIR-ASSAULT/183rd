@@ -21,7 +21,7 @@ exclude = ["*.psd", "*.png", "*.tga"]
 
 modname = "{{name}}"
 key_name = "{{prefix}}_{{version}}"
-
+authority = "{{prefix}}_{{version}}"
 
 releasebuild = [
     "@zip 183_v{{semver.major}}.{{semver.minor}}.{{semver.patch}}.{{semver.build}}"
