@@ -71,7 +71,7 @@ FORCE oeta_chat_tpUsage = 3;
 FORCE oeta_chat_whisperUsage = 3;
 
 // 183rd - Common
-oeta_common_weaponSafety = true;
+oeta_core_weaponSafety = true;
 
 // 183rd - Fatigue
 FORCE oeta_fatigue_highJogCoef = 0.9;

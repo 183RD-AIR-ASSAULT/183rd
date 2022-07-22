@@ -35,7 +35,7 @@ private _factions = [];
         _sideFactions = missionNamespace getVariable _sideVar;
         _factions append _sideFactions;
     } else {
-        _sideFactions = [nil, ["oeta_AI", format ["%1_Factions", _side]]] call YAINA_F_fnc_GetFunctions;
+        _sideFactions = [nil, ["oeta_ai", format ["%1_Factions", _side]]] call YaiNA_F_fnc_GetFunctions;
 
         for "_i" from (count _sideFactions) to 0 step -1 do {
             if !(isClass (configFile >> "CfgFactionClasses" >> (_sideFactions select _i))) then {

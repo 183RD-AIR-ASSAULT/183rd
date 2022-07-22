@@ -1,13 +1,13 @@
-class OETA_Explosives {
+class OETA_explosives {
 
     tag = "OETA";
-    class Explosives {
+    class explosives {
 
-        file = "z\oeta\Addons\Explosives\Functions";
+        file = "z\oeta\addons\explosives\Functions";
         class CrashSite {};
         class IEDVehicle {};
         class MakeIED {};
-        class SpawnExplosives {};
+        class Spawnexplosives {};
         class ModuleMakeIED {};
         class MakeIEDZeusWrapper {};
     };

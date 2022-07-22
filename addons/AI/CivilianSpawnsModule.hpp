@@ -1,8 +1,9 @@
-class OETA_ModuleCivilianSpawns: Module_F {
+class EGVAR(Core,BaseModule);
+class GVAR(ModuleaiSpawnsWest): Module_F {
     scope = 2;
-    displayName = "AI Spawn - Civilian";
-    icon = "\z\oeta\addons\media\images\Icons\AI CIV.paa";
-    category = QUOTE(PREFIX);
+    displayName = "ai Spawn - Civilian";
+    icon = "\z\oeta\addons\media\images\icons\ai_CIV.paa";
+    category = QEGVAR(main,AI);
     function = "oeta_fnc_moduleCivilianSpawns";
     functionPriority = 2;
     isGlobal = 0;
@@ -11,13 +12,13 @@ class OETA_ModuleCivilianSpawns: Module_F {
     is3den = 0;
     class Attributes: AttributesBase {
         class ObjName: Edit {
-                property = "oeta_AI_ObjName";
+                property = "oeta_ai_ObjName";
                 displayName = "Objective Name";
                 tooltip = "Name of Objective/Spawn Position.";
                 defaultValue = """Objective 1""";
             };
         class Type: Combo {
-                property = "oeta_AI_Type";
+                property = "oeta_ai_Type";
                 displayName = "Civilian Faction";
                 tooltip = "Civilian Faction Type for this Module.";
                 defaultValue = """CIV_F""";
@@ -36,7 +37,7 @@ class OETA_ModuleCivilianSpawns: Module_F {
                 };
             };
         class Side: Combo {
-                property = "oeta_AI_Side";
+                property = "oeta_ai_Side";
                 displayName = "Civilian Side";
                 tooltip = "Side to spawn the Civilians on.";
                 defaultValue = """CIVILIAN""";
@@ -49,22 +50,22 @@ class OETA_ModuleCivilianSpawns: Module_F {
             };
 
         class GarrRadius: Edit {
-                property = "oeta_AI_GarRadius";
+                property = "oeta_ai_GarRadius";
                 displayName = "Garrison Radius";
-                tooltip = "AI Garrison radius from this module.";
+                tooltip = "ai Garrison radius from this module.";
                 typeName = "NUMBER";
                 defaultValue = 200;
             };
 
         class GarrisonedUnitsMin: Edit {
-            property = "oeta_AI_GarrisonedUnitsMin";
+            property = "oeta_ai_GarrisonedUnitsMin";
             displayName = "Min Garrisoned Units";
             description = "Minimum Number of Garrisoned Civilians to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class GarrisonedUnitsMax: Edit {
-            property = "oeta_AI_GarrisonedUnitsMax";
+            property = "oeta_ai_GarrisonedUnitsMax";
             displayName = "Max Garrisoned Units";
             description = "Maximum Number of Garrisoned Civilians to Spawn";
             typeName = "Number";
@@ -72,7 +73,7 @@ class OETA_ModuleCivilianSpawns: Module_F {
         };
 
         class Radius: Edit {
-                property = "oeta_AI_Radius";
+                property = "oeta_ai_Radius";
                 displayName = "Patrol Radius";
                 tooltip = "Civilian Spawn radius from this module.";
                 typeName = "NUMBER";
@@ -80,42 +81,42 @@ class OETA_ModuleCivilianSpawns: Module_F {
             };
 
         class CivPedPatrolsMin: Edit {
-            property = "oeta_AI_CivPedPatrolsMin";
+            property = "oeta_ai_CivPedPatrolsMin";
             displayName = "Min Pedestrian Patrols";
             description = "Minimum Number of Pedestrians to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class CivPedPatrolsMax: Edit {
-            property = "oeta_AI_CivPedPatrolsMax";
+            property = "oeta_ai_CivPedPatrolsMax";
             displayName = "Max Pedestrian Patrols";
             description = "Maximum Number of Pedestrians to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class CivVehPatrolsMin: Edit {
-            property = "oeta_AI_CivVehPatrolsMin";
+            property = "oeta_ai_CivVehPatrolsMin";
             displayName = "Min Vehicle Patrols";
             description = "Minimum Number of Vehicle Patrols to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class CivVehPatrolsMax: Edit {
-            property = "oeta_AI_CivVehPatrolsMax";
+            property = "oeta_ai_CivVehPatrolsMax";
             displayName = "Max Vehicle Patrols";
             description = "Maximum Number of Vehicle Patrols to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class CivVehParkedMin: Edit {
-            property = "oeta_AI_CivVehParkedMin";
+            property = "oeta_ai_CivVehParkedMin";
             displayName = "Min Parked Vehicles";
             description = "Minimum Number of Parked Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class CivVehParkedMax: Edit {
-            property = "oeta_AI_CivVehPaarkedMax";
+            property = "oeta_ai_CivVehPaarkedMax";
             displayName = "Max Parked Vehicle";
             description = "Maximum Number of Parked Vehicles to Spawn";
             typeName = "Number";
@@ -125,8 +126,8 @@ class OETA_ModuleCivilianSpawns: Module_F {
     };
     class ModuleDescription: ModuleDescription {
         description[] = {
-            "Place this module to spawn selected AI around module location.",
-            "Multiple AI Spawn modules can be used with different settings.",
+            "Place this module to spawn selected ai around module location.",
+            "Multiple ai Spawn modules can be used with different settings.",
             "Ensure all Max values are greater than min values.",
             "Ensure you have the mod enabled for selected modded faction.",
             "Top Tip: Copy and Paste modules!"

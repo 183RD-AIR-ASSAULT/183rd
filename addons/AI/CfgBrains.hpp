@@ -2,7 +2,7 @@
 class CfgBrains {
     class DefaultSoldierBrain {
         class Components {
-            class AIBrainCountermeasuresComponent {
+            class aiBrainCountermeasuresComponent {
                 useSmokeGrenadeDelay = 10;
                 CMCheckDelay = 0.8;
                 suppressionThreshold = 0.5;
@@ -14,7 +14,7 @@ class CfgBrains {
                 maxReactionTime = 3;
                 randomReactionTimePercent = 0.2;
             };
-            class AIBrainSuppressionComponent {
+            class aiBrainSuppressionComponent {
                 maxSuppression = 1;
                 worstDecreaseTime = 90;
                 bestDecreaseTime = 65;
@@ -25,7 +25,7 @@ class CfgBrains {
                 CauseBulletCloseWeight = 0.045;
                 SuppressionThreshold = 0.5;
             };
-            class AIBrainAimingErrorComponent {
+            class aiBrainAimingErrorComponent {
                 maxAngularError = 0.05;
                 maxAngularErrorTurrets = 0.045;
                 worstDecreaseTime = 1.1;

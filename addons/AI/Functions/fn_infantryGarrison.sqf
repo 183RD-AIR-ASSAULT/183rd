@@ -14,7 +14,7 @@ Arguments:
     _infantryType - Class name of the infantry group type to use in populating <STRING>
     _infList - Array of groups to use in populating <ARRAY OF STRINGS>
     _groupCount - The amount of groups we want to create <SCALAR>
-    _AIOB_Positioning - The positioning directive to use <SCALAR, defaults to: 2>
+    _aiOB_Positioning - The positioning directive to use <SCALAR, defaults to: 2>
     _skill - The skill level of the garrisoned units <STRING>
     _maxFill - The maximum amount of units in one building <SCALAR, defaults to: 4>
     _excludes - Exclude buildings in this array from being garrisoned <ARRAY OF STRING>
@@ -41,7 +41,7 @@ params [
     ["_InfantryType","UInfantry"],
     ["_infList", ["OIA_GuardSquad"]],
     ["_groupCount", 1],
-    ["_AIOB_Positioning", 2],
+    ["_aiOB_Positioning", 2],
     ["_skill", "OETA Default"],
     ["_maxFill", 4],
     ["_excludes", []],
@@ -59,7 +59,7 @@ if (_units isEqualTo []) then {
 
 if (_units isEqualTo []) exitWith { [] };
 
-private _failed = [_pos, nil, _units, _radius, _AIOB_Positioning, true, _maxFill, _excludes] call DERP_fnc_AIOccupyBuilding;
+private _failed = [_pos, nil, _units, _radius, _aiOB_Positioning, true, _maxFill, _excludes] call DERP_fnc_aiOccupyBuilding;
 
 // Remove any non-garrisoned units { deleteVehicle _x; } forEach _failed;
 _allUnits = _units - _failed;

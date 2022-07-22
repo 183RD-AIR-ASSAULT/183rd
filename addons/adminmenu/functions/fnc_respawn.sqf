@@ -151,13 +151,13 @@ lbClear _control;
 
 private _idx = _control lbAdd format["BLUFOR (%1p)",_west];
 _control lbSetValue [_idx,1];
-_control lbSetColor [_idx,(west) call EFUNC(common,sideToColor)];
+_control lbSetColor [_idx,(west) call EFUNC(core,sideToColor)];
 private _idx = _control lbAdd format["OPFOR (%1p)",_east];
 _control lbSetValue [_idx,0];
-_control lbSetColor [_idx,(east) call EFUNC(common,sideToColor)];
+_control lbSetColor [_idx,(east) call EFUNC(core,sideToColor)];
 private _idx = _control lbAdd format["GREENFOR (%1p)",_resistance];
 _control lbSetValue [_idx,2];
-_control lbSetColor [_idx,(independent) call EFUNC(common,sideToColor)];
+_control lbSetColor [_idx,(independent) call EFUNC(core,sideToColor)];
 private _idx = _control lbAdd format["Civilian (%1p)",_civilian];
 _control lbSetValue [_idx,3];
 if (!isNil QGVAR(selectedSide)) then {

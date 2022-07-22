@@ -23,7 +23,7 @@ Author:
 params [["_pos", [0, 0, 0]]];
 
 if (_pos isEqualTo [0, 0, 0]) exitWith {
-    ["Couldn't process wrapper call", "ErrorLog"] call YAINA_F_fnc_log;
+    ["Couldn't process wrapper call", "ErrorLog"] call YaiNA_F_fnc_log;
 };
 
 // Holds the array of factions that are available for selection, based on side
@@ -33,7 +33,7 @@ _prettyNames = CIV_FACTIONS;
 _lookup = CIV_FACTIONS_LOOKUP;
 
 private _dialogResult = [
-    "Spawn AI - Civilian",
+    "Spawn ai - Civilian",
     [
         ["EDIT", "Objective Name", ["Objective Alpha"]],
         ["COMBO", "Faction", [_lookup, _prettyNames, 0]],
@@ -95,5 +95,5 @@ private _dialogResult = [
 ] call zen_dialog_fnc_create;
 
 if !(_dialogResult) exitWith {
-    ["Failed to create zen dialog!", "ErrorLog"] call YAINA_F_fnc_log;
+    ["Failed to create zen dialog!", "ErrorLog"] call YaiNA_F_fnc_log;
 };

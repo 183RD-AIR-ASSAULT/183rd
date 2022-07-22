@@ -7,7 +7,7 @@ params ["_display"];
 if (cbChecked (_display displayCtrl IDC_OETA_ADMINMENU_ENDM_SIDESPECIFIC)) exitWith {
     private _isDraw = cbChecked (_display displayCtrl IDC_OETA_ADMINMENU_ENDM_SIDEDRAW);
     if (_isDraw) then {
-        [QGVAR(draw)] remoteExec [QEFUNC(common,endMission)];
+        [QGVAR(draw)] remoteExec [QEFUNC(core,endMission)];
     } else {
         private _winners = [];
         if ((missionNamespace getVariable [QGVAR(DOUBLES(ending,blufor)), 0]) isEqualTo 1) then {
@@ -35,7 +35,7 @@ if (cbChecked (_display displayCtrl IDC_OETA_ADMINMENU_ENDM_CUSTOM)) exitWith {
     missionNamespace setVariable [QEGVAR(common,endMissionText), [_title, _subtext], true];
 
     private _isDefeat = cbChecked (_display displayCtrl IDC_OETA_ADMINMENU_ENDM_CUSTOM_ISDEFEAT);
-    [[QGVAR(victory), QGVAR(defeat)] select _isDefeat, !_isDefeat] remoteExec [QEFUNC(common,endMission)];
+    [[QGVAR(victory), QGVAR(defeat)] select _isDefeat, !_isDefeat] remoteExec [QEFUNC(core,endMission)];
     [format ["%1 Ended Mission, Title: %2, subText: %3, isDefeat: %4",profileName, _title, _subtext, _isDefeat],false,"Admin Menu"] call FUNC(log);
 };
 
@@ -43,5 +43,5 @@ if (cbChecked (_display displayCtrl IDC_OETA_ADMINMENU_ENDM_CUSTOM)) exitWith {
 private _list = _display displayCtrl IDC_OETA_ADMINMENU_ENDM_LIST;
 private _ending = _list lbData (lbCurSel _list);
 private _isDefeat = cbChecked (_display displayCtrl IDC_OETA_ADMINMENU_ENDM_FROMMISSION_ISDEFEAT);
-[_ending, !_isDefeat] remoteExec [QEFUNC(common,endMission)];
+[_ending, !_isDefeat] remoteExec [QEFUNC(core,endMission)];
 [format ["%1 Ended Mission, Endtype: %2, isDefeat: %3",profileName, _ending, _isDefeat],false,"Admin Menu"] call FUNC(log);

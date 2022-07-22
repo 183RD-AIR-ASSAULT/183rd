@@ -4,7 +4,7 @@ class CfgPatches {
     class OETA_Media {
 
         author = QAUTHOR;
-         name = COMPONENT_NAME;
+        name = COMPONENT_NAME;
         url = URL;
         units[] = {"OETA_Flag_White", "OETA_Flag_Black"};
         requiredVersion = REQUIRED_VERSION;

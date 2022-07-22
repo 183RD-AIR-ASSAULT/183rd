@@ -1,27 +1,28 @@
 class CfgVehicles {
     class Logic;
-    class Module_F: Logic {
-        class AttributesBase {
-            class Default;
-            class Checkbox;
-            class ModuleDescription;
+    class EGVAR(Core,BaseModule);
+    // class Module_F: Logic {
+    //     class AttributesBase {
+    //         class Default;
+    //         class Checkbox;
+    //         class ModuleDescription;
 
-            class GVAR(categories): Default {
-                control = QGVAR(categories);
-                displayName = CSTRING(3DEN_Categories);
-                defaultValue = QUOTE('ATTRIBUTE_CATEGORIES_DEFAULT_VALUE');
-                expression = QUOTE(_this setVariable [ARR_2('%s',parseSimpleArray _value)]);
-                validate = "none";
-            };
-        };
+    //         class GVAR(categories): Default {
+    //             control = QGVAR(categories);
+    //             displayName = CSTRING(3DEN_Categories);
+    //             defaultValue = QUOTE('ATTRIBUTE_CATEGORIES_DEFAULT_VALUE');
+    //             expression = QUOTE(_this setVariable [ARR_2('%s',parseSimpleArray _value)]);
+    //             validate = "none";
+    //         };
+    //     };
 
-        class ModuleDescription {};
-    };
+    //     class ModuleDescription {};
+    // };
 
-    class GVAR(arsenal): Module_F {
+    class GVAR(arsenal): EGVAR(Core,BaseModule) {
         scope = 2;
         displayName = CSTRING(Module_DisplayName);
-        category = QUOTE(PREFIX);
+        category = PREFIX;
 
         function = QFUNC(arsenalModule);
 

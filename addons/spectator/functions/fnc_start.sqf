@@ -22,7 +22,7 @@ if (!(local _player)) exitWith {[QGVAR(start), _this, _player] call CBA_fnc_targ
 if (["IsInitialized"] call BIS_fnc_EGSpectator) exitWith {WARNING("Spectator already initialized!")};
 
 // Determine spectator parameters based on player consciousness
-private _unconscious = [player] call EFUNC(common,isUnconscious);
+private _unconscious = [player] call EFUNC(core,isUnconscious);
 
 private _sides = [GVAR(sides), GVAR(sidesUnconscious)] select _unconscious;
 private _civilianSide = [GVAR(civilianSide), GVAR(civilianSideUnconscious)] select _unconscious;

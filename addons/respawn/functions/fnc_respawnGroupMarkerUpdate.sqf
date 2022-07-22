@@ -2,14 +2,15 @@
 
 // Goes through GVAR(respawnedGroupsMarkerData), ensuring all groups already have markers.
 if (isNil QGVAR(respawnedGroupsMarkerData)) exitWith {};
- {
+
+{
     //Check if Group already has a group marker.
     if (!isNil (_x select 0)) then {
         private _found = false;
 
         //Check if the entity is already setup to be drawn (aka in f_grpMkr_groups)
         private _entity = missionNamespace getVariable[(_x select 0),objNull];
-
+        
         _found = (count ([EGVAR(orbat,orbatMarkerArray),_entity] call BIS_fnc_findNestedElement) != 0);
 
         //If not add the new group.
@@ -23,10 +24,10 @@ if (isNil QGVAR(respawnedGroupsMarkerData)) exitWith {};
             };
 
             if (_toAdd) then {
-                //private _markerTexture = ((GVAR(respawnMenuMarkers) select (_x select 2)) select 0);
+               // private _markerTexture = ((GVAR(respawnMenuMarkers) select (_x select 2)) select 0);
                 //private _markerColorRGB = (GVAR(respawnMenuMarkerColours) select (_x select 3)) select 0;
                 //private _size = [28,28];
-
+                
 
                 private _color = ((GVAR(respawnMenuMarkerColours) select (_x select 3)) select 2);
                 private _type = ((GVAR(respawnMenuMarkers) select (_x select 2)) select 2);

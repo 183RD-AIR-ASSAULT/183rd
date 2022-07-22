@@ -30,10 +30,6 @@ class CfgFunctions {
 
 #include "cfgVehicles.hpp"
 
-class Extended_PreInit_EventHandlers {
-    class OETA_Zeus_Event {
-        init = "call compile preprocessFileLineNumbers 'z\oeta\addons\Zeus\XEH_preInit.sqf'";
-    };
-};
-
+#include "CfgEventHandlers.hpp"
+#include "CfgModuleCategories.hpp"
 #include "ZenActions.hpp"

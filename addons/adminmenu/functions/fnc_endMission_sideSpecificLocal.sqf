@@ -13,7 +13,7 @@ if (!isNil "_unitData") then {
 private _isWinner = _playerSide in _winners;
 
 if (_isWinner) then {
-    [QGVAR(victory), true] call EFUNC(common,endMission);
+    [QGVAR(victory), true] call EFUNC(core,endMission);
 } else {
-    [QGVAR(defeat), false] call EFUNC(common,endMission);
+    [QGVAR(defeat), false] call EFUNC(core,endMission);
 };

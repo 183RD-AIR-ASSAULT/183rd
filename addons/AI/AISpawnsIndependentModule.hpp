@@ -1,9 +1,9 @@
-class OETA_ModuleAISpawnsIndependent: Module_F {
+class GVAR(ModuleaiSpawnsIndependent): Module_F {
     scope = 2;
-    displayName = "AI Spawn - Independent";
-    icon = "\z\oeta\addons\media\images\icons\AI INDEP.paa";
-    category = QUOTE(PREFIX);
-    function = "oeta_fnc_moduleAISpawns";
+    displayName = "ai Spawn - Independent";
+    icon = "\z\oeta\addons\media\images\icons\ai_INDEP.paa";
+    category = QEGVAR(main,AI);
+    function = "oeta_fnc_moduleaiSpawns";
     functionPriority = 2;
     isGlobal = 0;
     isTriggerActivated = 0;
@@ -11,13 +11,13 @@ class OETA_ModuleAISpawnsIndependent: Module_F {
     is3den = 0;
     class Attributes: AttributesBase {
         class ObjName: Edit {
-                property = "oeta_AI_ObjName";
+                property = "oeta_ai_ObjName";
                 displayName = "Objective Name";
                 tooltip = "Name of Objective/Spawn Position.";
                 defaultValue = """Objective 1""";
             };
         class EnemyType: Combo {
-                property = "oeta_AI_EnemyType";
+                property = "oeta_ai_EnemyType";
                 displayName = "Enemy Faction";
                 tooltip = "Enemy Faction Type for this Module.";
                 defaultValue = """IND_C_F""";
@@ -60,30 +60,30 @@ class OETA_ModuleAISpawnsIndependent: Module_F {
                 };
             };
         class GarrRadius: Edit {
-                property = "oeta_AI_GarRadius";
+                property = "oeta_ai_GarRadius";
                 displayName = "Garrison Radius";
-                tooltip = "AI Garrison radius from this module.";
+                tooltip = "ai Garrison radius from this module.";
                 typeName = "NUMBER";
                 defaultValue = 100;
             };
 
         class GarrisonedGroupsMin: Edit {
-            property = "oeta_AI_GarrisonedGroupsMin";
+            property = "oeta_ai_GarrisonedGroupsMin";
             displayName = "Min Garrisoned Groups";
-            description = "Minimum Number of Garrisoned AI Groups to Spawn";
+            description = "Minimum Number of Garrisoned ai Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class GarrisonedGroupsMax: Edit {
-            property = "oeta_AI_GarrisonedGroupsMax";
+            property = "oeta_ai_GarrisonedGroupsMax";
             displayName = "Max Garrisoned Groups";
-            description = "Maximum Number of Garrisoned AI Groups to Spawn";
+            description = "Maximum Number of Garrisoned ai Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
 
         class PatrolMethod: Combo {
-                property = "oeta_AI_PatrolMethod";
+                property = "oeta_ai_PatrolMethod";
                 displayName = "Patrol Method";
                 tooltip = "Method to use for plotting patrol paths";
                 defaultValue = """RANDOM""";
@@ -93,134 +93,134 @@ class OETA_ModuleAISpawnsIndependent: Module_F {
                 };
             };
         class Radius: Edit {
-                property = "oeta_AI_Radius";
+                property = "oeta_ai_Radius";
                 displayName = "Patrol Radius";
-                tooltip = "AI Patrol radius from this module.";
+                tooltip = "ai Patrol radius from this module.";
                 typeName = "NUMBER";
                 defaultValue = 500;
             };
 
         class EIPatrolsMin: Edit {
-            property = "oeta_AI_EIPatrolsMin";
+            property = "oeta_ai_EIPatrolsMin";
             displayName = "Min Infantry Patrols";
             description = "Minimum Number of Infantry Patrol Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EIPatrolsMax: Edit {
-            property = "oeta_AI_EIPatrolsMax";
+            property = "oeta_ai_EIPatrolsMax";
             displayName = "Max Infantry Patrols";
             description = "Maximum Number of Infantry Patrol Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EIAAMin: Edit {
-            property = "oeta_AI_EIAAMin";
+            property = "oeta_ai_EIAAMin";
             displayName = "Min AA Infantry";
             description = "Minimum Number of AA Infantry Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EIAAMax: Edit {
-            property = "oeta_AI_EIAAMax";
+            property = "oeta_ai_EIAAMax";
             displayName = "Max AA Infantry";
             description = "Maximum Number of AA Infantry Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EIATMin: Edit {
-            property = "oeta_AI_EIATMin";
+            property = "oeta_ai_EIATMin";
             displayName = "Min AT Infantry";
             description = "Minimum Number of AT Infantry Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EIATMax: Edit {
-            property = "oeta_AI_EIATMax";
+            property = "oeta_ai_EIATMax";
             displayName = "Max AT Infantry";
             description = "Maximum Number of AT Infantry Groups to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EISniperMin: Edit {
-            property = "oeta_AI_EISniperMin";
+            property = "oeta_ai_EISniperMin";
             displayName = "Min Sniper Teams";
             description = "Minimum Number of Sniper Teams to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class EISniperMax: Edit {
-            property = "oeta_AI_EISniperMax";
+            property = "oeta_ai_EISniperMax";
             displayName = "Max Sniper Teams";
             description = "Maximum Number of Sniper Teams to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehAAMin: Edit {
-            property = "oeta_AI_VehAAMin";
+            property = "oeta_ai_VehAAMin";
             displayName = "Min AA Vehicles";
             description = "Minimum Number of AA Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehAAMax: Edit {
-            property = "oeta_AI_VehAAMax";
+            property = "oeta_ai_VehAAMax";
             displayName = "Max AA Vehicles";
             description = "Maximum Number of AA Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehLightMin: Edit {
-            property = "oeta_AI_VehLightMin";
+            property = "oeta_ai_VehLightMin";
             displayName = "Min Light Vehicles";
             description = "Minimum Number of Light Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehLightMax: Edit {
-            property = "oeta_AI_VehLightMax";
+            property = "oeta_ai_VehLightMax";
             displayName = "Max Light Vehicles";
             description = "Maximum Number of Light Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehMRAPMin: Edit {
-            property = "oeta_AI_VehMRAPMin";
+            property = "oeta_ai_VehMRAPMin";
             displayName = "Min MRAPs";
             description = "Minimum Number of MRAPs to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehMRAPMax: Edit {
-            property = "oeta_AI_VehMRAPMax";
+            property = "oeta_ai_VehMRAPMax";
             displayName = "Max MRAPs";
             description = "Maximum Number of MRAPs to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehHeavyMin: Edit {
-            property = "oeta_AI_VehHeavyMin";
+            property = "oeta_ai_VehHeavyMin";
             displayName = "Min Heavy Vehicles";
             description = "Minimum Number of Heavy Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehHeavyMax: Edit {
-            property = "oeta_AI_VehHeavyMax";
+            property = "oeta_ai_VehHeavyMax";
             displayName = "Max Heavy Vehicles";
             description = "Maximum Number of Heavy Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehRandomMin: Edit {
-            property = "oeta_AI_VehRandomMin";
+            property = "oeta_ai_VehRandomMin";
             displayName = "Min Random Vehicles";
             description = "Minimum Number of Random Vehicles to Spawn";
             typeName = "Number";
             defaultValue = 0;
         };
         class VehRandomMax: Edit {
-            property = "oeta_AI_VehRandomMax";
+            property = "oeta_ai_VehRandomMax";
             displayName = "Max Random Vehicles";
             description = "Maximum Number of Random Vehicles to Spawn";
             typeName = "Number";
@@ -230,8 +230,8 @@ class OETA_ModuleAISpawnsIndependent: Module_F {
     };
     class ModuleDescription: ModuleDescription {
         description[] = {
-            "Place this module to spawn selected AI around module location.",
-            "Multiple AI Spawn modules can be used with different settings.",
+            "Place this module to spawn selected ai around module location.",
+            "Multiple ai Spawn modules can be used with different settings.",
             "Ensure all Max values are greater than min values.",
             "Ensure you have the mod enabled for selected modded faction.",
             "Top Tip: Copy and Paste modules!"

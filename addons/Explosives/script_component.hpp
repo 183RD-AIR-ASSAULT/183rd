@@ -1,4 +1,4 @@
-#define COMPONENT EXPLOSIVES
-#define COMPONENT_BEAUTIFIED Explosives
+#define COMPONENT explosives
+#define COMPONENT_BEAUTIFIED explosives
 
 #include "\z\oeta\addons\main\script_mod.hpp"

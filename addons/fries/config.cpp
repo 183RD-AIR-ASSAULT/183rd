@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "oeta_main",
-            "oeta_common"
+            "oeta_core"
         };
         author = QAUTHOR;
         authors[] = {"veteran29"};

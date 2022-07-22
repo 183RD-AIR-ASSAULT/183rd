@@ -1,11 +1,11 @@
 /*
-Function: oeta_fnc_SpawnAIZeusWrapper
+Function: oeta_fnc_SpawnaiZeusWrapper
 
 Description:
-    Wraps calls to oeta_fnc_SpawnAI for use with the Zeus Modules.
+    Wraps calls to oeta_fnc_Spawnai for use with the Zeus Modules.
 
 Arguments:
-    _side - The side of the AI to spawn <STRING>
+    _side - The side of the ai to spawn <STRING>
     _pos - Position of the module <ARRAY/POS3D>
 
 Return Values:
@@ -29,7 +29,7 @@ Author:
 params [["_side", ""], ["_pos", [0, 0, 0]]];
 
 if ((_side isEqualTo "") || (_pos isEqualTo [0, 0, 0])) exitWith {
-    ["Couldn't process wrapper call", "ErrorLog"] call YAINA_F_fnc_log;
+    ["Couldn't process wrapper call", "ErrorLog"] call YaiNA_F_fnc_log;
 };
 
 // Holds the array of factions that are available for selection, based on side
@@ -55,7 +55,7 @@ switch (toLower _side) do {
 };
 
 private _dialogResult = [
-    format ["Spawn AI - %1", _side],
+    format ["Spawn ai - %1", _side],
     [
         ["EDIT", "Objective Name", ["Objective Alpha"]],
         ["COMBO", "Faction", [_lookup, _prettyNames, 0]],
@@ -117,7 +117,7 @@ private _dialogResult = [
             "_vehrandMin", "_vehrandMax"
         ];
 
-        // Actually call SpawnAI, do it remotely so the server has the units and takes care of them c:
+        // Actually call Spawnai, do it remotely so the server has the units and takes care of them c:
         [
             _pos,
             _grpPrefix,
@@ -135,11 +135,11 @@ private _dialogResult = [
             [_vehmrapMin, _vehmrapMax],
             [_vehheavyMin, _vehheavyMax],
             [_vehrandMin, _vehrandMax]
-        ] remoteExec ["oeta_fnc_SpawnAI", 2];
+        ] remoteExec ["oeta_fnc_Spawnai", 2];
     }, {},
     [_pos]
 ] call zen_dialog_fnc_create;
 
 if !(_dialogResult) exitWith {
-    ["Failed to create zen dialog!", "ErrorLog"] call YAINA_F_fnc_log;
+    ["Failed to create zen dialog!", "ErrorLog"] call YaiNA_F_fnc_log;
 };

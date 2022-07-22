@@ -1,22 +1,22 @@
-class OETA_AI {
+class GVAR(ai) {
 
     tag = "OETA";
-    class AI {
+    class ai {
 
-        file = "z\oeta\addons\AI\Functions";
+        file = "z\oeta\addons\ai\Functions";
         class InfantryGarrison {};
-        class moduleAISpawns {};
-        class SetInitialAI {};
+        class moduleaiSpawns {};
+        class SetInitialai {};
         class SetUnitSkill {};
-        class SpawnAI {};
-        class SpawnAIZeusWrapper {};
+        class Spawnai {};
+        class SpawnaiZeusWrapper {};
         class RoadPatrol {};
         class GetAvailableFactions {};
     };
 
     class Civilian {
 
-        file = "z\oeta\addons\AI\Functions\Civilians";
+        file = "z\oeta\addons\ai\Functions\Civilians";
         class CivBreakPatrol {};
         class CivilianGarrison {};
         class CivilianPatrol {};
@@ -27,7 +27,7 @@ class OETA_AI {
 
     class Civilian_Factions {
 
-        file = "z\oeta\addons\AI\Functions\Factions\Civilian";
+        file = "z\oeta\addons\ai\Functions\Factions\Civilian";
         class CFP_C_AFG {};
         class CFP_C_AFRCHRISTIAN {};
         class CFP_C_AFRISLAMIC {};
@@ -43,7 +43,7 @@ class OETA_AI {
 
     class East_Factions {
 
-        file = "z\oeta\addons\AI\Functions\Factions\East";
+        file = "z\oeta\addons\ai\Functions\Factions\East";
         class CFP_O_ABUSAYYAF {};
         class CFP_O_ALQAEDA {};
         class CFP_O_ALSHABAAB {};
@@ -99,7 +99,7 @@ class OETA_AI {
 
     class Indep_Factions {
 
-        file = "z\oeta\addons\AI\Functions\Factions\Indep";
+        file = "z\oeta\addons\ai\Functions\Factions\Indep";
         class CFP_I_ALNUSRA {};
         class CFP_I_IS {};
         class CFP_I_SDRebels {};
@@ -137,7 +137,7 @@ class OETA_AI {
 
     class West_Factions {
 
-        file = "z\oeta\addons\AI\Functions\Factions\West";
+        file = "z\oeta\addons\ai\Functions\Factions\West";
         class BLU_F {};
         class BLU_T_F {};
         class CFP_B_AFARMY {};
@@ -192,8 +192,8 @@ class DERP {
     tag = "DERP";
 
     class General {
-        file = "z\oeta\addons\AI\Functions";
-        class AIOccupyBuilding {};
+        file = "z\oeta\addons\ai\Functions";
+        class aiOccupyBuilding {};
         class randomPos {};
         class ZenOccupy {};
     };

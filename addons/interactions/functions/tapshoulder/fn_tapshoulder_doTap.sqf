@@ -56,7 +56,7 @@ if ((_shoulder < 0) || (_shoulder > 1)) exitWith {};
 
     if (missionNamespace getVariable ["oeta_interactions_global_sounds", false]) then {
         private _pitch = random [0.8, 1.0, 1.2];
-        ["oeta_Action_Shoulder_Tap_1", _target, AGLToASL (_target modelToWorld (_target selectionPosition _selectionName)), 20, 1, _pitch, false] call OETA_common_fnc_playSound3d;
+        ["oeta_Action_Shoulder_Tap_1", _target, AGLToASL (_target modelToWorld (_target selectionPosition _selectionName)), 20, 1, _pitch, false] call oeta_core_fnc_playSound3d;
     } else {
         playSound "oeta_Action_Shoulder_Tap_1";
     };

@@ -2,7 +2,7 @@ class OETA_Modulerole: Module_F {
     scope = 2;
     displayName = "Role Selection";
     icon = "\a3\modules_f_bootcamp\Data\IconBootcampStage.paa";
-    category = "Rank & Role";
+    category = PREFIX;
     function = FUNC(pick);
     functionPriority = 4;
     isGlobal = 1;

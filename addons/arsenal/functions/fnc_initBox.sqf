@@ -35,7 +35,7 @@ private _action = [
     },
     {
         params ["_target", "_player"];
-        [_player, _target] call ACEFUNC(common,canInteractWith)
+        [_player, _target] call ACEFUNC(core,canInteractWith)
     },
     {},
     []

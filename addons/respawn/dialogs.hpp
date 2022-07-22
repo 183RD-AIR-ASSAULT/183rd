@@ -35,7 +35,7 @@ class respawnMenuDialog {
     onLoad="['onLoad'] spawn oeta_respawn_fnc_handleRespawnUI;";
     class controlsBackground {};
     class objects {};
-    class controls {
+    class controls { 
         class respawnGroupFrame: respawnMenu_RscFrame {
             idc = -1;
             x = 0.238065 * safezoneW + safezoneX;
@@ -236,11 +236,11 @@ class RscMapControl;
 class respawnMenuMapDialog {
     idd = 26950;
     movingEnable = 0;
-    class controlsBackground {
+    class controlsBackground { 
     };
-    class objects {
+    class objects { 
     };
-    class controls {
+    class controls { 
         class FullRespawnMap: RscMapControl {
             idc = 26902;
             type = 100;

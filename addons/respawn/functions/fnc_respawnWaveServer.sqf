@@ -15,7 +15,7 @@ params ["_groupName", "_position", "_faction", "_selectedRespawnGroup", "_marker
     } else {
         _position = _position vectorAdd [1,0,0]; // do position transofmration
     };
-
+    
     _x params ["_rank", "_client", "_typeOfUnit"];
     private _leader = _forEachIndex==0;
 
@@ -28,7 +28,7 @@ params ["_groupName", "_position", "_faction", "_selectedRespawnGroup", "_marker
       GVAR(serverRespawnPlayerCounter),
       _leader,_halo,_side,_groupName],
       "oeta_respawn_fnc_respawnLocalClient", _client] call BIS_fnc_MP;
-
+    
     //Setup respawned player to die if he disconnects?
     [GVAR(serverRespawnPlayerCounter)] spawn {
         sleep 5;
@@ -63,7 +63,7 @@ GVAR(serverRespawnGroupCounter) = GVAR(serverRespawnGroupCounter) + 1;
         //
         // Garbage collector: Cleanup GVAR(respawnedGroupsMarkerData) of old invalid groups.
         //
-
+        
         private _x = 0;
         private _length = count GVAR(respawnedGroupsMarkerData);
         while {_x < _length} do {
@@ -71,17 +71,17 @@ GVAR(serverRespawnGroupCounter) = GVAR(serverRespawnGroupCounter) + 1;
             private _entry = GVAR(respawnedGroupsMarkerData) select _x;
             private _toRemove = false;
             if (isNil (_entry select 0)) then {
-                _toRemove = true;
+                _toRemove = true;   
             } else {
                 private _entity = missionNamespace getVariable [(_entry select 0),objNull];
                 if (isNull _entity) then {
-                    _toRemove = true;
+                    _toRemove = true;   
                 } else {
                     if (!isNull leader _entity) then {
                         _toRemove = false;
                         //FUTURE consider removing group if the leader is dead.
                     } else {
-                        _toRemove = true;
+                        _toRemove = true;  
                     };
                 };
             };

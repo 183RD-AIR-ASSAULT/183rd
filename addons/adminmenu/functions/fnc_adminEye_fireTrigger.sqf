@@ -14,7 +14,7 @@ if (count _statements > 0) then { // isTrigger.
         private _interval = triggerInterval _trigger;
 
         _trigger setVariable [QGVAR(serialised_trigger),[_statements,triggerTimeout _trigger, +_activation,_interval]];
-        TRACE_4("Admin Eye serialised trigger",_statements,triggerTimeout _trigger,+_activation,_interval)
+        TRACE_4("Admin Eye serialised trigger",_statements,triggerTimeout _trigger,+_activation,_interval);
 
         _activation set[2,false];
         _trigger setTriggerActivation _activation;

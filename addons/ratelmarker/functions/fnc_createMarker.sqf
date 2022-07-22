@@ -23,7 +23,7 @@ private _marker = createMarkerLocal [QGVAR(marker), _pos];
 _marker setMarkerTypeLocal "KIA";
 
 // Show ACE Hint
-[localize LSTRING(MarkerCreated), QPATHTOF(UI\ratelMarker_ca.paa)] call ACEFUNC(common,displayTextPicture);
+[localize LSTRING(MarkerCreated), QPATHTOF(UI\ratelMarker_ca.paa)] call ACEFUNC(core,displayTextPicture);
 
 // Exit if map EH already installed
 if (!isNil QGVAR(openMapEH)) exitWith {};

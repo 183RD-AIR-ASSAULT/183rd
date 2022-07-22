@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class OETA_Civilians {
+    class GVAR(Civilians) {
         author = AUTHOR;
         name = NAME;
         url = URL;
@@ -29,7 +29,7 @@ class CfgFunctions {
 };
 
 class Extended_PreInit_EventHandlers {
-    class OETA_Civilians_Event {
-        init = "call compile preprocessFileLineNumbers 'z\oeta\Addons\Civilians\XEH_preInit.sqf'";
+    class GVAR(Civilians_Event) {
+        init = "call compile preprocessFileLineNumbers 'z\oeta\addons\civilians\XEH_preInit.sqf'";
     };
 };

@@ -1,5 +1,5 @@
 /*
-Function: oeta_fnc_SpawnAI
+Function: oeta_fnc_Spawnai
 
 Description:
     Used to populate an area with a predefined enemy faction. This function has a large list of parameters
@@ -34,7 +34,7 @@ Example:
             "Sahrani Liberation Army",
             [5, 100, 200],
             [3, 5]
-            ] call oeta_fnc_SpawnAI;
+            ] call oeta_fnc_Spawnai;
             Example 2:
             ["Kavala",
             [2955.43,6010.11,0],
@@ -50,7 +50,7 @@ Example:
             [2, 3],
             [5, 6],
             "RANDOM"
-        ] call oeta_fnc_SpawnAI;
+        ] call oeta_fnc_Spawnai;
     (end)
 
 Author:
@@ -94,7 +94,7 @@ _typeNameCenter = typeName _center;
 call {
     if (_typeNameCenter isEqualTo "OBJECT") exitwith { _center = getPos _center;};
     if (_typeNameCenter isEqualTo "STRING") exitwith { _center = getMarkerPos _center;};
-    if (_typeNameCenter isEqualTo [0, 0, 0]) exitwith {systemchat "AISpawns - Position is invalid";};
+    if (_typeNameCenter isEqualTo [0, 0, 0]) exitwith {systemchat "aiSpawns - Position is invalid";};
 };
 
 _center set [2, 0];
@@ -130,11 +130,11 @@ switch (_patrolMethod) do {
         _fnc_pos_veh = compile "[[[(_this select 0), (_this select 1)], []], [""water""], { !(_this isFlatEmpty [2,-1,0.5,1,0,false,objNull] isEqualTo []) }] call oeta_fnc_SafePos;";
     };
     default {
-        _fnc_patrol_EI = compile "systemChat ""Error: Unknown patrol method supplied to oeta_fnc_SpawnAI!"";";
-        _fnc_patrol_EI_spec = compile "systemChat ""Error: Unknown patrol method supplied to oeta_fnc_SpawnAI!"";";
-        _fnc_patrol_veh = compile "systemChat ""Error: Unknown patrol method supplied to oeta_fnc_SpawnAI!"";";
-        _fnc_pos_EI = compile "systemChat ""Error: Unknown patrol method supplied to oeta_fnc_SpawnAI!"";";
-        _fnc_pos_veh = compile "systemChat ""Error: Unknown patrol method supplied to oeta_fnc_SpawnAI!"";";
+        _fnc_patrol_EI = compile "systemChat ""Error: Unknown patrol method supplied to oeta_fnc_Spawnai!"";";
+        _fnc_patrol_EI_spec = compile "systemChat ""Error: Unknown patrol method supplied to oeta_fnc_Spawnai!"";";
+        _fnc_patrol_veh = compile "systemChat ""Error: Unknown patrol method supplied to oeta_fnc_Spawnai!"";";
+        _fnc_pos_EI = compile "systemChat ""Error: Unknown patrol method supplied to oeta_fnc_Spawnai!"";";
+        _fnc_pos_veh = compile "systemChat ""Error: Unknown patrol method supplied to oeta_fnc_Spawnai!"";";
     };
 };
 
@@ -152,7 +152,7 @@ private _FactionSide = "East";
 private _InfantryType = "Infantry";
 private _InfantryGroup = "OIA_InfTeam";
 private _vehRandList = [];
-private _AIReporting = OETA_AI_Reporting;
+private _aiReporting = OETA_ai_Reporting;
 
 // Check for Side from _faction
 private _SideNumber = getnumber (configfile >> "CfgFactionClasses" >> _faction >> "side");
@@ -255,7 +255,7 @@ if !(_infList isEqualTo []) then {
         // tag groups { _x setGroupIdGlobal [format["%1_gar%2", _grpPrefix, _forEachIndex]]; } forEach _grps;
     };
 } else {
-    if (_AIReporting && { _GarrisonedGroupsMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no Infantry Teams to select from. Step skipped.",_FactionName]};
+    if (_aiReporting && { _GarrisonedGroupsMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no Infantry Teams to select from. Step skipped.",_FactionName]};
 };
 ///////////////////////////////////////////////////////////
 // STANDARD INFANTRY
@@ -273,7 +273,7 @@ if !(_infList isEqualTo []) then {
         _units append (units _g);
     };
 } else {
-    if (_AIReporting && { _infMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no Infantry Teams to select from. Step skipped.",_FactionName]};
+    if (_aiReporting && { _infMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no Infantry Teams to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -293,7 +293,7 @@ if !(_infaaList isEqualTo []) then {
         _units append (units _g);
     };
 } else {
-    if (_AIReporting && { _InfaaMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no AA Teams to select from. Step skipped.",_FactionName]};
+    if (_aiReporting && { _InfaaMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no AA Teams to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -313,7 +313,7 @@ if !(_infatList isEqualTo []) then {
         _units append (units _g);
     };
 } else {
-    if (_AIReporting && { _InfatMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no AT Teams to select from. Step skipped.",_FactionName]};
+    if (_aiReporting && { _InfatMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no AT Teams to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -333,7 +333,7 @@ if !(_sniperList isEqualTo []) then {
         _units append (units _g);
     };
 } else {
-    if (_AIReporting && { _SniperMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no Sniper Teams to select from. Step skipped.",_FactionName]};
+    if (_aiReporting && { _SniperMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no Sniper Teams to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -365,7 +365,7 @@ if !(_vehAAList isEqualTo []) then {
         };
     };
 } else {
-    if (_AIReporting && { _VehAAMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no AA Vehicles to select from. Step skipped.",_FactionName]};
+    if (_aiReporting && { _VehAAMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no AA Vehicles to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -397,7 +397,7 @@ if !(_vehmrapList isEqualTo []) then {
         };
     };
 } else {
-    if (_AIReporting && { _VehMRAPMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no MRAPs to select from. Step skipped.",_FactionName]};
+    if (_aiReporting && { _VehMRAPMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no MRAPs to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -430,7 +430,7 @@ if !(_vehLightList isEqualTo []) then {
         };
     };
 } else {
-    if (_AIReporting && { _VehLightMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no Light Vehicles to select from. Step skipped.",_FactionName]};
+    if (_aiReporting && { _VehLightMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no Light Vehicles to select from. Step skipped.",_FactionName]};
     };
 
 ///////////////////////////////////////////////////////////
@@ -463,7 +463,7 @@ if !(_vehHeavyList isEqualTo []) then {
     };
 } else {
 
-    if (_AIReporting && { _VehHeavyMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no Heavy Vehicles to select from. Step skipped.",_FactionName]};
+    if (_aiReporting && { _VehHeavyMax >0 }) exitwith {systemchat format ["183rd: INFO: %1 no Heavy Vehicles to select from. Step skipped.",_FactionName]};
     };
 
 
@@ -503,7 +503,7 @@ if !(_vehRandList isEqualTo []) then {
     if !(dynamicSimulationEnabled (group _x)) then {
         (group _x) enableDynamicSimulation true;
     };
-    _x  disableAI "AUTOCOMBAT";
+    _x  disableai "AUTOCOMBAT";
 } forEach _units;
  {
     if !(dynamicSimulationEnabled (group _x)) then {

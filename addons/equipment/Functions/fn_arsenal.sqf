@@ -1,4 +1,4 @@
-#include "..\script_component.hpp"
+#include "\z\oeta\addons\equipment\script_component.hpp"
 /*
 Arguments:
 0: items only misc items <ARRAY of STRING>
@@ -16,8 +16,14 @@ call OETA_fnc_arsenal;
 "ItemAndroid",
 "ItemcTabHCam",
 "ItemMicroDAGR",
-
 Public: Yes
+
+[
+    ["ACE_Flashlight_XL50"], 
+    "better flashlight", 
+    "\path\to\a\pictureWithAFlashlight.paa",
+     _buttonId
+] call ace_arsenal_fnc_addRightPanelButton
 */
 
 [

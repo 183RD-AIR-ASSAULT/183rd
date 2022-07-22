@@ -17,14 +17,14 @@ if (hasInterface) then {
     _playerUID = getPlayerUID player;
 
     switch (true) do {
-        case (_playerUID in Roles_comm)   : { call {draAvailable=true;};  };
+        case (_playerUID in Roles_comm)  : { call {draAvailable=true;};  };
     };
     waitUntil{!(isNil"daoReady")};
     switch (true) do {
-        case (_playerUID in Roles_comm)   : { call {daoAvailable=true;daoJTACmode=true;};  };
+        case (_playerUID in Roles_comm)  : { call {daoAvailable=true;daoJTACmode=true;};  };
     };
     switch (true) do {
-        case (_playerUID in Roles_srcomm)   : { call {daoAvailable=true;daoJTACmode=false;};  };
+        case (_playerUID in Roles_srcomm)  : { call {daoAvailable=true;daoJTACmode=false;};  };
     };
 };
  
@@ -37,7 +37,7 @@ if (hasInterface) then {
     [{draAvailable},
      {
         switch (true) do {
-        case (_playerUID in Roles_comm)   : { 
+        case (_playerUID in Roles_comm)  : { 
             call {draAvailable=true;};  
             };
         default { call {draAvailable=false;}; };
@@ -48,11 +48,11 @@ if (hasInterface) then {
      [{daoReady},
      {
         switch (true) do {
-        case (_playerUID in Roles_comm)   : { call {daoAvailable=true;daoJTACmode=false;};  };
+        case (_playerUID in Roles_comm)  : { call {daoAvailable=true;daoJTACmode=false;};  };
         default { call {daoAvailable=false;}; };
         };
     switch (true) do {
-        case (_playerUID in Roles_srcomm)   : { call {daoAvailable=true;daoJTACmode=true;};  };
+        case (_playerUID in Roles_srcomm)  : { call {daoAvailable=true;daoJTACmode=true;};  };
         };
     }
      ] call CBA_fnc_waitUntilAndExecute;

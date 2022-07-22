@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class OETA_Explosives {
+    class OETA_explosives {
         author = AUTHOR;
         name = NAME;
         url = URL;

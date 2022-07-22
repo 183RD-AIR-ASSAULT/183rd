@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class OETA_AI {
+    class ADDON {
         author = QAUTHOR;
         name = COMPONENT_NAME;
         url = URL;
@@ -27,8 +27,8 @@ class CfgFunctions {
 };
 
 class Extended_PreInit_EventHandlers {
-    class OETA_AI_Event {
-        init = "call compile preProcessFileLineNumbers 'z\oeta\addons\AI\XEH_preInit.sqf'";
+    class GVAR(ai_Event) {
+        init = "call compile preProcessFileLineNumbers 'z\oeta\addons\ai\XEH_preInit.sqf'";
     };
 };
 

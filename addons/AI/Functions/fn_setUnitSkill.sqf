@@ -45,17 +45,17 @@ private _skillv = [
     (0.20 + random 0.40)
 ];
 
-if !(isNil "oeta_AI_AimingAccuracy") then {
+if !(isNil "oeta_ai_AimingAccuracy") then {
     _skillv = [
-        (OETA_AI_AimingAccuracy + random 0.20),
-        (OETA_AI_AimingShake + random 0.20),
-        (OETA_AI_AimingSpeed + random 0.20),
-        (OETA_AI_Commanding),
-        (OETA_AI_Courage), 1,
-        (OETA_AI_General),
-        (OETA_AI_ReloadSpeed + random 0.50),
-        (OETA_AI_SpotDistance + random 0.30),
-        (OETA_AI_SpotTime + random 0.40)
+        (OETA_ai_AimingAccuracy + random 0.20),
+        (OETA_ai_AimingShake + random 0.20),
+        (OETA_ai_AimingSpeed + random 0.20),
+        (OETA_ai_Commanding),
+        (OETA_ai_Courage), 1,
+        (OETA_ai_General),
+        (OETA_ai_ReloadSpeed + random 0.50),
+        (OETA_ai_SpotDistance + random 0.30),
+        (OETA_ai_SpotTime + random 0.40)
     ];
 };
 

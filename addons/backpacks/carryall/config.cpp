@@ -2,7 +2,7 @@
 
 class CfgPatches {
 
-    class OETA_Backpacks_Carryall {
+    class GVAR(Backpacks_Carryall) {
         name = COMPONENT_NAME;
         addonRootClass = "oeta_backpacks";
         requiredVersion = REQUIRED_VERSION;

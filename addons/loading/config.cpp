@@ -7,7 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "OETA_common"
+            "oeta_core"
         };
         author = QAUTHOR;
         authors[] = {"veteran29"};

@@ -23,6 +23,7 @@ class CfgVehicles {
     };
 
     class Logic;
+    class EGVAR(Core,BaseModule);
     class Module_F: Logic {
         class ArgumentsBaseUnits {
             class Units;
@@ -36,7 +37,7 @@ class CfgVehicles {
         scope = 2;
         displayName = $STR_OETA_boc_moduleAdd_disp;
         icon = QPATHTOF(data\moduleAdd.paa);
-        category = "OETA_boc";
+        category = QEGVAR(main,BOC);
         function = QFUNC(moduleAdd);
         functionPriority = 0;
         isGlobal = 0;
@@ -88,7 +89,7 @@ class CfgVehicles {
         scope = 2;
         displayName = $STR_OETA_boc_moduleOnChest_disp;
         icon = QPATHTOF(data\moduleOnChest.paa);
-        category = "OETA_boc";
+        category = QEGVAR(main,BOC);
         function = QFUNC(moduleOnChest);
         functionPriority = 0;
         isGlobal = 0;

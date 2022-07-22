@@ -3,7 +3,7 @@ class OETA_Civilians {
     tag = "OETA";
     class Civilians {
 
-        file = "z\oeta\Addons\Civilians\Functions";
+        file = "z\oeta\addons\civilians\Functions";
         class initCivilianGestures {};
     };
 };

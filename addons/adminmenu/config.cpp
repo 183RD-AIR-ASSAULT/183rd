@@ -8,7 +8,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"oeta_common", "A3_UI_F", "cba_diagnostic"};
+        requiredAddons[] = {"oeta_core", "A3_UI_F", "cba_diagnostic"};
         VERSION_CONFIG;
     };
 };

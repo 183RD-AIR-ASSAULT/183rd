@@ -47,4 +47,4 @@
 
         WARNING(_msg);
     }] call CBA_fnc_addEventHandler;
-}] call EFUNC(common,runAfterSettingsInit);
+}] call EFUNC(core,runAfterSettingsInit);

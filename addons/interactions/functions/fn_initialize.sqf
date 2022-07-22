@@ -19,7 +19,7 @@
 // -------------------------------------------------------------------------------------------------
 
 private _version = ["oeta_interactions"] call oeta_fnc_getAddonVersion;
-[4, "Addon (v%1) loaded...", [_version], "interactions"] call OETA_common_fnc_log;
+[4, "Addon (v%1) loaded...", [_version], "interactions"] call oeta_core_fnc_log;
 
 // -------------------------------------------------------------------------------------------------
 

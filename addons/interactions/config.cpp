@@ -9,7 +9,7 @@ class CfgPatches {
         url = URL;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "oeta_common"
+            "oeta_core"
         };
         units[] = {};
         weapons[] = {};

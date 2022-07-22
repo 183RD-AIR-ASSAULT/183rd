@@ -1,4 +1,10 @@
 #include "script_component.hpp"
+
+ADDON = false;
+
+#include "XEH_PREP.hpp"
+
+ADDON = true;
 // AISpawns Modules
 
 [
@@ -11,7 +17,7 @@
         params ["_value"];
         if ((!isClass (configFile >> "CfgPatches" >> "zen_main")) || (!_value)) exitWith {};
 
-        ["OETA", "AI Spawn - East", {_this call oeta_fnc_moduleAISpawnsEastZeus}, "\z\oeta\addons\media\images\icons\AI EAST.paa"] call zen_custom_modules_fnc_register;
+        ["OETA", "AI Spawn - East", {_this call oeta_fnc_moduleAISpawnsEastZeus}, "\z\oeta\addons\media\images\icons\ai_EAST.paa"] call zen_custom_modules_fnc_register;
     }
 ] call CBA_fnc_addSetting;
 
@@ -25,7 +31,7 @@
         params ["_value"];
         if ((!isClass (configFile >> "CfgPatches" >> "zen_main")) || (!_value)) exitWith {};
 
-        ["OETA", "AI Spawn - Independent", {_this call oeta_fnc_moduleAISpawnsIndepZeus}, "\z\oeta\addons\media\images\icons\AI INDEP.paa"] call zen_custom_modules_fnc_register;
+        ["OETA", "AI Spawn - Independent", {_this call oeta_fnc_moduleAISpawnsIndepZeus}, "\z\oeta\addons\media\images\icons\ai_INDEP.paa"] call zen_custom_modules_fnc_register;
     }
 ] call CBA_fnc_addSetting;
 
@@ -39,7 +45,7 @@
         params ["_value"];
         if ((!isClass (configFile >> "CfgPatches" >> "zen_main")) || (!_value)) exitWith {};
 
-        ["OETA", "AI Spawn - West", {_this call oeta_fnc_moduleAISpawnsWestZeus}, "\z\oeta\addons\media\images\icons\AI WEST.paa"] call zen_custom_modules_fnc_register;
+        ["OETA", "AI Spawn - West", {_this call oeta_fnc_moduleAISpawnsWestZeus}, "\z\oeta\addons\media\images\icons\ai_WEST.paa"] call zen_custom_modules_fnc_register;
     }
 ] call CBA_fnc_addSetting;
 
@@ -54,7 +60,7 @@
         params ["_value"];
         if ((!isClass (configFile >> "CfgPatches" >> "zen_main")) || (!_value)) exitWith {};
 
-        ["OETA", "AI Spawn - Civilian", {_this call oeta_fnc_moduleCivilianSpawnsZeus}, "\z\oeta\addons\media\images\Icons\AI CIV.paa"] call zen_custom_modules_fnc_register;
+        ["OETA", "AI Spawn - Civilian", {_this call oeta_fnc_moduleCivilianSpawnsZeus}, "\z\oeta\addons\media\images\icons\ai_CIV.paa"] call zen_custom_modules_fnc_register;
     }
 ] call CBA_fnc_addSetting;
 

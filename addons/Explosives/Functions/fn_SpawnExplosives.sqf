@@ -1,5 +1,5 @@
 /*
-Function: LR_fnc_SpawnExplosives
+Function: OETA_fnc_Spawnexplosives
 
 Description:
     Utility function for spawning explosions and secondaries on objects,

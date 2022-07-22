@@ -18,8 +18,8 @@ class CfgVehicles {
         };
     };
 
-    #include "AISpawnsEastModule.hpp"
-    #include "AISpawnsIndependentModule.hpp"
-    #include "AISpawnsWestModule.hpp"
+    #include "aiSpawnsEastModule.hpp"
+    #include "aiSpawnsIndependentModule.hpp"
+    #include "aiSpawnsWestModule.hpp"
     #include "CivilianSpawnsModule.hpp"
 };

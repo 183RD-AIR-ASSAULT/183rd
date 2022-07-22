@@ -1,4 +1,4 @@
-#define COMPONENT ZEUS
+#define COMPONENT Zeus
 #define COMPONENT_BEAUTIFIED Zeus
 
 #include "\z\oeta\addons\main\script_mod.hpp"

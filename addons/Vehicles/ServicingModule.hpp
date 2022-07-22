@@ -2,7 +2,7 @@ class OETA_ModuleServicing: Module_F {
     scope = 2;
     displayName = "Vehicle Servicing";
     icon = "\z\oeta\addons\media\images\icons\Vehicle Service.paa";
-    category = QUOTE(PREFIX);
+    category = PREFIX;
     function = "OETA_fnc_moduleServicing";
     functionPriority = 4;
     isGlobal = 1;

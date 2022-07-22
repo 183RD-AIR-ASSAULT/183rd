@@ -1,5 +1,5 @@
 /*
-Function: LR_fnc_initCivilianGestures
+Function: OETA_fnc_initCivilianGestures
 
 Description:
     Initializes the Civilian Interactions through Gestures System (CIGS).
@@ -13,7 +13,7 @@ Return Value:
 
 Example:
     (begin example)
-        call LR_fnc_initCivilianGestures;
+        call OETA_fnc_initCivilianGestures;
     (end)
 
 Author:

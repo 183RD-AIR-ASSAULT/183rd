@@ -1,4 +1,4 @@
-#define COMPONENT AI
+#define COMPONENT ai
 #define COMPONENT_BEAUTIFIED AI
 
 #include "\z\oeta\addons\main\script_mod.hpp"

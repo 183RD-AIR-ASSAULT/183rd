@@ -46,6 +46,7 @@ class Cfg3den {
     class Object {
         class AttributeCategories {
             class PREFIX {
+                displayName = "183rd Player Options";
                 collapsed = 1;
                 class Attributes {
                     // class OETAGroup_Preset {
@@ -103,7 +104,7 @@ class Cfg3den {
                         control = "Checkbox";
                         displayName = "183rd Preset Loadout";
                         tooltip = "Use Preset Loadout for this player type if available.";
-                        expression = "if (_value IsEqualTo true) then { [_this] call LR_fnc_Loadouts;}";
+                        expression = "if (_value IsEqualTo true) then { [_this] call OETA_fnc_Loadouts;}";
                         typeName = "BOOL";
                         condition = "objectBrain";
                         defaultValue = "(false)";

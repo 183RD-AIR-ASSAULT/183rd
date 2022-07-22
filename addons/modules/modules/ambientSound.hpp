@@ -5,7 +5,7 @@ class OETA_ModuleAmbientSound: Module_F {
     scope = 2;
 
     displayName = "$STR_OETA_Module_AmbientSound_DisplayName";
-    category = QUOTE(PREFIX);
+    category = QEGVAR(main,SOUND);
     author = AUTHOR;
     icon = "\z\oeta\addons\modules\data\icons\module_sound_0_ca.paa";
 

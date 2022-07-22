@@ -3,7 +3,7 @@ class OETA_ModuleIED: Module_F {
     displayName = "Create IED";
     icon = "a3\ui_f\data\GUI\Cfg\Hints\IEDs_CA.paa"; //todo: find better icon
     category = PREFIX;
-    function = "LR_fnc_moduleMakeIED";
+    function = "OETA_fnc_moduleMakeIED";
     functionPriority = 2;
     isGlobal = 1;
     isTriggerActivated = 0;

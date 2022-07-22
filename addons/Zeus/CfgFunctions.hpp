@@ -3,7 +3,7 @@ class OETA_Zeus {
     tag = "OETA";
     class Zeus {
 
-        file = "z\oeta\addons\Zeus\Functions";
+        file = "z\oeta\addons\zeus\Functions";
         class ConfigZeus {};
         class moduleAISpawnsEastZeus {};
         class moduleAISpawnsIndepZeus {};

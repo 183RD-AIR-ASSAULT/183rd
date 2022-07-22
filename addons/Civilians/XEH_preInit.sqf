@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 // AISpawns Modules
 
 [
@@ -11,7 +12,7 @@
         params ["_value"];
         if (!_value) exitWith {};
 
-        call LR_fnc_initCivilianGestures;
+        call OETA_fnc_initCivilianGestures;
     }
 ] call CBA_Settings_fnc_init;
 

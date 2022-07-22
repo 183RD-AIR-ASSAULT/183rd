@@ -14,7 +14,7 @@ if (isServer) then {
 
     {
         private _taskConfigName = configName _x;
-        private _taskNamespace = [_x] call EFUNC(common,readConfigToNamespace);
+        private _taskNamespace = [_x] call EFUNC(core,readConfigToNamespace);
         _taskNamespace setVariable ["taskConfigName", _taskConfigName];
         _taskNamespace setVariable ["taskGlobalTag", _tag];
 

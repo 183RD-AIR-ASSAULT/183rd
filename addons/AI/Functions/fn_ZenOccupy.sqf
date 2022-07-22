@@ -179,7 +179,7 @@ for [{_j = 0}, {(_unitIndex < count _units) && {(count _buildingPosArray > 0)}},
 
                                 (_units select _unitIndex) doWatch ([_housePos, CHECK_DISTANCE, (90 - _i), (_housePos select 2) - (getTerrainHeightASL _housePos)] call _Zen_ExtendPosition);
                                 //doStop (_units select _unitIndex);
-                                //(_units select _unitIndex) disableAI "MOVE";
+                                //(_units select _unitIndex) disableai "MOVE";
                                 (_units select _unitIndex) forceSpeed 0;
 
                                 I(_unitIndex)

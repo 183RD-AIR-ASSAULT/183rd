@@ -43,7 +43,7 @@ if (hasInterface) then {
                     WARNING("Player unconscious!");
                     [QGVAR(start)] call CBA_fnc_localEvent;
                     // Disable ACE's disable user input
-                    ["unconscious", false] call ACEFUNC(common,setDisableUserInputStatus);
+                    ["unconscious", false] call ACEFUNC(core,setDisableUserInputStatus);
                 }] call CBA_fnc_waitUntilAndExecute;
 
                 GVAR(unconsciousKilledEH) = player addEventHandler ["Killed", {

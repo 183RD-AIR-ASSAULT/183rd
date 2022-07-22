@@ -1,9 +1,9 @@
 /*
-Function: derp_fnc_AIOccupyBuilding
+Function: derp_fnc_aiOccupyBuilding
 
 
 Description:
-    Garrison function used to garrison AI inside buildings.
+    Garrison function used to garrison ai inside buildings.
 
 Arguments:
     _startingPos - The building(s) nearest this position are used <POSITION 3D>
@@ -20,7 +20,7 @@ Return Value:
 
 Example:
     (begin example)
-        [position, nil, [unit1, unit2, unit3, unitN], 200, 1, false] call derp_fnc_AIOccupyBuilding
+        [position, nil, [unit1, unit2, unit3, unitN], 200, 1, false] call derp_fnc_aiOccupyBuilding
     (end)
 
 Author:
@@ -42,13 +42,13 @@ _origUnits  = _unitsArray + [];
 _unitsArray = _unitsArray select {alive _x && {!isPlayer _x}};
 
 if (_startingPos isEqualTo [0,0,0]) exitWith {
-    diag_log "[derp_fnc_AIOccupyBuilding] Error: Position provided is invalid";
-    systemChat "[derp_fnc_AIOccupyBuilding] Error: Position provided is invalid";
+    diag_log "[derp_fnc_aiOccupyBuilding] Error: Position provided is invalid";
+    systemChat "[derp_fnc_aiOccupyBuilding] Error: Position provided is invalid";
 };
 
 if (count _unitsArray == 0 || {isNull (_unitsArray select 0)}) exitWith {
-    diag_log "[derp_fnc_AIOccupyBuilding] Error: No unit provided";
-    systemChat "[derp_fnc_AIOccupyBuilding] Error: No unit provided";
+    diag_log "[derp_fnc_aiOccupyBuilding] Error: No unit provided";
+    systemChat "[derp_fnc_aiOccupyBuilding] Error: No unit provided";
 };
 
 private _buildings = [];
@@ -63,8 +63,8 @@ _buildings =
 _buildings = _buildings call BIS_fnc_arrayShuffle;
 
 if (count _buildings == 0) exitWith {
-    diag_log "[derp_fnc_AIOccupyBuilding] Error: No valid building found";
-    systemChat "[derp_fnc_AIOccupyBuilding] Error: No valid building found";
+    diag_log "[derp_fnc_aiOccupyBuilding] Error: No valid building found";
+    systemChat "[derp_fnc_aiOccupyBuilding] Error: No valid building found";
     _unitsArray
 };
 
@@ -106,10 +106,10 @@ if (_topDownFilling) then { {
 
 // Warn the user that there's not enough positions to place all units
 private _count = 0; {_count = _count + count _x;} forEach _buildingsIndexes;
-private _leftOverAICount = (count _unitsArray) - _count;
-if (_leftOverAICount > 0) then {
-    diag_log "[derp_fnc_AIOccupyBuilding] Warning: not enough positions to place all units";
-    systemChat "[derp_fnc_AIOccupyBuilding] Warning: not enough positions to place all units";
+private _leftOveraiCount = (count _unitsArray) - _count;
+if (_leftOveraiCount > 0) then {
+    diag_log "[derp_fnc_aiOccupyBuilding] Warning: not enough positions to place all units";
+    systemChat "[derp_fnc_aiOccupyBuilding] Warning: not enough positions to place all units";
 };
 
 private _placedUnits = [];
@@ -197,8 +197,8 @@ switch (_fillingType) do {
     };
 };
  {
-    _x disableAI "AUTOCOMBAT";
-    _x disableAI "PATH";
+    _x disableai "AUTOCOMBAT";
+    _x disableai "PATH";
     if !(dynamicSimulationEnabled (group _x)) then {(group _x) enableDynamicSimulation true;};
 
 } forEach _placedUnits;

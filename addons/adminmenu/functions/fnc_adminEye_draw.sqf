@@ -58,7 +58,7 @@ params["_fullmapWindow"];
         _color = [1,0,0,0.75];
     };
     _fullmapWindow drawIcon ["\a3\3DEN\data\cfg3den\logic\texturebackgroundmodule_ca.paa",_color,_pos,26,26,0];
-    _fullmapWindow drawIcon ["\z\oeta\addons\common\UI\183rd.paa",[0,0,0,0.5],_pos,20,20,0];
+    _fullmapWindow drawIcon ["\z\oeta\addons\media\images\183rd.paa",[0,0,0,0.5],_pos,20,20,0];
 
     private _text = "";
     private _wavesRemaining = _x getVariable ["Waves",1];
@@ -106,7 +106,7 @@ params["_fullmapWindow"];
 
     //background
     _fullmapWindow drawIcon ["\a3\3DEN\data\cfg3den\logic\texturebackgroundmodule_ca.paa",[1,1,1,0.5],_pos,26,26,0];
-    _fullmapWindow drawIcon ["\z\oeta\addons\common\UI\183rd.paa",[0,0,0,0.5],_pos,20,20,0];
+    _fullmapWindow drawIcon ["\z\oeta\addons\media\images\183rd.paa",[0,0,0,0.5],_pos,20,20,0];
 
     private _text = format["Garrison (Quantity: %1)",_x getVariable ["aiNumberToSpawn", 0]];
 
@@ -134,7 +134,7 @@ params["_fullmapWindow"];
                 (vehicle _x) setVariable ["f_cam_icon",_icon];
             };
 
-            private _color = (side _x) call oeta_common_fnc_sideToColor;
+            private _color = (side _x) call oeta_core_fnc_sideToColor;
 
             private _pos = getPos _x;
             private _sizeX = 20;

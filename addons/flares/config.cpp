@@ -7,7 +7,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"oeta_common"};
+        requiredAddons[] = {"oeta_core"};
         author = QAUTHOR;
         authors[] = {"PabstMirror"};
         authorUrl = URL;

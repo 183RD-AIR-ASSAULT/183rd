@@ -49,4 +49,4 @@ _SpawnLocation = (getPos _logic);
     [_VehMRAPMin, _VehMRAPMax],
     [_VehHeavyMin, _VehHeavyMax],
     [_VehRandomMin, _VehRandomMax]
-] call oeta_fnc_SpawnAI;
+] call oeta_fnc_Spawnai;

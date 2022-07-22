@@ -53,19 +53,19 @@ switch _mode do {
 
         if (_source isEqualTo "") exitWith {
             [format [localize "STR_OETA_ModuleError_UnitIsEmpty", _source]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_UnitIsEmpty", _source]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_UnitIsEmpty", _source]], "modules"] call oeta_core_fnc_log;
         };
 
         if (isNull (missionNamespace getVariable [_source, objNull])) exitWith {
             [format [localize "STR_OETA_ModuleError_VarIsUnknown", _source]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_VarIsUnknown", _source]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_VarIsUnknown", _source]], "modules"] call oeta_core_fnc_log;
         };
 
         private _unit = missionNamespace getVariable _source;
 
         if !(_unit isKindOf "Man") exitWith {
             [format [localize "STR_OETA_ModuleError_IsNotUnit", _unit]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_IsNotUnit", _unit]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_IsNotUnit", _unit]], "modules"] call oeta_core_fnc_log;
         };
 
         // VALIDATE CLASSNAME
@@ -82,21 +82,21 @@ switch _mode do {
 
         if (_soundExist isEqualTo 0) exitWith {
             [format [localize "STR_OETA_ModuleError_UnknownInCfgSounds", _sound]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_UnknownInCfgSounds", _sound]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_UnknownInCfgSounds", _sound]], "modules"] call oeta_core_fnc_log;
         };
 
         // VALIDATE DISTANCE
 
         if (_distance <= 0) exitWith {
             [format [localize "STR_OETA_ModuleError_DistanceGreaterZero", _distance]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_DistanceGreaterZero", _distance]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_DistanceGreaterZero", _distance]], "modules"] call oeta_core_fnc_log;
         };
 
         // VALIDATE MAX DISTANCE
 
         if ((_maxDistance > 0) && (_maxDistance <= _distance)) exitWith {
             [format [localize "STR_OETA_ModuleError_MaxGreaterDistance", _distance, _maxDistance]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_MaxGreaterDistance", _distance, _maxDistance]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_MaxGreaterDistance", _distance, _maxDistance]], "modules"] call oeta_core_fnc_log;
         };
 
         // VALIDATE DURATION
@@ -104,14 +104,14 @@ switch _mode do {
         if (_duration <= 0) then {_duration = [_sound] call OETA_fnc_getSoundDuration;};
         if (_duration <= 0) exitWith {
             [format [localize "STR_OETA_ModuleError_DurationNotDefined", _sound]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_DurationNotDefined", _sound]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_DurationNotDefined", _sound]], "modules"] call oeta_core_fnc_log;
         };
 
         // VALIDATE ANIMATION
 
         if ((_reaction > 2) && (_animation isEqualTo "")) exitWith {
             [format [localize "STR_OETA_ModuleError_AnimationEmpty", _reaction, _animation]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_AnimationEmpty", _reaction, _animation]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_AnimationEmpty", _reaction, _animation]], "modules"] call oeta_core_fnc_log;
         };
 
         // GLOBAL SPEECH MENU
@@ -143,7 +143,7 @@ switch _mode do {
 
         if (_source isEqualTo "") exitWith {
             [format [localize "STR_OETA_ModuleError_UnitIsEmpty", _source]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_UnitIsEmpty", _source]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_UnitIsEmpty", _source]], "modules"] call oeta_core_fnc_log;
         };
 
         // VALIDATE CLASSNAME
@@ -160,21 +160,21 @@ switch _mode do {
 
         if (_soundExist isEqualTo 0) exitWith {
             [format [localize "STR_OETA_ModuleError_UnknownInCfgSounds", _sound]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_UnknownInCfgSounds", _sound]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_UnknownInCfgSounds", _sound]], "modules"] call oeta_core_fnc_log;
         };
 
         // VALIDATE DISTANCE
 
         if (_distance <= 0) exitWith {
             [format [localize "STR_OETA_ModuleError_DistanceGreaterZero", _distance]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_DistanceGreaterZero", _distance]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_DistanceGreaterZero", _distance]], "modules"] call oeta_core_fnc_log;
         };
 
         // VALIDATE MAX DISTANCE
 
         if ((_maxDistance > 0) && (_maxDistance <= _distance)) exitWith {
             [format [localize "STR_OETA_ModuleError_MaxGreaterDistance", _distance, _maxDistance]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_MaxGreaterDistance", _distance, _maxDistance]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_MaxGreaterDistance", _distance, _maxDistance]], "modules"] call oeta_core_fnc_log;
         };
 
         // VALIDATE DURATION
@@ -182,14 +182,14 @@ switch _mode do {
         if (_duration <= 0) then {_duration = [_sound] call OETA_fnc_getSoundDuration;};
         if (_duration <= 0) exitWith {
             [format [localize "STR_OETA_ModuleError_DurationNotDefined", _sound]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_DurationNotDefined", _sound]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_DurationNotDefined", _sound]], "modules"] call oeta_core_fnc_log;
         };
 
         // VALIDATE ANIMATION
 
         if ((_reaction > 2) && (_animation isEqualTo "")) exitWith {
             [format [localize "STR_OETA_ModuleError_AnimationEmpty", _reaction, _animation]] call BIS_fnc_error;
-            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_AnimationEmpty", _reaction, _animation]], "modules"] call OETA_common_fnc_log;
+            [2, "ModuleGlobalSpeech '%1' - %2", [_logic, format [localize "STR_OETA_ModuleError_AnimationEmpty", _reaction, _animation]], "modules"] call oeta_core_fnc_log;
         };
 
     };

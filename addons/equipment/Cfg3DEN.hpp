@@ -65,7 +65,7 @@ class Cfg3den {
             class PREFIX {
                 collapsed = 1;
                 class Attributes {
-                    class OETA_Arsenal_Select {
+                    class GVAR(Arsenal_Select) {
                         property = QUOTE(OETA_Arsenal_Select);
                         control = "ArsenalSelect";
                         displayName = "Full Arsenal Selection:";
@@ -75,7 +75,7 @@ class Cfg3den {
                         condition = "objectHasInventoryCargo - objectVehicle";
                         defaultValue = "-1";
                     };
-                        class OETA_Ammo_Select {
+                        class GVAR(Ammo_Select) {
                         property = QUOTE(OETA_Ammo_Select);
                         control = "ArsenalSelect";
                         displayName = "Limited Arsenal Selection:";
@@ -85,7 +85,7 @@ class Cfg3den {
                         condition = "objectHasInventoryCargo - objectVehicle";
                         defaultValue = "-1";
                     };
-                        class OETA_LimitedAmmoSelect {
+                        class GVAR(LimitedAmmoSelect) {
                         property = QUOTE(OETA_LimitedAmmoSelect);
                         control = LimitedAmmoSelect;
                         displayName = "Ammobox Selection:";
@@ -95,7 +95,7 @@ class Cfg3den {
                         condition = "objectHasInventoryCargo";
                         defaultValue = "-1";
                     };
-                        class OETA_Equipment_Select {
+                        class GVAR(Equipment_Select) {
                         property = QUOTE(OETA_Equipment_Select);
                         control = "EquipmentSelect";
                         displayName = "Medical Supplies Selection:";

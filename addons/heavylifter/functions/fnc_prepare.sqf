@@ -27,14 +27,14 @@ _vehiclePosOffset = [_vehiclePosOffsetWorld select 0, _vehiclePosOffsetWorld sel
 _vehicleVectorDirAndUp = [vectorDir _vehicle, vectorUp _vehicle];
 
 // Prepare vehicle to be attached to helper object
-[_vehicle, "blockEngine", QUOTE(ADDON), true] call ACEFUNC(common,statusEffect_set);
-[_vehicle, "blockDamage", QUOTE(ADDON), true] call ACEFUNC(common,statusEffect_set);
+[_vehicle, "blockEngine", QUOTE(ADDON), true] call ACEFUNC(core,statusEffect_set);
+[_vehicle, "blockDamage", QUOTE(ADDON), true] call ACEFUNC(core,statusEffect_set);
 _vehicle enableSimulationGlobal false;
 _vehicle setPosASL [0, 0, 0];
 
 // Create helper object on original vehicle location, prevent damage and set orientation
 _helper = createVehicle [QGVAR(Helper), _vehiclePosOffset, [], 0, "CAN_COLLIDE"];
-[_helper, "blockDamage", QUOTE(ADDON), true] call ACEFUNC(common,statusEffect_set);
+[_helper, "blockDamage", QUOTE(ADDON), true] call ACEFUNC(core,statusEffect_set);
 _helper enableSimulationGlobal false;
 _helper setVectorDirAndUp _vehicleVectorDirAndUp;
 
@@ -42,13 +42,13 @@ _helper setVectorDirAndUp _vehicleVectorDirAndUp;
 _vehicle attachTo [_helper, _attachPos];
 
 // Enable damage on vehicle and helper object
-[_vehicle, "blockDamage", QUOTE(ADDON), false] call ACEFUNC(common,statusEffect_set);
+[_vehicle, "blockDamage", QUOTE(ADDON), false] call ACEFUNC(core,statusEffect_set);
 _vehicle enableSimulationGlobal true;
-[_helper, "blockDamage", QUOTE(ADDON), false] call ACEFUNC(common,statusEffect_set);
+[_helper, "blockDamage", QUOTE(ADDON), false] call ACEFUNC(core,statusEffect_set);
 _helper enableSimulationGlobal true;
 
 // Set variable with helper object
 _vehicle setVariable [QGVAR(prepared), [_vehicle, _helper], true];
 
 // Show ACE Hint
-[localize LSTRING(Attached), QPATHTOF(UI\attach_ca.paa)] call ACEFUNC(common,displayTextPicture);
+[localize LSTRING(Attached), QPATHTOF(UI\attach_ca.paa)] call ACEFUNC(core,displayTextPicture);

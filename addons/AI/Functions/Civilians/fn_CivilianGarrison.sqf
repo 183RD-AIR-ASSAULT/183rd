@@ -12,7 +12,7 @@ Arguments:
     _side - The side of the civilians to spawn <SIDE>
     _pedList - Array of units to use in populating <ARRAY OF STRINGS>
     _unitCount - The amount of units we want to create <SCALAR>
-    _AIOB_Positioning - The positioning directive to use <SCALAR, defaults to: 2>
+    _aiOB_Positioning - The positioning directive to use <SCALAR, defaults to: 2>
     _maxFill - The maximum amount of units in one building <SCALAR, defaults to: 1>
     _excludes - Exclude buildings in this array from being garrisoned <ARRAY OF STRING>
 
@@ -34,7 +34,7 @@ params [
     ["_side", civilian],
     "_pedList",
     ["_unitCount", 0],
-    ["_AIOB_Positioning", 2],
+    ["_aiOB_Positioning", 2],
     ["_maxFill", 1],
     ["_excludes", []]
 ];
@@ -49,7 +49,7 @@ for "_x" from 0 to _unitCount do {
 
 if (_units isEqualTo []) exitWith {};
 
-private _failed = [_pos, nil, _units, _GarrRadius, _AIOB_Positioning, true, _maxFill, _excludes] call DERP_fnc_AIOccupyBuilding;
+private _failed = [_pos, nil, _units, _GarrRadius, _aiOB_Positioning, true, _maxFill, _excludes] call DERP_fnc_aiOccupyBuilding;
 
 // Remove any non-garrisoned units { deleteVehicle _x; } forEach _failed;
 _allUnits = _units - _failed;

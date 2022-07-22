@@ -9,7 +9,6 @@ class cfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "A3_UI_F",
             "cba_main",
             "cba_xeh",
             "cba_ui",
@@ -19,11 +18,12 @@ class cfgPatches {
     };
 };
 
+#include "CfgFactionClasses.hpp"
+
 #include "CfgSettings.hpp"
-#include "Dialogs\CfgDisplays.hpp"
+#include "dialogs\CfgDisplays.hpp"
 #include "CfgRespawnTemplates.hpp"
 #include "CfgEventHandlers.hpp"
-#include "CfgFactionClasses.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgScriptPaths.hpp"
 #include "CfgEditorCategories.hpp"

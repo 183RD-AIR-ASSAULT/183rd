@@ -83,7 +83,7 @@ if (!isNil QEGVAR(acre2,networksWithRadioChannels)) then {
                 format ["faction: %1", _x]
             } else {
                 if (_x isEqualType 0) then {
-                    toLower str (_x call EFUNC(common,numToSide))
+                    toLower str (_x call EFUNC(core,numToSide))
                 } else {
                     str _x
                 };

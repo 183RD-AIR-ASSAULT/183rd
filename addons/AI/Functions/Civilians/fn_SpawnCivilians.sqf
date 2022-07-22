@@ -60,7 +60,7 @@ params [
     ["_vehparked", [0, 0]]
 ];
 
-private _AIReporting = OETA_AI_Reporting;
+private _aiReporting = OETA_ai_Reporting;
 
 _typeNameCenter = typeName _center;
 
@@ -140,7 +140,7 @@ if !(_pedPool isEqualTo []) then {
         // tag groups { _x setGroupIdGlobal [format["%1_gar%2", _grpPrefix, _forEachIndex]]; } forEach _grps;
     };
 } else {
-    if (_AIReporting && { _garrisonsMax > 0 }) exitwith {systemchat format ["183rd: INFO: %1 no Civilian peds to select from. Step skipped.",_faction]};
+    if (_aiReporting && { _garrisonsMax > 0 }) exitwith {systemchat format ["183rd: INFO: %1 no Civilian peds to select from. Step skipped.",_faction]};
 };
 
 ///////////////////////////////////////////////////////////
@@ -162,7 +162,7 @@ if !(_pedPool isEqualTo []) then {
         _units append (units _g);
     };
 } else {
-    if (_AIReporting && { _pedMax > 0 }) exitwith {systemchat format ["183rd: INFO: %1 no Civilian peds to select from. Step skipped.",_faction]};
+    if (_aiReporting && { _pedMax > 0 }) exitwith {systemchat format ["183rd: INFO: %1 no Civilian peds to select from. Step skipped.",_faction]};
 };
 
 
@@ -204,7 +204,7 @@ if !((_motPool isEqualTo []) || (_pedPool isEqualTo [])) then {
         _vehicles append [_v];
     };
 } else {
-    if (_AIReporting && { _vehpatrolMax > 0 }) exitwith {systemchat format ["183rd: INFO: %1 no Civilian peds or vehicles to select from. Step skipped.",_faction]};
+    if (_aiReporting && { _vehpatrolMax > 0 }) exitwith {systemchat format ["183rd: INFO: %1 no Civilian peds or vehicles to select from. Step skipped.",_faction]};
 };
 
 ///////////////////////////////////////////////////////////
@@ -234,7 +234,7 @@ if !(_motPool isEqualTo []) then {
         _vehicles append [_v];
     };
 } else {
-    if (_AIReporting && { _vehparkedMax > 0 }) exitwith {systemchat format ["183rd: INFO: %1 no Civilian vehicles to select from. Step skipped.",_faction]};
+    if (_aiReporting && { _vehparkedMax > 0 }) exitwith {systemchat format ["183rd: INFO: %1 no Civilian vehicles to select from. Step skipped.",_faction]};
 };
 
 // Set up dynamic sim and curator stuff
@@ -242,7 +242,7 @@ if !(_motPool isEqualTo []) then {
     if !(dynamicSimulationEnabled (group _x)) then {
         (group _x) enableDynamicSimulation true;
     };
-    _x  disableAI "AUTOCOMBAT";
+    _x  disableai "AUTOCOMBAT";
 } forEach _units;
  {
     if !(dynamicSimulationEnabled (group _x)) then {

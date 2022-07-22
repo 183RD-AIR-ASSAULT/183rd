@@ -1,22 +1,20 @@
 #include "script_component.hpp"
 
-class CfgPatches {
+class cfgPatches {
     class ADDON {
+        author = AUTHOR;
         name = COMPONENT_NAME;
+        url = URL;
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {
-            "oeta_common"
-        };
-        author = QAUTHOR;
+        requiredAddons[] = {"oeta_core"};
         VERSION_CONFIG;
     };
 };
 
-
-#include "CfgEventHandlers.hpp"
-#include "CfgRespawnTemplates.hpp"
 #include "Cfg3DEN.hpp"
+#include "CfgEventHandlers.hpp"
+
 #include "defines.hpp"
 #include "dialogs.hpp"
