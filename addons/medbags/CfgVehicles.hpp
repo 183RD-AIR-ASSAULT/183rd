@@ -9,7 +9,7 @@ class CfgVehicles {
         // exceptions[] = {"isNotDead", "isNotUnconscious", "isNotSurrendering", "isNotHandcuffed", "isNotCarrying", "isNotDragging", "isNotEscorting", "isNotSwimming", "isNotRefueling", "isNotOnLadder", "isNotSitting", "isNotInside", "isNotInZeus", "notOnMap"};
 
         class ACE_SelfActions {
-            class ACE_Equipment {
+            class ACE_Medical {
                 class GVAR(Medical_Supplies_Action_FirstAid) {
                     displayName = "Unpack IFAK";
                     condition = "[_player] call oeta_medbags_fnc_canUnpackFirstAid";

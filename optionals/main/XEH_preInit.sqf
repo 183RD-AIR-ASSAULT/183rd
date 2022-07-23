@@ -83,54 +83,6 @@
     }
 ] call CBA_Settings_fnc_init;
 
-// CH View Distance
-[
-    "OETA_Main_CHViewDistance",
-    "CHECKBOX",
-    ["CH View Distance", "Enable CHVD within OETA Fundamentals"],
-    COMPONENT_NAME,
-    false,
-    true, {
-        if (_this && { hasinterface }) then  { call CHVD_fnc_init};
-    }
-] call CBA_Settings_fnc_init;
-
-// CHVD - Max View Distance
-[
-    "OETA_Main_ViewDistanceMaxDistance",
-    "SLIDER",
-    ["CHVD - Max View Distance", "Max distance a player can set CHVD View Distance to."],
-    COMPONENT_NAME,
-    [5000, 15000, 10000, 0],
-    true, {
-
-    }
-] call CBA_Settings_fnc_init;
-
-// CHVD - Max Object View Distance
-[
-    "OETA_Main_ViewDistanceMaxObjectDistance",
-    "SLIDER",
-    ["CHVD - Max Object View Distance", "Max distance a player can set CHVD Object View Distance to."],
-    COMPONENT_NAME,
-    [5000, 15000, 10000, 0],
-    true, {
-
-    }
-] call CBA_Settings_fnc_init;
-
-// CHVD - Allow No Grass
-[
-    "OETA_Main_ViewDistanceNoGrass",
-    "CHECKBOX",
-    ["CHVD - Allow No Grass", "Should players be allowed to turn grass off?"],
-    COMPONENT_NAME,
-    false,
-    true, {
-
-    }
-] call CBA_Settings_fnc_init;
-
 // Arsenal - Save/Load
 [
     "OETA_Main_ArsenalSaveLoad",
@@ -179,17 +131,6 @@
     }
 ] call CBA_Settings_fnc_init;
 
-// Cue Cards
-[
-    "OETA_Main_CueCards",
-    "CHECKBOX",
-    ["Cue Cards", "Show/Hide Cue Cards in ACE Self Interaction Menu."],
-    COMPONENT_NAME,
-    true,
-    true, {
-        if (_this && { hasinterface }) then  { call OETA_fnc_AddCueCards};
-    }
-] call CBA_Settings_fnc_init;
 
 // Diary Defaults
 [

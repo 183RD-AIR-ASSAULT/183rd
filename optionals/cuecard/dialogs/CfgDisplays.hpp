@@ -1,4 +1,3 @@
-
 class IGUIBack;
 class RscStandardDisplay;
 class RscText;

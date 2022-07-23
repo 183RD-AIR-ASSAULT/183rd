@@ -168,57 +168,56 @@ _npAction = [
     [player, 1, ["ACE_SelfActions", "CueCardAction"], _action] call ace_interact_menu_fnc_addActionToObject;
 } forEach _cueCardsData;
 
-// medical
-private _medic = player getVariable "ace_medical_medicclass";
+// // medical
+// private _medic = player getVariable "ace_medical_medicclass";
+// if (_medic >= 1) then {
+//     // Add Parent Action
+//     _parentActionMed = [
+//         "CueCardActionMed",
+//         "Medical Smart Cards",
+//         "", {diag_log "running parent action"}, {true}
+//     ] call ace_interact_menu_fnc_createAction;
 
-if (_medic >= 1) then {
-    // Add Parent Action
-    _parentActionMed = [
-        "CueCardActionMed",
-        "Medical Smart Cards",
-        "", {diag_log "running parent action"}, {true}
-    ] call ace_interact_menu_fnc_createAction;
-
-    [player, 1, ["ACE_SelfActions"], _parentActionMed] call ace_interact_menu_fnc_addActionToObject;
-    [player, 1, ["ACE_SelfActions", "CueCardActionMed"], _npAction] call ace_interact_menu_fnc_addActionToObject;
+//     [player, 1, ["ACE_SelfActions"], _parentActionMed] call ace_interact_menu_fnc_addActionToObject;
+//     [player, 1, ["ACE_SelfActions", "CueCardActionMed"], _npAction] call ace_interact_menu_fnc_addActionToObject;
 
     
-    // Add Cue Card Actions
-    {
-        _xmed params [
-            "_texture",
-            "_name"
-        ];
+//     // Add Cue Card Actions
+//     {
+//         _xmed params [
+//             "_texture",
+//             "_name"
+//         ];
 
-        _title = format ["Show %1", _name];
-        _id = format ["CueCardActionMed%1", _forEachIndex];
+//         _title = format ["Show %1", _name];
+//         _id = format ["CueCardActionMed%1", _forEachIndex];
 
-        diag_log format ["[[LOGGING]]  ID: %1    Title: %2", _id, _title];
+//         diag_log format ["[[LOGGING]]  ID: %1    Title: %2", _id, _title];
 
-        _action = [
-            _id,
-            _title,
-            _texture, // see if this looks nice or not TODO
-            {
-                _this spawn {
-                    params ["_target", "_caller", "_data"];
+//         _action = [
+//             _id,
+//             _title,
+//             _texture, // see if this looks nice or not TODO
+//             {
+//                 _this spawn {
+//                     params ["_target", "_caller", "_data"];
 
-                    diag_log format ["[[LOGGING]] Target: %2    Data: %1", _data, _target];
+//                     diag_log format ["[[LOGGING]] Target: %2    Data: %1", _data, _target];
 
-                    disableserialization;
-                    missionNamespace setVariable ["RscDisplayCueCard_data", _data];
-                    ([] call bis_fnc_displayMission) createdisplay "RscDisplayCueCard";
-                    ([] call bis_fnc_displayMission) createdisplay "NotepadDialog";
-                    [missionnamespace,"cueCardShown",[_target] + _data] spawn bis_fnc_callScriptedEventHandler;
-                };
-            }, {true}, {},
-            _xmed,
-            ""
-        ] call ace_interact_menu_fnc_createAction;
+//                     disableserialization;
+//                     missionNamespace setVariable ["RscDisplayCueCard_data", _data];
+//                     ([] call bis_fnc_displayMission) createdisplay "RscDisplayCueCard";
+//                     ([] call bis_fnc_displayMission) createdisplay "NotepadDialog";
+//                     [missionnamespace,"cueCardShown",[_target] + _data] spawn bis_fnc_callScriptedEventHandler;
+//                 };
+//             }, {true}, {},
+//             _xmed,
+//             ""
+//         ] call ace_interact_menu_fnc_createAction;
 
-        [player, 1, ["ACE_SelfActions", "CueCardActionMed"], _action] call ace_interact_menu_fnc_addActionToObject;
-    } forEach _cueCardMedical;
-};
+//         [player, 1, ["ACE_SelfActions", "CueCardActionMed"], _action] call ace_interact_menu_fnc_addActionToObject;
+//     } forEach _cueCardMedical;
+// };
 
 
 

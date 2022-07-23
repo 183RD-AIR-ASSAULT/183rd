@@ -18,18 +18,18 @@ class cfgPatches {
     };
 };
 
+
+
 #include "CfgFactionClasses.hpp"
 
 #include "CfgSettings.hpp"
-#include "dialogs\CfgDisplays.hpp"
+
 #include "CfgRespawnTemplates.hpp"
-#include "CfgEventHandlers.hpp"
-#include "CfgFunctions.hpp"
-#include "CfgScriptPaths.hpp"
+// #include "CfgEventHandlers.hpp"
+// #include "CfgFunctions.hpp"
 #include "CfgEditorCategories.hpp"
-#include "CfgVehicleIcons.hpp"
+
 #include "CfgWorlds.hpp"
 #include "CfgMarkers.hpp"
 #include "radio.hpp"
-#include "CfgEden.hpp"
 #include "CfgSkeletons.hpp"

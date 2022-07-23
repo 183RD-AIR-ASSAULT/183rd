@@ -106,7 +106,6 @@ FORCE oeta_interactions_tapshoulder_ai = false;
 // 183rd - Main
 FORCE OETA_Main_ArsenalSaveLoad = true;
 FORCE OETA_Main_CHViewDistance = false;
-FORCE OETA_Main_CueCards = true;
 FORCE OETA_Main_Diary = true;
 FORCE OETA_Main_DynamicGroups = true;
 FORCE OETA_Main_DynamicSim = false;
