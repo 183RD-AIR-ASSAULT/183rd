@@ -1,5 +1,5 @@
 
-if (EGVAR(common,aceFinger)) then {
+if (EGVAR(core,aceFinger)) then {
     private _aceKeybind = ["ACE3 Common", "ace_finger_finger"] call CBA_fnc_getKeybind select 5;
     private _keybind = [_aceKeybind, [41, [true, false, false]]] select isNil "_aceKeybind";
 

@@ -54,3 +54,51 @@ if (!(hasInterface) || (isServer)) then {
 GVAR(CachedDisplayNames) = [];
 
 ADDON = true;
+
+// Flip Vehicle
+[
+    "OETA_Main_FlipVehicle",
+    "CHECKBOX",
+    ["Flip Vehicle", "Add an action to players to allow them to flip land vehicles."],
+    COMPONENT_NAME,
+    false,
+    true, {
+        if (_this && { hasinterface }) then  { call FUNC(FlipVehicle)};
+    }
+] call CBA_Settings_fnc_init;
+
+// OETA_Main_DynamicSim
+[
+    "OETA_Main_DynamicSim",
+    "CHECKBOX",
+    ["TFD Dynamic Sim", "Simple check for Dynamic Sim enabled. If not enabled it will enable it to default TFD Values. "],
+    COMPONENT_NAME,
+    false,
+    true, {
+        if (_this && { isserver }) then  { call FUNC(DynamicSim)};
+    }
+] call CBA_Settings_fnc_init;
+
+// OETA_Main_DynamicSim
+[
+    "OETA_Main_LockCamVehicle",
+    "CHECKBOX",
+    ["TFD Lock Camera in Vehicle", "Locks the camera to first-person inside vehicles. If not enabled it will enable it to default TFD Values. "],
+    COMPONENT_NAME,
+    false,
+    true, {
+        if (_this && {hasInterface}) then  { call FUNC(LockCamVehicle)};
+    }
+] call CBA_Settings_fnc_init;
+
+// Dynamic Groups
+[
+    "OETA_Main_DynamicGroups",
+    "CHECKBOX",
+    ["BIS Dynamic Groups", "Enable Vanilla Dynamic Groups system (U Menu)"],
+    COMPONENT_NAME,
+    false,
+    true, {
+        if (_this) then { call FUNC(DynamicGroups)};
+    }
+] call CBA_Settings_fnc_init;

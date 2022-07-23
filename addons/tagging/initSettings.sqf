@@ -1,5 +1,5 @@
 
-if (EGVAR(common,aceTagging)) then {
+if (EGVAR(core,aceTagging)) then {
     [
         QGVAR(enabled),
         "CHECKBOX",

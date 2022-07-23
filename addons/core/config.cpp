@@ -21,3 +21,4 @@ class CfgPatches {
 #include "Cfg3DEN.hpp"
 #include "CfgCustom\RespawnTemplates.hpp"
 #include "cfgDebriefingSections.hpp"
+#include "ui\RscModal.hpp"

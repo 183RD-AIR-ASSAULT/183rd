@@ -17,3 +17,11 @@ class CfgPatches {
 #include "\z\oeta\addons\main\RscTitles.hpp"
 #include "CfgEventHandlers.hpp"
 #include "Cfg3DEN.hpp"
+#include "CfgModules.hpp"
+#include "CfgRemoteExec.hpp"
+#include "CfgNonAIVehicles.hpp"
+
+class RscText;
+class RscDisplayMainMap;
+#include "RscDisplayGetReady.hpp"
+#include "RscTitles.hpp"

@@ -1,5 +1,5 @@
 
-if (EGVAR(common,aceTowing)) then {
+if (EGVAR(core,aceTowing)) then {
     [
         QGVAR(addToHeavyDutyVehicles),
         "CHECKBOX",

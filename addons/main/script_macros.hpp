@@ -6,6 +6,45 @@
 // Default versioning level
 #define DEFAULT_VERSIONING_LEVEL 2
 
+// Main
+#define QUOTE(var1) #var1
+#define VERSION_CONFIG version = MAJOR.MINOR; versionStr = QUOTE(MAJOR.MINOR.PATCH); versionAr[] = {MAJOR,MINOR,PATCH}
+
+
+// Expanding on CBA macros
+#define CFUNC(var) EFUNC(core,var)
+#define QCFUNC(var) QUOTE(CFUNC(var))
+
+// Chat macros
+#define IS_CMND_AVAILABLE(var,cmnd) if !([var,cmnd] call EFUNC(chat,commandAvailable)) exitWith {}
+
+// ACE3 reference macros
+#define ACE_PREFIX ace
+#define ACE_ADDON(module) DOUBLES(ACE_PREFIX,module)
+#define ACEGVAR(module,var)         TRIPLES(ACE_PREFIX,module,var)
+#define QACEGVAR(module,var)        QUOTE(ACEGVAR(module,var))
+
+#define ACEFUNC(module,function)    TRIPLES(DOUBLES(ACE_PREFIX,module),fnc,function)
+#define QACEFUNC(module,function)   QUOTE(ACEFUNC(module,function))
+
+#define ACELSTRING(module,string)   QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,module),string))
+#define ACECSTRING(module,string)   QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,module),string))
+
+#define GVAR(var1) DOUBLES(ADDON,var1)
+#define EGVAR(var1,var2) TRIPLES(PREFIX,var1,var2)
+#define QGVAR(var1) QUOTE(GVAR(var1))
+#define QEGVAR(var1,var2) QUOTE(EGVAR(var1,var2))
+#define QQGVAR(var1) QUOTE(QGVAR(var1))
+#define QQEGVAR(var1,var2) QUOTE(QEGVAR(var1,var2))
+
+#define GVARMAIN(var1) GVARMAINS(PREFIX,var1)
+#define QGVARMAIN(var1) QUOTE(GVARMAIN(var1))
+#define QQGVARMAIN(var1) QUOTE(QGVARMAIN(var1))
+
+// 183RD macros
+#define IS_MOD_LOADED(modclass)     (isClass (configFile >> "CfgPatches" >> #modclass))
+
+
 #ifdef DISABLE_COMPILE_CACHE
     #undef PREP
     #undef PREPE
@@ -24,10 +63,10 @@
 
 #define PREP_MODULE(folder) [] call compile preprocessFileLineNumbers QPATHTOF(folder\__PREP__.sqf)
 
-#define MMFW_DEPRECATED(arg1,arg2,arg3) WARNING_3("%1 is deprecated. Support will be dropped in version %2. Replaced by: %3",arg1,arg2,arg3)
+#define OETA_DEPRECATED(arg1,arg2,arg3) WARNING_3("%1 is deprecated. Support will be dropped in version %2. Replaced by: %3",arg1,arg2,arg3)
 
-#define DGVAR(varName)    if (isNil "MMFW_DEBUG_NAMESPACE") then { MMFW_DEBUG_NAMESPACE = []; }; if (!(QUOTE(GVAR(varName)) in MMFW_DEBUG_NAMESPACE)) then { PUSH(MMFW_DEBUG_NAMESPACE, QUOTE(GVAR(varName))); }; GVAR(varName)
-#define DVAR(varName)     if (isNil "MMFW_DEBUG_NAMESPACE") then { MMFW_DEBUG_NAMESPACE = []; }; if (!(QUOTE(varName) in MMFW_DEBUG_NAMESPACE)) then { PUSH(MMFW_DEBUG_NAMESPACE, QUOTE(varName)); }; varName
+#define DGVAR(varName)    if (isNil "OETA_DEBUG_NAMESPACE") then { OETA_DEBUG_NAMESPACE = []; }; if (!(QUOTE(GVAR(varName)) in OETA_DEBUG_NAMESPACE)) then { PUSH(OETA_DEBUG_NAMESPACE, QUOTE(GVAR(varName))); }; GVAR(varName)
+#define DVAR(varName)     if (isNil "OETA_DEBUG_NAMESPACE") then { OETA_DEBUG_NAMESPACE = []; }; if (!(QUOTE(varName) in OETA_DEBUG_NAMESPACE)) then { PUSH(OETA_DEBUG_NAMESPACE, QUOTE(varName)); }; varName
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
 #define DEFUNC(var1,var2) TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)
 
@@ -103,8 +142,8 @@ MESSAGE call EFUNC(Debug,DebugMessage)
 #define SETPLPVAR(var1,var2) player SETPVAR_SYS(var1,var2)
 #define ESETPLPVAR(var1,var2,var3) player ESETPVAR_SYS(var1,var2,var3)
 
-#define QQGVAR(var1) QUOTE(QGVAR(var1))
-#define QQEGVAR(var1,var2) QUOTE(QEGVAR(var1,var2))
+// #define QQGVAR(var1) QUOTE(QGVAR(var1))
+// #define QQEGVAR(var1,var2) QUOTE(QEGVAR(var1,var2))
 
 #define QN(var1) '##var1##'
 
@@ -133,3 +172,25 @@ if !(EGVAR(Core,Enabled)) exitWith {}
 
 #include "script_debug.hpp"
 #include "config_macros.hpp"
+
+
+
+#define MACRO_ADDWEAPON(WEAPON,COUNT) class _xx_##WEAPON { \
+    weapon = #WEAPON; \
+    count = COUNT; \
+}
+
+#define MACRO_ADDITEM(ITEM,COUNT) class _xx_##ITEM { \
+    name = #ITEM; \
+    count = COUNT; \
+}
+
+#define MACRO_ADDMAGAZINE(MAGAZINE,COUNT) class _xx_##MAGAZINE { \
+    magazine = #MAGAZINE; \
+    count = COUNT; \
+}
+
+#define MACRO_ADDBACKPACK(BACKPACK,COUNT) class _xx_##BACKPACK { \
+    backpack = #BACKPACK; \
+    count = COUNT; \
+}

@@ -12,7 +12,7 @@ params["_fullmapWindow"];
         {
             private _icon = (vehicle _x getVariable ["f_cam_icon",""]);
             if(_icon == "") then {_icon = gettext (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "icon");vehicle _x setVariable ["f_cam_icon",_icon]};
-            private _color = (side _x) call oeta_common_fnc_sideToColor;
+            private _color = (side _x) call oeta_core_fnc_sideToColor;
             _fullmapWindow drawIcon [_icon,_color,getpos _x,19,19,getDir (vehicle _x),_name,1];
         };
     };

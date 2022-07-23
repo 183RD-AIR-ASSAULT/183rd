@@ -32,7 +32,7 @@ if (cbChecked (_display displayCtrl IDC_OETA_ADMINMENU_ENDM_SIDESPECIFIC)) exitW
 if (cbChecked (_display displayCtrl IDC_OETA_ADMINMENU_ENDM_CUSTOM)) exitWith {
     private _title = ctrlText (_display displayCtrl IDC_OETA_ADMINMENU_ENDM_CUSTOM_TITLE);
     private _subtext = ctrlText (_display displayCtrl IDC_OETA_ADMINMENU_ENDM_CUSTOM_SUBTEXT);
-    missionNamespace setVariable [QEGVAR(common,endMissionText), [_title, _subtext], true];
+    missionNamespace setVariable [QEGVAR(core,endMissionText), [_title, _subtext], true];
 
     private _isDefeat = cbChecked (_display displayCtrl IDC_OETA_ADMINMENU_ENDM_CUSTOM_ISDEFEAT);
     [[QGVAR(victory), QGVAR(defeat)] select _isDefeat, !_isDefeat] remoteExec [QEFUNC(core,endMission)];

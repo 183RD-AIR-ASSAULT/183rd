@@ -1,5 +1,5 @@
 
-if (EGVAR(common,aceFinger)) then {
+if (EGVAR(core,aceFinger)) then {
     [
         QGVAR(vehicleEnabled),
         "CHECKBOX",

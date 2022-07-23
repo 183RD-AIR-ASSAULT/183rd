@@ -17,18 +17,16 @@ class CfgPatches {
     };
 };
 
-#include "CfgVehicles.hpp"
 #include "CfgBrains.hpp"
 #include "Modes.hpp"
 #include "CfgWeapons.hpp"
+
+#include "CfgEventHandlers.hpp"
+#include "CfgWaypoints.hpp"
+#include "CfgModules.hpp"
 
 class CfgFunctions {
     #include "CfgFunctions.hpp"
 };
 
-class Extended_PreInit_EventHandlers {
-    class GVAR(ai_Event) {
-        init = "call compile preProcessFileLineNumbers 'z\oeta\addons\ai\XEH_preInit.sqf'";
-    };
-};
 

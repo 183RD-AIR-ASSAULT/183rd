@@ -55,7 +55,7 @@ class Cfg3den {
                     h = "5 * (pixelH * pixelGrid * 0.50)";
                     rows = 1;
                     columns = 4;
-                    strings[] = {"None", "Limited", "Standard", "MERT"};
+                    strings[] = {"None", "Vanilla", "183rd", "RHS"};
                 };
             };
         };

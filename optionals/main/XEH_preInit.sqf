@@ -192,7 +192,7 @@
     COMPONENT_NAME,
     false,
     true, {
-        if (_this) then { call OETA_common_fnc_logs};
+        if (_this) then { call oeta_core_fnc_logs};
     }
 ] call CBA_Settings_fnc_init;
 

@@ -31,7 +31,7 @@ if (hasInterface) then {
         [QGVAR(stop)] call CBA_fnc_localEvent;
     }];
 
-    if (EGVAR(common,aceMedical)) then {
+    if (EGVAR(core,aceMedical)) then {
         ["ace_unconscious", {
             params ["_unit", "_active"];
             if (!GVAR(enabled) || {_unit isNotEqualTo player}) exitWith {};

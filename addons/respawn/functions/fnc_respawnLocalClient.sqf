@@ -28,7 +28,7 @@ if (_halo) then {
 };
 
 //Dummy group is required to
-private _dummyGroup = createGroup (_side call EFUNC(common,numToSide));
+private _dummyGroup = createGroup (_side call EFUNC(core,numToSide));
 if (_leader && _groupName != "INSERT_GROUP_NAME") then {
     _dummyGroup setGroupIdGlobal [_groupName];
 };

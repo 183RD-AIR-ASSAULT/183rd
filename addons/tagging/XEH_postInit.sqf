@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-if (!EGVAR(common,aceTagging)) exitWith {};
+if (!EGVAR(core,aceTagging)) exitWith {};
 
 if (hasInterface) then {
     ["ace_tagCreated", {

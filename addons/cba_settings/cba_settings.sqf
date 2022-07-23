@@ -70,6 +70,19 @@ FORCE oeta_chat_specUsage = 3;
 FORCE oeta_chat_tpUsage = 3;
 FORCE oeta_chat_whisperUsage = 3;
 
+// OETA - Civilians
+force OETA_Civilians_enableFollowGestures = true;
+force OETA_Civilians_enableGestures = true;
+force OETA_Civilians_enableGetDownGestures = true;
+force OETA_Civilians_enableGoAwayGestures = true;
+force OETA_Civilians_enableGreetingGestures = true;
+force OETA_Civilians_enableStopGestures = true;
+force OETA_Civilians_successChance_armed = 0.5;
+force OETA_Civilians_successChance_unarmed = 0.8;
+
+// OETA - Cuecard
+force QGVAR(CueCards) = true;
+
 // 183rd - Common
 oeta_core_weaponSafety = true;
 
@@ -103,35 +116,18 @@ FORCE oeta_interactions_gear_access_enabled = 1;
 FORCE oeta_interactions_global_sounds = true;
 FORCE oeta_interactions_tapshoulder_ai = false;
 
-// 183rd - Main
-FORCE OETA_Main_ArsenalSaveLoad = true;
-FORCE OETA_Main_CHViewDistance = false;
-FORCE OETA_Main_Diary = true;
-FORCE OETA_Main_DynamicGroups = true;
-FORCE OETA_Main_DynamicSim = false;
-FORCE OETA_Main_Earplugs = false;
-FORCE OETA_Main_FatigueVanilla = true;
-FORCE OETA_Main_FlipVehicle = true;
-FORCE OETA_Main_FPSCounter = false;
-FORCE OETA_Main_LockCamVehicle = false;
-FORCE OETA_Main_Logging = true;
-FORCE OETA_Main_MapIcons = true;
-FORCE OETA_Main_MaydayAccess = 2;
-FORCE OETA_Main_PilotCheck = false;
-FORCE OETA_Main_QSMagRepack = false;
-FORCE OETA_Main_TFARTerrainInterference = 1;
-FORCE OETA_Main_TFARTransmitRange = 2.5;
-FORCE OETA_Main_VehicleCrewList = true;
-FORCE OETA_Main_ViewDistanceMaxDistance = 10000;
-FORCE OETA_Main_ViewDistanceMaxObjectDistance = 10000;
-FORCE OETA_Main_ViewDistanceNoGrass = false;
-FORCE OETA_Main_VoyagerCompass = false;
 
 // 183rd - No Actions
 oeta_noactions_LightOff = false;
 oeta_noactions_LightOn = false;
 oeta_noactions_Turnin = false;
 oeta_noactions_TurnOut = false;
+
+// OETA - Player
+force OETA_Main_MaydayAccess = 2;
+force OETA_Main_PilotCheck = false;
+force oeta_Main_TFARTerrainInterference = 1;
+force oeta_Main_TFARTransmitRange = 2.5;
 
 // 183rd - Pointing
 FORCE oeta_pointing_vehicleEnabled = true;
@@ -764,6 +760,34 @@ dzn_MG_Tripod_Enabled_CrouchGesture = true;
 dzn_MG_Tripod_Enabled_ProneGesture = true;
 dzn_MG_Tripod_Enabled_StandGesture = true;
 FORCE dzn_MG_Tripod_FallbackToUniversal = false;
+
+
+// Enhanced Movement Rework
+force emr_main_allowMidairClimbing = true;
+force emr_main_animSpeedCoef = 1;
+force emr_main_animSpeedStaminaCoef = 0.4;
+force emr_main_blacklistStr = "";
+force emr_main_climbingEnabled = true;
+force emr_main_climbOnDuty = 3.4;
+force emr_main_climbOverDuty = 3;
+force emr_main_dropDuty = 0.7;
+emr_main_dropViewElevation = -0.7;
+emr_main_enableWalkableSurface = true;
+force emr_main_enableWeightCheck = false;
+emr_main_hintType = 2;
+force emr_main_jumpDuty = 1;
+force emr_main_jumpingEnabled = true;
+force emr_main_jumpingLoadCoefficient = 1;
+force emr_main_jumpVelocity = 3.4;
+force emr_main_maxClimbHeight = 2.6;
+force emr_main_maxDropHeight = 6;
+force emr_main_maxWeightClimb1 = 100;
+force emr_main_maxWeightClimb2 = 85;
+force emr_main_maxWeightClimb3 = 60;
+force emr_main_maxWeightJump = 100;
+emr_main_preventHighVaulting = false;
+force emr_main_staminaCoefficient = 1;
+force emr_main_whitelistStr = "";
 
 // KAT - ADV Medical: Airway
 FORCE kat_airway_Accuvac_time = 8;

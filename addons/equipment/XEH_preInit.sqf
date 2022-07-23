@@ -2,7 +2,7 @@
 
 ADDON = false;
 
-if (isNil QEGVAR(common,OETA_enabled) || !(EGVAR(common,OETA_enabled))) exitWith {};
+if (isNil QEGVAR(core,OETA_enabled) || !(EGVAR(core,OETA_enabled))) exitWith {};
 
 
 ADDON = true;

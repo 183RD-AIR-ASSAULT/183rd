@@ -1,36 +1,25 @@
 #include "script_component.hpp"
 
-class CfgPatches {
+class cfgPatches {
     class ADDON {
+        author = AUTHOR;
         name = COMPONENT_NAME;
+        url = URL;
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "A3_Data_F_Tank_Loadorder",
-            // CBA
             "cba_main",
             "cba_xeh",
-            // ACE
-            "ace_main"
+            "cba_ui",
+            "cba_jr"
         };
-        author = ECSTRING(core,MMFWTeam);
-        url = CSTRING(URL);
         VERSION_CONFIG;
     };
 };
 
-class CfgMods {
-    class PREFIX {
-        dir = "@MMFW";
-        name = "Mission Maker Framework";
-        picture = QPATHTOF(resources\MMFWLogo);
-        hidePicture = "true";
-        hideName = "true";
-        actionName = "Website";
-        action = CSTRING(URL);
-        description = "Issue Tracker: https://github.com/PiZZAD0X/MMFW/issues";
-    };
-};
-
+#include "CfgWorlds.hpp"
+#include "CfgFactionClasses.hpp"
+#include "CfgMarkers.hpp"
 #include "CfgSettings.hpp"

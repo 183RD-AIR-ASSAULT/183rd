@@ -33,7 +33,7 @@ deleteVehicle _helper;
 _vehicle enableSimulationGlobal true;
 
 // Fix floating
-[QACEGVAR(common,fixFloating), _vehicle, _vehicle] call CBA_fnc_targetEvent;
+[QACEGVAR(core,fixFloating), _vehicle, _vehicle] call CBA_fnc_targetEvent;
 
 // Remove variable
 _vehicle setVariable [QGVAR(prepared), nil, true];

@@ -157,8 +157,10 @@ PREP(stop3dSoundLocal);
 PREP(testGroupsSlottingScreen);
 PREP(videoKeyDown);
 
-
-
+PREP(DynamicGroups);
+PREP(DynamicSim);
+PREP(FlipVehicle);
+PREP(LockCamVehicle);
 
 PREPATTR(AIOnlyOnLoad);
 PREPATTR(CheckboxStateReversed_AttrLoad);

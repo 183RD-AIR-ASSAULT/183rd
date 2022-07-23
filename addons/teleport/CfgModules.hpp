@@ -76,7 +76,7 @@ class CfgVehicles {
         scope = 2; // Editor visibility; 2 will show it in the menu, 1 will hide it.
         displayName = "Deploy in Parachute"; // Name displayed in the menu
         icon = "\z\oeta\addons\media\images\183rd.paa"; // Map icon. Delete this entry to use the default icon
-        category = "Teamwork";
+        category = QEGVAR(main,AI);
         function = QFUNC(deployInit);
         functionPriority = 1;
         isGlobal = 0;

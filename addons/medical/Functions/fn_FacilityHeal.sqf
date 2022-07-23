@@ -21,15 +21,15 @@ Author:
 params ["_player"];
 
 if !(local _player) exitWith {
-    systemChat "OETA_fnc_FacilityHeal: player unit needs to be local";
+    systemChat "183rd Medical Facility: player unit needs to be local";
 };
 
 if (_player getVariable ["ACE_isUnconscious", false]) then {
-    [format ["%1<br />is being revived at the LRG Medical Facility.", profileName], [1,-0.2], "#ed1b2e", 0.4] call OETA_fnc_dynamicText;
+    [format ["%1<br />is being revived at the 183rd Medical Facility.", profileName], [1,-0.2], "#ed1b2e", 0.4] call OETA_fnc_dynamicText;
 };
 
 [
-    "You are being treated at the LRG Medical Facility",
+    "You are being treated at the 183rd Medical Facility",
     [-1, 0.8],
     "#FFA500",
     0.5,
@@ -46,5 +46,5 @@ if (_player getVariable ["ACE_isUnconscious", false]) then {
             0.5,
             false
         ] call OETA_fnc_DynamicText;
-    }, [], 10
+    }, [], 26
 ] call CBA_fnc_waitAndExecute;

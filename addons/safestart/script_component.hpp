@@ -15,3 +15,8 @@
 #endif
 
 #include "\z\oeta\addons\main\script_macros.hpp"
+#define DIALOG_IDD 5413
+
+#define TIMER (_this getVariable ["timer",-1])
+
+#define MISSION_DISPLAY (findDisplay 46)

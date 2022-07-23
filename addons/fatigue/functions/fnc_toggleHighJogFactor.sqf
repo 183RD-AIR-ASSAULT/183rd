@@ -17,7 +17,7 @@
 
 params ["_enable"];
 
-if (!EGVAR(common,aceFatigue)) exitWith {};
+if (!EGVAR(core,aceFatigue)) exitWith {};
 
 if (_enable) then {
     [QGVAR(high_jog_coef), {

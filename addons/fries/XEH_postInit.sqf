@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-if (is3den || !(EGVAR(common,aceFastroping))) exitWith {};
+if (is3den || !(EGVAR(core,aceFastroping))) exitWith {};
 
 if(typeOf(_vehicle) == "ACE_friesAnchorBar") exitWith {};//For some reason the FRIES bar is defined as a helicopter. This gets rid of an annoying "not configured" error
 

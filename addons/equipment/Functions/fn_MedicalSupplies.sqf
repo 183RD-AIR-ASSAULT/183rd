@@ -42,6 +42,13 @@ call {
  if (_Type isEqualTo "Limited") exitwith {
   if (isClass (configFile >> "CfgPatches" >> "ace_main")) then {
    _ContainerItems = [
+    ["1Rnd_Smoke_Grenade_shell",2],
+    ["1Rnd_SmokeRed_Grenade_shell",2],
+    ["1Rnd_SmokeGreen_Grenade_shell",2],
+    ["1Rnd_SmokeYellow_Grenade_shell",2],
+    ["1Rnd_SmokePurple_Grenade_shell",2],
+    ["1Rnd_SmokeBlue_Grenade_shell",2],
+    ["1Rnd_SmokeOrange_Grenade_shell",2],
     ["OETA_medbags_FirstAid", 4],
     ["ACE_EarPlugs", 4],
     ["ACE_Flashlight_MX991", 1],
@@ -59,6 +66,13 @@ call {
  if (_Type isEqualTo "Standard") exitwith {
   if (isClass (configFile >> "CfgPatches" >> "ace_main")) then {
    _ContainerItems = [
+    ["1Rnd_Smoke_Grenade_shell",2],
+    ["1Rnd_SmokeRed_Grenade_shell",2],
+    ["1Rnd_SmokeGreen_Grenade_shell",2],
+    ["1Rnd_SmokeYellow_Grenade_shell",2],
+    ["1Rnd_SmokePurple_Grenade_shell",2],
+    ["1Rnd_SmokeBlue_Grenade_shell",2],
+    ["1Rnd_SmokeOrange_Grenade_shell",2],
     ["OETA_medbags_FirstAid", 4],
     ["ACE_EarPlugs", 4],
     ["ACE_Flashlight_MX991", 1],
@@ -77,41 +91,30 @@ call {
  if (_Type isEqualTo "MERT") exitwith {
   if (isClass (configFile >> "CfgPatches" >> "ace_main")) then {
    _ContainerItems = [
+    ["1Rnd_Smoke_Grenade_shell",2],
+    ["1Rnd_SmokeRed_Grenade_shell",2],
+    ["1Rnd_SmokeGreen_Grenade_shell",2],
+    ["1Rnd_SmokeYellow_Grenade_shell",2],
+    ["1Rnd_SmokePurple_Grenade_shell",2],
+    ["1Rnd_SmokeBlue_Grenade_shell",2],
+    ["1Rnd_SmokeOrange_Grenade_shell",2],
     ["ACE_EarPlugs", 4],
     ["ACE_Flashlight_MX991", 1],
     ["ToolKit", 1],
-    ["Chemlight_blue", 1],
-    ["Chemlight_green", 1],
-    ["Chemlight_red", 1],
-    ["kat_accuvac", 2],
+    ["Chemlight_blue", 10],
+    ["Chemlight_green", 10],
+    ["Chemlight_red", 10],
+    ["oeta_medbags_DrugKit", 10],
     ["kat_X_AED", 2],
-    ["kat_AED", 2],
-    ["kat_aatKit", 8],
+    ["oeta_medbags_FirstAid", 20],
     ["ACE_bodyBag", 8],
-    ["OETA_MedicArea", 1],
     ["OETA_medbags_MedicKit", 8],
-    ["ACE_tourniquet", 20],
+    ["Attachable_Helistretcher", 2],
     ["ACE_surgicalKit", 2],
     ["OETA_Stethoscope", 2],
-    ["ACE_splint", 20],
-    ["ACE_salineIV", 20],
-    ["ACE_plasmaIV", 20],
-    ["ACE_personalAidKit", 4],
-    ["ACE_morphine", 20],
-    ["kat_guedel", 20],
-    ["ACE_epinephrine", 20],
-    ["ACE_EarPlugs", 20],
-    ["kat_chestSeal", 20],
-    ["kat_bloodIV_B", 20],
-    ["kat_bloodIV_AB", 20],
-    ["kat_bloodIV_A", 20],
-    ["kat_bloodIV_O", 20],
-    ["ACE_fieldDressing", 20],
-    ["ACE_elasticBandage", 20],
-    ["ACE_packingBandage", 20],
-    ["ACE_quikclot", 20],
-    ["ACE_adenosine", 20],
-    ["ACE_personalAidKit",4]
+    ["kat_accuvac", 2],
+    ["ACE_personalAidKit",8],
+    ["oeta_medbags_Trauma",1]
    ];
   } else {
    _ContainerItems = [
@@ -126,3 +129,4 @@ if (_purge) then {
  clearItemCargoGlobal _container;
 };
  {_container addItemCargoGlobal _x} foreach _ContainerItems
+

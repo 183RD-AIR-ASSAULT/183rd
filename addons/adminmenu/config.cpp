@@ -4,7 +4,7 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         author = "Bear, Snippers";
-        url = "http://www.teamonetactical.com";
+        url = URL;
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -29,6 +29,20 @@ class GVAR(authorized_players) {
     };
     class ADMIN_Summers {
         uid = "76561198015722757";
+    };
+
+
+    class ADMIN_fox {
+        uid = "76561198283975252";
+    };
+    class ADMIN_forester {
+        uid = "76561198146946410";
+    };
+    class ADMIN_iroh {
+        uid = "76561198994904932";
+    };
+    class ADMIN_resja {
+        uid = "76561198058838936";
     };
 };
 

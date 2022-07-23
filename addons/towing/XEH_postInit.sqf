@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-if (!isServer || {!EGVAR(common,aceTowing)}) exitWith {};
+if (!isServer || {!EGVAR(core,aceTowing)}) exitWith {};
 
 if (GVAR(addToHeavyDutyVehicles)) then { {
         [_x, "initPost", {
