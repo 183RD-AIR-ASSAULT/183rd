@@ -2,8 +2,8 @@
 <Project name="OETA">
     <Package name="Safestart">
         <Key ID="STR_OETA_Safestart_DisplayName">
-            <English>183rd Air Assault Unit [183rd] - Safestart</English>
-            <Polish>183rd Air Assault Unit [183rd] - Bezpieczny start</Polish>
+            <English>183rd - Safestart</English>
+            <Polish>183rd - Bezpieczny start</Polish>
         </Key>
         <Key ID="STR_OETA_Safestart_StartLocked">
             <English>Lock weapon</English>

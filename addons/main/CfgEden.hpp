@@ -1,8 +1,8 @@
-class Cfg3den {
+class Cfg3DEN {
     class Object {
         class AttributeCategories {
             class PREFIX {
-                displayName = "183rd Air Assault Unit [183rd]";
+                displayName = CSTRING(Attributes);
                 collapsed = 1;
                 class Attributes {};
             };

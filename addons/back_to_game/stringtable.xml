@@ -2,8 +2,8 @@
 <Project name="OETA">
     <Package name="Back_To_Game">
         <Key ID="STR_OETA_Back_To_Game_DisplayName">
-            <English>183rd Air Assault Unit [183rd] - Back To Game</English>
-            <Polish>183rd Air Assault Unit [183rd] - Back To Game</Polish>
+            <English>183rd - Back To Game</English>
+            <Polish>183rd - Back To Game</Polish>
         </Key>
         <Key ID="STR_OETA_Back_To_Game_EnableAddon">
             <English>Enable Back To Game</English>

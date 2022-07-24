@@ -2,8 +2,8 @@
 <Project name="OETA">
     <Package name="Pointing">
         <Key ID="STR_OETA_Pointing_DisplayName">
-            <English>183rd Air Assault Unit [183rd] - Pointing</English>
-            <Polish>183rd Air Assault Unit [183rd] - Wskazywanie</Polish>
+            <English>183rd - Pointing</English>
+            <Polish>183rd - Wskazywanie</Polish>
         </Key>
         <Key ID="STR_OETA_Pointing_Vehicle_Enabled">
             <English>Enable pointing in vehicles</English>

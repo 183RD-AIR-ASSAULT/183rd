@@ -2,8 +2,8 @@
 <Project name="OETA">
     <Package name="AI_Disembark">
         <Key ID="STR_OETA_AI_Disembark_DisplayName">
-            <English>183rd Air Assault Unit [183rd] - AI Disembark</English>
-            <Polish>183rd Air Assault Unit [183rd] - AI Wysiadanie</Polish>
+            <English>183rd - AI Disembark</English>
+            <Polish>183rd - AI Wysiadanie</Polish>
         </Key>
         <Key ID="STR_OETA_AI_Disembark_Enabled">
             <English>Force reload on disembarking AI</English>

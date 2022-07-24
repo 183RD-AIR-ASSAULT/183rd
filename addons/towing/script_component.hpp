@@ -1,5 +1,4 @@
 #define COMPONENT towing
-#define COMPONENT_BEAUTIFIED Towing
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

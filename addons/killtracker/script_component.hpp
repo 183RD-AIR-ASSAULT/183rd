@@ -1,5 +1,4 @@
 #define COMPONENT killtracker
-#define COMPONENT_BEAUTIFIED Kill Tracker
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

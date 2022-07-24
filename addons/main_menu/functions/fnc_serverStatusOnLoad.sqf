@@ -17,7 +17,7 @@ params ["_ctrlGroup"];
 
 TRACE_1("Server status panel init",_ctrlGroup);
 
-if (getClientState == "NONE" && !is3den) exitWith {
+if (getClientState == "NONE" && !is3DEN) exitWith {
     LOG("Not joining, hidding status panel");
 
     _ctrlGroup ctrlShow false;

@@ -1,5 +1,4 @@
 #define COMPONENT back_to_game
-#define COMPONENT_BEAUTIFIED Back to Game
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

@@ -16,12 +16,12 @@ class CfgPatches {
 
 class Extended_PreInit_EventHandlers {
     class OETAFundamentals_Channels_Event {
-        init = "call compile preprocessFileLineNumbers 'z\oeta\addons\Channels\XEH_preInit.sqf'";
+        init = "call compile preprocessFileLineNumbers 'z\oeta\addons\channels\XEH_preInit.sqf'";
     };
 };
 
 class Extended_PostInit_EventHandlers {
     class OETA_AI_Event {
-        init = "call compile preprocessFileLineNumbers 'z\oeta\addons\Channels\XEH_postInit.sqf'";
+        init = "call compile preprocessFileLineNumbers 'z\oeta\addons\channels\XEH_postInit.sqf'";
     };
 };

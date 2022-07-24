@@ -1,7 +1,7 @@
 class CfgMarkers {
     class iconcasap {
         name = "CAS Action Point";
-        icon = "z\oeta\addons\Media\images\map\aap.paa";
+        icon = "z\oeta\addons\common\images\map\aap.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -9,7 +9,7 @@ class CfgMarkers {
     };
     class iconcasbp {
         name = "CAS Battle Point";
-        icon = "z\oeta\addons\Media\images\map\abp.paa";
+        icon = "z\oeta\addons\common\images\map\abp.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -17,7 +17,7 @@ class CfgMarkers {
     };
     class iconcascp {
         name = "CAS Control Point";
-        icon = "z\oeta\addons\Media\images\map\acp.paa";
+        icon = "z\oeta\addons\common\images\map\acp.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -25,7 +25,7 @@ class CfgMarkers {
     };
     class iconcasop {
         name = "CAS Orbit Point";
-        icon = "z\oeta\addons\Media\images\map\orbit.paa";
+        icon = "z\oeta\addons\common\images\map\orbit.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -33,7 +33,7 @@ class CfgMarkers {
     };
     class iconcasip {
         name = "CAS Initiation Point";
-        icon = "z\oeta\addons\Media\images\map\aip.paa";
+        icon = "z\oeta\addons\common\images\map\aip.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -41,7 +41,7 @@ class CfgMarkers {
     };
     class iconcascck {
         name = "CAS Communications Point";
-        icon = "z\oeta\addons\Media\images\map\ackp.paa";
+        icon = "z\oeta\addons\common\images\map\ackp.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -49,7 +49,7 @@ class CfgMarkers {
     };
     class iconcasep {
         name = "CAS Egress Point";
-        icon = "z\oeta\addons\Media\images\map\aep.paa";
+        icon = "z\oeta\addons\common\images\map\aep.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -57,7 +57,7 @@ class CfgMarkers {
     };
     class iconcasdz {
         name = "Drop Zone";
-        icon = "z\oeta\addons\Media\images\map\DZ.paa";
+        icon = "z\oeta\addons\common\images\map\DZ.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -65,7 +65,7 @@ class CfgMarkers {
     };
     class iconcasilz {
         name = "Landing Zone Insertion";
-        icon = "z\oeta\addons\Media\images\map\ILZ.paa";
+        icon = "z\oeta\addons\common\images\map\ILZ.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -73,7 +73,7 @@ class CfgMarkers {
     };
     class iconcaselz {
         name = "Landing Zone Extraction";
-        icon = "z\oeta\addons\Media\images\map\ELZ.paa";
+        icon = "z\oeta\addons\common\images\map\ELZ.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -81,7 +81,7 @@ class CfgMarkers {
     };
     class iconcasflz {
         name = "False Landing Zone";
-        icon = "z\oeta\addons\Media\images\map\FLZ.paa";
+        icon = "z\oeta\addons\common\images\map\FLZ.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -89,7 +89,7 @@ class CfgMarkers {
     };
     class iconassultd {
         name = "Assult";
-        icon = "z\oeta\addons\Media\images\map\assult.paa";
+        icon = "z\oeta\addons\common\images\map\assult.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -97,7 +97,7 @@ class CfgMarkers {
     };
     class iconsupportd {
         name = "Support";
-        icon = "z\oeta\addons\Media\images\map\support.paa";
+        icon = "z\oeta\addons\common\images\map\support.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -105,7 +105,7 @@ class CfgMarkers {
     };
     class iconoetax {
         name = "X";
-        icon = "z\oeta\addons\Media\images\map\x.paa";
+        icon = "z\oeta\addons\common\images\map\x.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -113,7 +113,7 @@ class CfgMarkers {
     };
     class iconoetanrp {
         name = "Dive Referance Point";
-        icon = "z\oeta\addons\Media\images\map\nrp.paa";
+        icon = "z\oeta\addons\common\images\map\nrp.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -121,7 +121,7 @@ class CfgMarkers {
     };
     class iconoetansp {
         name = "Dive Special Referance Point";
-        icon = "z\oeta\addons\Media\images\map\nsp.paa";
+        icon = "z\oeta\addons\common\images\map\nsp.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -129,7 +129,7 @@ class CfgMarkers {
     };
     class iconoetannp {
         name = "Dive Navigation Point";
-        icon = "z\oeta\addons\Media\images\map\nnp.paa";
+        icon = "z\oeta\addons\common\images\map\nnp.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -137,7 +137,7 @@ class CfgMarkers {
     };
     class iconoetadive {
         name = "Dive Point";
-        icon = "z\oeta\addons\Media\images\map\dive.paa";
+        icon = "z\oeta\addons\common\images\map\dive.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -145,7 +145,7 @@ class CfgMarkers {
     };
     class iconoetasurface {
         name = "Surface Point";
-        icon = "z\oeta\addons\Media\images\map\surface.paa";
+        icon = "z\oeta\addons\common\images\map\surface.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -153,7 +153,7 @@ class CfgMarkers {
     };
     class iconoetaland {
         name = "Landing Point";
-        icon = "z\oeta\addons\Media\images\map\land.paa";
+        icon = "z\oeta\addons\common\images\map\land.paa";
         size = 24;
         shadow = True;
         scope = 2;
@@ -161,7 +161,7 @@ class CfgMarkers {
     };
     class iconoetaacrew {
         name = "Downed Aircrew";
-        icon = "z\oeta\addons\Media\images\map\down.paa";
+        icon = "z\oeta\addons\common\images\map\down.paa";
         size = 24;
         shadow = True;
         scope = 2;

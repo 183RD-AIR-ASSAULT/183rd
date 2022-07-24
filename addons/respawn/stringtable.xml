@@ -2,8 +2,8 @@
 <Project name="OETA">
     <Package name="Respawn">
         <Key ID="STR_OETA_Respawn_DisplayName">
-            <English>183rd Air Assault Unit [183rd] - Respawn</English>
-            <Polish>183rd Air Assault Unit [183rd] - Odrodzenie</Polish>
+            <English>183rd - Respawn</English>
+            <Polish>183rd - Odrodzenie</Polish>
         </Key>
         <Key ID="STR_OETA_Respawn_Enabled">
             <English>Enable respawn</English>

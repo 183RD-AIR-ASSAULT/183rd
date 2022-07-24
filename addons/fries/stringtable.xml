@@ -2,8 +2,8 @@
 <Project name="OETA">
     <Package name="Fries">
         <Key ID="STR_OETA_Fries_DisplayName">
-            <English>183rd Air Assault Unit [183rd] - FRIES</English>
-            <Polish>183rd Air Assault Unit [183rd] - FRIES</Polish>
+            <English>183rd - FRIES</English>
+            <Polish>183rd - FRIES</Polish>
         </Key>
         <Key ID="STR_OETA_Fries_AutoAdd">
             <English>Auto add FRIES</English>

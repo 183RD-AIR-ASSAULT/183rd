@@ -1,2 +1,0 @@
-PREP(ConfigPlayer);
-PREP(setupPlayer);

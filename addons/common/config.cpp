@@ -9,19 +9,10 @@ class CfgPatches {
         requiredAddons[] = {
             "oeta_main"
         };
-        author = QAUTHOR;
+        author = "183rd";
         VERSION_CONFIG;
     };
 };
 
-#include "Cfg3DEN.hpp"
 #include "CfgEventHandlers.hpp"
-#include "CfgVehicles.hpp"
-#include "display3DEN.hpp"
 #include "ui\RscModal.hpp"
-
-class OETA_autotest {
-    class GVAR(groupNamesSlottingScreen) {
-        code = QUOTE([] call FUNC(testGroupsSlottingScreen));
-    };
-};

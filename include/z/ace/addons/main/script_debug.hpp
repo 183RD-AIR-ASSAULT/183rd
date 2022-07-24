@@ -16,23 +16,23 @@ Fast Recompiling via function
 
 
 /**
-SOETAK TRACING
+SSIXSFGK TRACING
 **/
-//#define ENABLE_CALLSOETAK
+//#define ENABLE_CALLSSIXSFGK
 //#define ENABLE_PERFORMANCE_COUNTERS
 //#define DEBUG_EVENTS
 
-#ifdef ENABLE_CALLSOETAK
-    #define CALLSOETAK(function) {if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSOETAK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_SOETAK_TRACE set [ACE_SOETAK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, 'ANON', _this]]; ACE_SOETAK_DEPTH = ACE_SOETAK_DEPTH + 1; ACE_CURRENT_FUNCTION = 'ANON'; private _ret = _this call ##function; ACE_SOETAK_DEPTH = ACE_SOETAK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
-    #define CALLSOETAK_NAMED(function, functionName) {if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSOETAK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_SOETAK_TRACE set [ACE_SOETAK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, functionName, _this]]; ACE_SOETAK_DEPTH = ACE_SOETAK_DEPTH + 1; ACE_CURRENT_FUNCTION = functionName; private _ret = _this call ##function; ACE_SOETAK_DEPTH = ACE_SOETAK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
-    #define DUMPSOETAK ([__FILE__, __LINE__] call ACE_DUMPSOETAK_FNC)
+#ifdef ENABLE_CALLSSIXSFGK
+    #define CALLSSIXSFGK(function) {if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSSIXSFGK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_SSIXSFGK_TRACE set [ACE_SSIXSFGK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, 'ANON', _this]]; ACE_SSIXSFGK_DEPTH = ACE_SSIXSFGK_DEPTH + 1; ACE_CURRENT_FUNCTION = 'ANON'; private _ret = _this call ##function; ACE_SSIXSFGK_DEPTH = ACE_SSIXSFGK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
+    #define CALLSSIXSFGK_NAMED(function, functionName) {if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSSIXSFGK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_SSIXSFGK_TRACE set [ACE_SSIXSFGK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, functionName, _this]]; ACE_SSIXSFGK_DEPTH = ACE_SSIXSFGK_DEPTH + 1; ACE_CURRENT_FUNCTION = functionName; private _ret = _this call ##function; ACE_SSIXSFGK_DEPTH = ACE_SSIXSFGK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
+    #define DUMPSSIXSFGK ([__FILE__, __LINE__] call ACE_DUMPSSIXSFGK_FNC)
 
-    #define FUNC(var1) {if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSOETAK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_SOETAK_TRACE set [ACE_SOETAK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, 'TRIPLES(ADDON,fnc,var1)', _this]]; ACE_SOETAK_DEPTH = ACE_SOETAK_DEPTH + 1; ACE_CURRENT_FUNCTION = 'TRIPLES(ADDON,fnc,var1)'; private _ret = _this call TRIPLES(ADDON,fnc,var1); ACE_SOETAK_DEPTH = ACE_SOETAK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
-    #define EFUNC(var1,var2) {if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSOETAK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_SOETAK_TRACE set [ACE_SOETAK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, 'TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)', _this]]; ACE_SOETAK_DEPTH = ACE_SOETAK_DEPTH + 1; ACE_CURRENT_FUNCTION = 'TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)'; private _ret = _this call TRIPLES(DOUBLES(PREFIX,var1),fnc,var2); ACE_SOETAK_DEPTH = ACE_SOETAK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
+    #define FUNC(var1) {if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSSIXSFGK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_SSIXSFGK_TRACE set [ACE_SSIXSFGK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, 'TRIPLES(ADDON,fnc,var1)', _this]]; ACE_SSIXSFGK_DEPTH = ACE_SSIXSFGK_DEPTH + 1; ACE_CURRENT_FUNCTION = 'TRIPLES(ADDON,fnc,var1)'; private _ret = _this call TRIPLES(ADDON,fnc,var1); ACE_SSIXSFGK_DEPTH = ACE_SSIXSFGK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
+    #define EFUNC(var1,var2) {if(ACE_IS_ERRORED) then { ['AUTO','AUTO'] call ACE_DUMPSSIXSFGK_FNC; ACE_IS_ERRORED = false; }; ACE_IS_ERRORED = true; ACE_SSIXSFGK_TRACE set [ACE_SSIXSFGK_DEPTH, [diag_tickTime, __FILE__, __LINE__, ACE_CURRENT_FUNCTION, 'TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)', _this]]; ACE_SSIXSFGK_DEPTH = ACE_SSIXSFGK_DEPTH + 1; ACE_CURRENT_FUNCTION = 'TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)'; private _ret = _this call TRIPLES(DOUBLES(PREFIX,var1),fnc,var2); ACE_SSIXSFGK_DEPTH = ACE_SSIXSFGK_DEPTH - 1; ACE_IS_ERRORED = false; _ret;}
 #else
-    #define CALLSOETAK(function) function
-    #define CALLSOETAK_NAMED(function, functionName) function
-    #define DUMPSOETAK
+    #define CALLSSIXSFGK(function) function
+    #define CALLSSIXSFGK_NAMED(function, functionName) function
+    #define DUMPSSIXSFGK
 #endif
 
 

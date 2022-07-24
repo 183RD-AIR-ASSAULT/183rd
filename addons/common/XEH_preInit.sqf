@@ -1,9 +1,6 @@
 #include "script_component.hpp"
 ADDON = false;
 
-oeta_unit = objNull;
-uiNamespace setVariable ["oeta_unit", objNull];
-
 PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
@@ -30,7 +27,8 @@ GVAR(runAfterSettingsInit) = [];
 
 ["CBA_settingsInitialized", {
     GVAR(settingsInitialized) = true;
- {
+
+    {
         _x params ["_function", "_args"];
         _args call _function;
     } forEach GVAR(runAfterSettingsInit);
@@ -39,23 +37,3 @@ GVAR(runAfterSettingsInit) = [];
 }] call CBA_fnc_addEventHandler;
 
 ADDON = true;
-
-#include "initSettings.sqf"
-
-if is3den call {
-    call FUNC(edenInit);
-};
-
-isOETA = ((getMissionConfigValue ["oeta_version",[0,0,0]] select 0) > 0);
-
-// Rig up server event handler for variable sync requests.
-if (isServer) then {
-    [QGVAR(requestServerSync), {
-        // Delay a frame.
-        [{
-            params ["_clientOwnerId"];
-            [QGVAR(serverVariableSyncResponse), [], _clientOwnerId] call CBA_fnc_ownerEvent;
-        }, _this] call CBA_fnc_execNextFrame;
-    }] call CBA_fnc_addEventHandler;
-};
-

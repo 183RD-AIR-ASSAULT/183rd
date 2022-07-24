@@ -1,5 +1,4 @@
 #define COMPONENT respawn
-#define COMPONENT_BEAUTIFIED Respawn
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             "oeta_common"
         };
-        author = QAUTHOR;
+        author = "183rd";
         authors[] = {"3Mydlo3"};
         VERSION_CONFIG;
     };

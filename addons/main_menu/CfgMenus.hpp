@@ -15,3 +15,4 @@ class EMM_mainMenu_CfgMenus {
         };
     };
 };
+

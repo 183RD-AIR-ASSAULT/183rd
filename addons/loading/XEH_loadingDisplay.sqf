@@ -35,7 +35,7 @@ switch (systemTime select 1) do {
     case 12: {
         _picture ctrlSetText QPATHTOF(ui\183rd.paa);
     };
-    case ([] call EFUNC(common,easterDate) select 1): {
+    case ([] call EFUNC(core,easterDate) select 1): {
         _picture ctrlSetText QPATHTOF(ui\183rd.paa);
     };
     default {

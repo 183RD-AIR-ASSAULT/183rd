@@ -1,7 +1,6 @@
 #include "..\script_component.hpp"
 
 class CfgPatches {
-
     class OETA_Backpacks_RadioBag {
         name = COMPONENT_NAME;
         addonRootClass = "oeta_backpacks";
@@ -27,9 +26,7 @@ class CfgPatches {
             "O. Jemineh"
         };
         url = URL;
-
     };
-
 };
 
 #include "CfgVehicles.hpp"

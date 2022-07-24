@@ -2,11 +2,13 @@
 
 if (!isServer || {!EGVAR(common,aceTowing)}) exitWith {};
 
-if (GVAR(addToHeavyDutyVehicles)) then { {
+if (GVAR(addToHeavyDutyVehicles)) then {
+    {
         [_x, "initPost", {
             params ["_vehicle"];
             _vehicle addItemCargoGlobal ["ACE_rope12", 2];
             _vehicle addItemCargoGlobal ["ACE_rope27", 1];
+            _vehicle addItemCargoGlobal ["oeta_medbags_FirstAid", 4];
         }, true, [], true] call CBA_fnc_addClassEventHandler;
     } forEach [
         "Tank_F",
@@ -21,5 +23,6 @@ if (GVAR(addToCars)) then {
         params ["_vehicle"];
         _vehicle addItemCargoGlobal ["ACE_rope6", 2];
         _vehicle addItemCargoGlobal ["ACE_rope12", 1];
+        _vehicle addItemCargoGlobal ["oeta_medbags_FirstAid", 4];
     }, true, ["MRAP_01_base_F", "MRAP_02_base_F"], true] call CBA_fnc_addClassEventHandler;
 };
