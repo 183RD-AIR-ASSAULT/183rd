@@ -2,7 +2,7 @@
 #define _RESINCL_HPP
 
 /*******************/
-/*  OETAtical menu  */
+/*  sixsfgtical menu  */
 /*******************/
 
 // Menu commands
@@ -15,7 +15,8 @@
 #define CMD_EXECUTE       -5
 
 #ifdef _CONFIG
-enum {
+enum
+{
 // note: this CMD should be if possible organized as is menu
 // (items from the same menu together)
 // this makes searching much easier
@@ -211,7 +212,7 @@ CMD_STOP_AUTO,
 CMD_WATCH_CTX,
 CMD_GETIN_AUTO,
 CMD_REARM_AUTO,
-CMD_ATOETAK_AUTO,
+CMD_ATSIXSFGK_AUTO,
 CMD_FIRE_AT_POSITION_AUTO,
 CMD_SELECT_AUTO,
 CMD_SELECT_AUTO_ADD,
@@ -253,14 +254,16 @@ CMD_FIRE_AT_POSITION_AMMO // same as CMD_FIRE_AT_POSITION_AUTO but with custom m
 };
 
 /// In-game UI hiding animation type
-enum HideType {
+enum HideType
+{
   HTNone, // no animation
   HTFade, // fade in / fade out
   HTMoveLeft, // move from / to the left
   HTMoveRight // move from / to the right
 };
 
-enum {
+enum
+{
   SPTPlain,
   SPTPercents
 };
@@ -1474,7 +1477,7 @@ enum {
 #define IDC_DIFF_AUTO_REPORT          1539
 #define IDC_DIFF_MULTIPLE_SAVES       1540
 // #define IDC_DIFF_SQUAD_RADAR          1541
-#define IDC_DIFF_OETATICAL_PING        1542
+#define IDC_DIFF_SIXSFGTICAL_PING        1542
 #define IDC_DIFF_EXTENDED_MAP_ENEMY   1543
 #define IDC_DIFF_EXTENDED_MAP_MINES   1544
 #define IDC_DIFF_MINIMAP_ALLOWED	  1545
@@ -2478,10 +2481,10 @@ enum {
 #define IDC_PHYSX_DEBUG_JOINT_LOCAL_AXES        116
 #define IDC_PHYSX_DEBUG_JOINT_WORLD_AXES        117
 #define IDC_PHYSX_DEBUG_JOINT_LIMITS            118
-#define IDC_PHYSX_DEBUG_CONOETAT_POINT           119
-#define IDC_PHYSX_DEBUG_CONOETAT_NORMAL          120
-#define IDC_PHYSX_DEBUG_CONOETAT_ERROR           121
-#define IDC_PHYSX_DEBUG_CONOETAT_FORCE           122
+#define IDC_PHYSX_DEBUG_CONSIXSFGT_POINT           119
+#define IDC_PHYSX_DEBUG_CONSIXSFGT_NORMAL          120
+#define IDC_PHYSX_DEBUG_CONSIXSFGT_ERROR           121
+#define IDC_PHYSX_DEBUG_CONSIXSFGT_FORCE           122
 #define IDC_PHYSX_DEBUG_ACTOR_AXES              123
 #define IDC_PHYSX_DEBUG_COLLISION_AABBS         124
 #define IDC_PHYSX_DEBUG_COLLISION_SHAPES        125
@@ -2505,10 +2508,10 @@ enum {
 #define IDC_PHYSX3_DEBUG_BODY_LIN_VELOCITY                    153
 #define IDC_PHYSX3_DEBUG_BODY_ANG_VELOCITY                    154
 #define IDC_PHYSX3_DEBUG_BODY_JOINT_GROUPS                    155
-#define IDC_PHYSX3_DEBUG_CONOETAT_POINT                        156
-#define IDC_PHYSX3_DEBUG_CONOETAT_NORMAL                       157
-#define IDC_PHYSX3_DEBUG_CONOETAT_ERROR                        158
-#define IDC_PHYSX3_DEBUG_CONOETAT_FORCE                        159
+#define IDC_PHYSX3_DEBUG_CONSIXSFGT_POINT                        156
+#define IDC_PHYSX3_DEBUG_CONSIXSFGT_NORMAL                       157
+#define IDC_PHYSX3_DEBUG_CONSIXSFGT_ERROR                        158
+#define IDC_PHYSX3_DEBUG_CONSIXSFGT_FORCE                        159
 #define IDC_PHYSX3_DEBUG_ACTOR_AXES                           160
 #define IDC_PHYSX3_DEBUG_COLLISION_AABBS                      161
 #define IDC_PHYSX3_DEBUG_COLLISION_SHAPES                     162
@@ -2721,9 +2724,9 @@ enum {
   #define IDC_IGUI_TI_AUTO_CONTRAST     140
 
   //LASE
-  #define IDC_IGOETA_RANGE                141
-  #define IDC_IGOETA_BG                   142
-  #define IDC_IGOETA_RANGE_NUM            143
+  #define IDC_IGSIXSFG_RANGE                141
+  #define IDC_IGSIXSFG_BG                   142
+  #define IDC_IGSIXSFG_RANGE_NUM            143
 
   //AVRS
   #define IDC_IGUI_NICK                 144
@@ -2799,8 +2802,8 @@ enum {
 #define IDC_IGUI_WEAPON_CAM_TRACK_AREA        	194
 #define IDC_IGUI_WEAPON_CAM_TRACK_TARGET      	195
 
-#define IDC_IGUI_WEAPON_JAVELIN_ATOETAK_FROM_TOP 196
-#define IDC_IGUI_WEAPON_JAVELIN_ATOETAK_DIRECT  	197
+#define IDC_IGUI_WEAPON_JAVELIN_ATSIXSFGK_FROM_TOP 196
+#define IDC_IGUI_WEAPON_JAVELIN_ATSIXSFGK_DIRECT  	197
 
 #define IDC_IGUI_WEAPON_LASED_DISTANCE          198
 #define IDC_IGUI_WEAPON_LASED_SPEED             199

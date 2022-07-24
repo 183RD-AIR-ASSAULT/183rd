@@ -1,49 +1,23 @@
-// 183rd - Role
-FORCE Roles_comm = "";
-FORCE Roles_eng = "";
-FORCE Roles_medic = "";
-FORCE Roles_srcomm = "";
-FORCE Roles_sreng = "";
-FORCE Roles_srmedic = "";
 
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 183rd - AdminMenu
-oeta_adminmenu_endLogToRPT = false;
-FORCE oeta_adminmenu_printToChat = 1;
-
-// 183rd - AI
-FORCE oeta_AI_AimingAccuracy = 0.1;
-FORCE oeta_AI_AimingShake = 0.45;
-FORCE oeta_AI_AimingSpeed = 0.3;
-FORCE oeta_AI_Commanding = 1;
-FORCE oeta_AI_Courage = 1;
-FORCE oeta_AI_General = 1;
-FORCE oeta_AI_InitialAI = true;
-FORCE oeta_AI_ReloadSpeed = 0.5;
-FORCE oeta_AI_Reporting = false;
-FORCE oeta_AI_SpotDistance = 0.4;
-FORCE oeta_AI_SpotTime = 0.2;
-
-// 183rd - AI Disembark
+// OETA - ai_disembark
 FORCE oeta_ai_disembark_enabled = true;
 FORCE oeta_ai_disembark_stayInImmobileChance = 0.2927;
 
-// 183rd - Back to Game
-FORCE oeta_back_to_game_enableAddon = true;
+// OETA - back_to_game
+FORCE oeta_back_to_game_enableAddon = false;
 FORCE oeta_back_to_game_removeBody = true;
-FORCE oeta_back_to_game_teleportToLeader = true;
-FORCE oeta_back_to_game_teleportToVehicle = true;
+FORCE oeta_back_to_game_teleportToLeader = false;
+FORCE oeta_back_to_game_teleportToVehicle = false;
 
-// 183rd - Backpack on Chest
-FORCE oeta_boc_disabled = false;
-FORCE oeta_boc_FORCEWalk = false;
-FORCE oeta_boc_removeKilledPlayerChestpack = true;
+// OETA - Backpack on Chest
+force oeta_boc_disabled = false;
+force oeta_boc_forceWalk = false;
+force oeta_boc_removeKilledPlayerChestpack = true;
 
-// 183rd - Bodybag
-FORCE oeta_bodybag_destroyChance = 20;
+// OETA - Bodybag
+force oeta_bodybag_destroyChance = 20;
 
-// 183rd - Channels
+// OETA - Channels
 FORCE oeta_Channels_CommandDuration = 0;
 FORCE oeta_Channels_CommandText = true;
 FORCE oeta_Channels_CommandVoice = false;
@@ -63,89 +37,40 @@ FORCE oeta_Channels_VehicleDuration = 0;
 FORCE oeta_Channels_VehicleText = true;
 FORCE oeta_Channels_VehicleVoice = false;
 
-// 183rd - Chat
-FORCE oeta_chat_healUsage = 3;
-FORCE oeta_chat_rpUsage = 3;
-FORCE oeta_chat_specUsage = 3;
-FORCE oeta_chat_tpUsage = 3;
-FORCE oeta_chat_whisperUsage = 3;
+// OETA - Cuecard
+force QGVAR(CueCards) = true;
 
-// 183rd - Common
-oeta_common_weaponSafety = true;
+// OETA - fatigue
+force oeta_fatigue_highJogCoef = 0.9;
+force oeta_fatigue_highJogCoefEnabled = false;
 
-// 183rd - Fatigue
-FORCE oeta_fatigue_highJogCoef = 0.9;
-FORCE oeta_fatigue_highJogCoefEnabled = false;
+// OETA - friendly_fire
+force oeta_friendly_fire_loggingEnabled = false;
 
-// 183rd - Friendly Fire
-FORCE oeta_friendly_fire_loggingEnabled = true;
+// OETA - fries
+force oeta_fries_autoAdd = true;
 
-// 183rd - FRIES
-FORCE oeta_fries_autoAdd = true;
+// OETA - grass
+force oeta_grass_enabled = false;
 
-// 183rd - Grass
-FORCE oeta_grass_enabled = true;
+// OETA - insurgents
+force oeta_insurgents_enabled_CUP = true;
+force oeta_insurgents_enabled_Vanilla = true;
 
-// 183rd - Insurgents
-FORCE oeta_insurgents_enabled_CUP = false;
-FORCE oeta_insurgents_enabled_Vanilla = true;
+// OETA - No Actions
 
-// 183rd - Interaction
-FORCE OETA_CreatorActions_Channels = true;
-FORCE OETA_CreatorActions_EndMission = true;
-FORCE OETA_CreatorActions_Master = true;
+// OETA - pointing
+force oeta_pointing_vehicleEnabled = true;
 
-// 183rd - Interactions
-FORCE oeta_interactions_backpack_access_enemy = 0;
-FORCE oeta_interactions_backpack_access_faction = 2;
-FORCE oeta_interactions_backpack_access_friendly = 1;
-FORCE oeta_interactions_gear_access_enabled = 1;
-FORCE oeta_interactions_global_sounds = true;
-FORCE oeta_interactions_tapshoulder_ai = false;
+// OETA - RATEL Marker
+oeta_ratelmarker_QuickReferenceMarkerMode = 2;
 
-// 183rd - Main
-FORCE OETA_Main_ArsenalSaveLoad = true;
-FORCE OETA_Main_CHViewDistance = false;
-FORCE OETA_Main_CueCards = true;
-FORCE OETA_Main_Diary = true;
-FORCE OETA_Main_DynamicGroups = true;
-FORCE OETA_Main_DynamicSim = false;
-FORCE OETA_Main_Earplugs = false;
-FORCE OETA_Main_FatigueVanilla = true;
-FORCE OETA_Main_FlipVehicle = true;
-FORCE OETA_Main_FPSCounter = false;
-FORCE OETA_Main_LockCamVehicle = false;
-FORCE OETA_Main_Logging = true;
-FORCE OETA_Main_MapIcons = true;
-FORCE OETA_Main_MaydayAccess = 2;
-FORCE OETA_Main_PilotCheck = false;
-FORCE OETA_Main_QSMagRepack = false;
-FORCE OETA_Main_TFARTerrainInterference = 1;
-FORCE OETA_Main_TFARTransmitRange = 2.5;
-FORCE OETA_Main_VehicleCrewList = true;
-FORCE OETA_Main_ViewDistanceMaxDistance = 10000;
-FORCE OETA_Main_ViewDistanceMaxObjectDistance = 10000;
-FORCE OETA_Main_ViewDistanceNoGrass = false;
-FORCE OETA_Main_VoyagerCompass = false;
+// OETA - remotesensors
+force oeta_remotesensors_enabled = true;
 
-// 183rd - No Actions
-oeta_noactions_LightOff = false;
-oeta_noactions_LightOn = false;
-oeta_noactions_Turnin = false;
-oeta_noactions_TurnOut = false;
-
-// 183rd - Pointing
-FORCE oeta_pointing_vehicleEnabled = true;
-
-// 183rd - RATEL Marker
-FORCE oeta_ratelmarker_QuickReferenceMarkerMode = 2;
-
-// 183rd - Remote Sensors
-FORCE oeta_remotesensors_enabled = true;
-
-// 183rd - Respawn
-FORCE oeta_respawn_enabled = true;
-FORCE oeta_respawn_time = 10;
+// OETA - respawn
+force oeta_respawn_enabled = true;
+force oeta_respawn_time = 6;
 
 // 183rd - safestart
 oeta_safestart_startLocked = true;
@@ -176,17 +101,17 @@ FORCE oeta_suppress_shooterMinDistance = 0;
 // 183rd - Tagging
 FORCE oeta_tagging_enabled = true;
 
-// 183rd - Towing
-FORCE oeta_towing_addToCars = true;
-FORCE oeta_towing_addToHeavyDutyVehicles = true;
+// OETA - TFAR Setter
+oeta_tfar_setter_Layout = false;
+oeta_tfar_setter_Shortcut = false;
+oeta_tfar_setter_ShowLR = true;
+oeta_tfar_setter_ShowSR = true;
+oeta_tfar_setter_ShowVLR = true;
 
-// 183rd - Zeus
-FORCE oeta_Zeus_Module_AISpawnsEast = true;
-FORCE oeta_Zeus_Module_AISpawnsIndep = true;
-FORCE oeta_Zeus_Module_AISpawnsWest = true;
-FORCE oeta_Zeus_Module_CivilianSpawns = true;
-FORCE oeta_Zeus_Module_MedicalDummy = true;
-FORCE oeta_Zeus_Module_SafeZone = true;
+// OETA - towing
+force oeta_towing_addToCars = true;
+force oeta_towing_addToHeavyDutyVehicles = true;
+
 
 // ACE Advanced Ballistics
 FORCE ace_advanced_ballistics_ammoTemperatureEnabled = true;
@@ -694,21 +619,17 @@ FORCE ace_winddeflection_vehicleEnabled = true;
 
 // ACE Zeus
 FORCE ace_zeus_autoAddObjects = false;
-FORCE ace_zeus_canCreateZeus = -1;
+FORCE ace_zeus_canCreateZeus = 0;
 FORCE ace_zeus_radioOrdnance = false;
-FORCE ace_zeus_remoteWind = false;
 FORCE ace_zeus_revealMines = 0;
-FORCE ace_zeus_zeusAscension = false;
+FORCE ace_zeus_zeusAscension = true;
 FORCE ace_zeus_zeusBird = false;
 
 // AH-64D Official Project
 fza_ah64_aiFireControl = true;
-fza_ah64_aiFireResponse = 15;
 fza_ah64_aiFloodlight = false;
 fza_ah64_enableClickHelper = true;
 fza_ah64_headTrackAllowCursorMove = true;
-fza_ah64_headTrackSensitivity = 0.5;
-fza_ah64_sfmPlusStabilatorEnabled = 1;
 fza_ah64_showPopup = true;
 fza_ah64_vanillaTargetingEnable = true;
 
@@ -720,8 +641,7 @@ FORCE cba_disposable_replaceDisposableLauncher = false;
 cba_events_repetitionMode = 1;
 FORCE cba_network_loadoutValidation = 1;
 cba_optics_usePipOptics = true;
-cba_ui_notifyLifetime = 4;
-cba_ui_StorePasswords = 1;
+
 
 // cTab
 FORCE ctab_core_bft_mode = 1;
@@ -732,7 +652,7 @@ FORCE ctab_core_sync_time = 60;
 FORCE ctab_core_uav_mode = 1;
 FORCE ctab_core_useAceMicroDagr = true;
 FORCE ctab_core_useArmaMarker = true;
-FORCE ctab_core_useMils = false; */
+
 
 // DUI - Squad Radar - Indicators
 FORCE FORCE diwako_dui_indicators_icon_buddy = true;
@@ -817,7 +737,6 @@ FORCE kat_circulation_AED_BeepsAndCharge = true;
 FORCE kat_circulation_blood_draw_limit = 3.6;
 FORCE kat_circulation_blood_drawTime_250ml = 25;
 FORCE kat_circulation_blood_drawTime_500ml = 50;
-kat_circulation_bloodgroup = "B+";
 FORCE kat_circulation_bloodGroups = true;
 FORCE kat_circulation_CPR_Chance_Default = 20;
 FORCE kat_circulation_CPR_Chance_Doctor = 40;
@@ -850,7 +769,7 @@ FORCE kat_pharma_naloxoneActive = true;
 FORCE kat_pharma_PushTime = 7;
 FORCE kat_pharma_Reorientation_Enable = true;
 FORCE kat_pharma_Reorientation_Slap = true;
-FORCE kat_pharma_RequireInsIV = false;
+FORCE kat_pharma_RequireInsIV = true;
 FORCE kat_pharma_txaActive = true;
 
 // KNB
@@ -1009,151 +928,16 @@ Fat_Lurch_ShowTarget = true;
 FORCE vtx_ace_viv_loadDistance = 15;
 FORCE vtx_ace_viv_timeFactor = 1;
 vtx_uh60_anvishud_defaultMode = -1;
-vtx_uh60_anvishud_settingBrightness = 0.6;
-vtx_uh60_flir_setting_AimSlewBlockMouse = true;
 vtx_uh60_flir_setting_AimSlewSpeed = 1;
 vtx_uh60_flir_setting_AimXFactor = 1;
 FORCE vtx_uh60_flir_setting_animateTurret = true;
-vtx_uh60_flir_setting_KeySlewSpeed = 1;
 vtx_uh60_flir_setting_KeyXFactor = 1;
 FORCE vtx_uh60_flir_setting_syncDelay = 0.015;
 vtx_uh60_hoist_setting_useAttachScript = true;
 vtx_uh60_sfmPlus_showDamageHints = true;
 vtx_uh60_sfmPlusStabilatorEnabled = 1;
-vtx_uh60_ui_showDebugMessages = true;
 vtx_uh60m_enabled_waypts = true;
 vtx_uh60m_simpleCollective = false;
 vtx_uh60m_simpleStartup = false;
 vtx_uh60m_trackIR_interaction_cursor = false;
-vtx_uh60m_trackIR_interaction_cursorSensitivity = 2.5;
 
-// Zeus Enhanced
-zen_camera_adaptiveSpeed = true;
-zen_camera_defaultSpeedCoef = 1;
-zen_camera_fastSpeedCoef = 1;
-zen_camera_followTerrain = true;
-FORCE zen_common_ascensionMessages = false;
-FORCE zen_common_autoAddObjects = false;
-FORCE zen_common_cameraBird = false;
-zen_common_darkMode = false;
-zen_common_disableGearAnim = false;
-zen_common_preferredArsenal = 1;
-zen_compat_ace_hideModules = true;
-zen_context_menu_enabled = 2;
-zen_context_menu_overrideWaypoints = false;
-zen_editor_addGroupIcons = false;
-zen_editor_declutterEmptyTree = true;
-zen_editor_disableLiveSearch = false;
-zen_editor_moveDisplayToEdge = true;
-FORCE zen_editor_parachuteSounds = true;
-zen_editor_previews_enabled = true;
-zen_editor_randomizeCopyPaste = false;
-zen_editor_removeWatermark = true;
-zen_editor_unitRadioMessages = 0;
-zen_placement_enabled = false;
-zen_remote_control_cameraExitPosition = 2;
-zen_visibility_enabled = false;
-zen_vision_enableBlackHot = false;
-zen_vision_enableBlackHotGreenCold = false;
-zen_vision_enableBlackHotRedCold = false;
-zen_vision_enableGreenHotCold = false;
-zen_vision_enableNVG = true;
-zen_vision_enableRedGreenThermal = false;
-zen_vision_enableRedHotCold = false;
-zen_vision_enableWhiteHot = true;
-zen_vision_enableWhiteHotRedCold = false;
-
-// Zeus Enhanced - Faction Filter
-zen_faction_filter_0_LOP_AFR_OPF = true;
-zen_faction_filter_0_LOP_AM_OPF = true;
-zen_faction_filter_0_LOP_BH = true;
-zen_faction_filter_0_LOP_ChDKZ = true;
-zen_faction_filter_0_LOP_IRA = true;
-zen_faction_filter_0_LOP_ISTS_OPF = true;
-zen_faction_filter_0_LOP_NK = true;
-zen_faction_filter_0_LOP_SLA = true;
-zen_faction_filter_0_LOP_SYR = true;
-zen_faction_filter_0_LOP_TKA = true;
-zen_faction_filter_0_LOP_US = true;
-zen_faction_filter_0_OPF_F = true;
-zen_faction_filter_0_OPF_G_F = true;
-zen_faction_filter_0_OPF_GEN_F = true;
-zen_faction_filter_0_OPF_R_F = true;
-zen_faction_filter_0_OPF_T_F = true;
-zen_faction_filter_0_rhs_faction_msv = true;
-zen_faction_filter_0_rhs_faction_rva = true;
-zen_faction_filter_0_rhs_faction_tv = true;
-zen_faction_filter_0_rhs_faction_vdv = true;
-zen_faction_filter_0_rhs_faction_vmf = true;
-zen_faction_filter_0_rhs_faction_vpvo = true;
-zen_faction_filter_0_rhs_faction_vv = true;
-zen_faction_filter_0_rhs_faction_vvs = true;
-zen_faction_filter_0_rhs_faction_vvs_c = true;
-zen_faction_filter_0_rhsgref_faction_chdkz = true;
-zen_faction_filter_0_rhsgref_faction_chdkz_groups = true;
-zen_faction_filter_0_rhsgref_faction_tla = true;
-zen_faction_filter_0_rhssaf_faction_airFORCE_opfor = true;
-zen_faction_filter_0_rhssaf_faction_army_opfor = true;
-zen_faction_filter_1_BLU_CTRG_F = true;
-zen_faction_filter_1_BLU_F = true;
-zen_faction_filter_1_BLU_G_F = true;
-zen_faction_filter_1_BLU_GEN_F = true;
-zen_faction_filter_1_BLU_T_F = true;
-zen_faction_filter_1_BLU_W_F = true;
-zen_faction_filter_1_fza_usaav = true;
-zen_faction_filter_1_LOP_AA = true;
-zen_faction_filter_1_LOP_CDF = true;
-zen_faction_filter_1_LOP_GRE = true;
-zen_faction_filter_1_LOP_IA = true;
-zen_faction_filter_1_LOP_PESH = true;
-zen_faction_filter_1_rhs_faction_socom = true;
-zen_faction_filter_1_rhs_faction_usaf = true;
-zen_faction_filter_1_rhs_faction_usarmy_d = true;
-zen_faction_filter_1_rhs_faction_usarmy_wd = true;
-zen_faction_filter_1_rhs_faction_usmc_d = true;
-zen_faction_filter_1_rhs_faction_usmc_wd = true;
-zen_faction_filter_1_rhs_faction_usn = true;
-zen_faction_filter_1_rhsgref_faction_cdf_air_b = true;
-zen_faction_filter_1_rhsgref_faction_cdf_ground_b = true;
-zen_faction_filter_1_rhsgref_faction_cdf_ground_b_groups = true;
-zen_faction_filter_1_rhsgref_faction_cdf_ng_b = true;
-zen_faction_filter_1_rhsgref_faction_hidf = true;
-zen_faction_filter_2_IND_C_F = true;
-zen_faction_filter_2_IND_E_F = true;
-zen_faction_filter_2_IND_F = true;
-zen_faction_filter_2_IND_G_F = true;
-zen_faction_filter_2_IND_L_F = true;
-zen_faction_filter_2_LOP_AFR = true;
-zen_faction_filter_2_LOP_AM = true;
-zen_faction_filter_2_LOP_IRAN = true;
-zen_faction_filter_2_LOP_ISTS = true;
-zen_faction_filter_2_LOP_NAPA = true;
-zen_faction_filter_2_LOP_PESH_IND = true;
-zen_faction_filter_2_LOP_PMC = true;
-zen_faction_filter_2_LOP_RACS = true;
-zen_faction_filter_2_LOP_TRK = true;
-zen_faction_filter_2_LOP_UA = true;
-zen_faction_filter_2_LOP_UKR = true;
-zen_faction_filter_2_LOP_UN = true;
-zen_faction_filter_2_LOP_UVF = true;
-zen_faction_filter_2_rhsgref_faction_cdf_air = true;
-zen_faction_filter_2_rhsgref_faction_cdf_ground = true;
-zen_faction_filter_2_rhsgref_faction_cdf_ground_groups = true;
-zen_faction_filter_2_rhsgref_faction_cdf_ng = true;
-zen_faction_filter_2_rhsgref_faction_cdf_ng_groups = true;
-zen_faction_filter_2_rhsgref_faction_chdkz_g = true;
-zen_faction_filter_2_rhsgref_faction_chdkz_g_groups = true;
-zen_faction_filter_2_rhsgref_faction_nationalist = true;
-zen_faction_filter_2_rhsgref_faction_nationalist_groups = true;
-zen_faction_filter_2_rhsgref_faction_tla_g = true;
-zen_faction_filter_2_rhsgref_faction_un = true;
-zen_faction_filter_2_rhssaf_faction_airFORCE = true;
-zen_faction_filter_2_rhssaf_faction_army = true;
-zen_faction_filter_2_rhssaf_faction_un = true;
-zen_faction_filter_3_CIV_F = true;
-zen_faction_filter_3_CIV_IDAP_F = true;
-zen_faction_filter_3_EdCat_Things = true;
-zen_faction_filter_3_IND_L_F = true;
-zen_faction_filter_3_LOP_AFR_Civ = true;
-zen_faction_filter_3_LOP_CHR_Civ = true;
-zen_faction_filter_3_LOP_TAK_Civ = true;

@@ -2,8 +2,8 @@
 <Project name="OETA">
     <Package name="Insurgents">
         <Key ID="STR_OETA_Insurgents_DisplayName">
-            <English>183rd Air Assault Unit [183rd] - Insurgents</English>
-            <Polish>183rd Air Assault Unit [183rd] - Partyzanci</Polish>
+            <English>183rd - Insurgents</English>
+            <Polish>183rd - Partyzanci</Polish>
         </Key>
         <Key ID="STR_OETA_Insurgents_Insurgent">
             <English>Insurgent (randomized)</English>

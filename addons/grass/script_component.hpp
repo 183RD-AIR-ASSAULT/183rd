@@ -1,5 +1,4 @@
 #define COMPONENT grass
-#define COMPONENT_BEAUTIFIED Grass
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

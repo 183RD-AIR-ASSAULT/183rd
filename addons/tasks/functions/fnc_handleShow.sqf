@@ -41,6 +41,7 @@ if (!_conditionCodeEmpty) then {
 };
 
 if (!_conditionEventsEmpty) then {
+    // Create EventHandler for all events
     {
         [_x, {
             private _taskNamespace = _thisArgs;

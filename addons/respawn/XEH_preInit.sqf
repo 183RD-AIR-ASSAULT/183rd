@@ -17,4 +17,3 @@ if (hasInterface) then {
 };
 
 ADDON = true;
-

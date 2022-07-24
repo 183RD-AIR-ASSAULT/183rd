@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             "oeta_common"
         };
-        author = QAUTHOR;
+        author = "183rd";
         VERSION_CONFIG;
     };
 };
@@ -17,6 +17,3 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "CfgRespawnTemplates.hpp"
-#include "Cfg3DEN.hpp"
-#include "defines.hpp"
-#include "dialogs.hpp"

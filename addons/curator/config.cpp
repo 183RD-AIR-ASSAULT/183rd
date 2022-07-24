@@ -10,7 +10,7 @@ class CfgPatches {
             "oeta_main",
             "oeta_debug_console"
         };
-        author = QAUTHOR;
+        author = "183rd";
         VERSION_CONFIG;
     };
 };

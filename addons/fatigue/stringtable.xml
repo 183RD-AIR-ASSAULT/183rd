@@ -2,8 +2,8 @@
 <Project name="OETA">
     <Package name="Fatigue">
         <Key ID="STR_OETA_Fatigue_DisplayName">
-            <English>183rd Air Assault Unit [183rd] - Fatigue</English>
-            <Polish>183rd Air Assault Unit [183rd] - Zmęczenie</Polish>
+            <English>183rd - Fatigue</English>
+            <Polish>183rd - Zmęczenie</Polish>
         </Key>
         <Key ID="STR_OETA_Fatigue_High_Jog_Coef_Enabled">
             <English>Enable custom high jog coefficient</English>

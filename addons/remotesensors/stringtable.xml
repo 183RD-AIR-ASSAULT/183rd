@@ -2,7 +2,7 @@
 <Project name="OETA">
     <Package name="RemoteSensors">
         <Key ID="STR_OETA_RemoteSensors_DisplayName">
-            <English>183rd Air Assault Unit [183rd] - Remote Sensors</English>
+            <English>183rd - Remote Sensors</English>
         </Key>
         <Key ID="STR_OETA_RemoteSensors_Enabled">
             <English>Enable remote sensors on clients</English>

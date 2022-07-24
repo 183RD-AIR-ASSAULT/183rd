@@ -33,7 +33,8 @@ for "_index" from 0 to _maxLines do {
             private _projectileData = _currentEntry select 1;
             private _arrCount = count _projectileData;
             private _startSpeed = 0;
- {
+
+            {
                 private _currentProjectileData = _x;
                 private _nextProjectileData = nil;
 

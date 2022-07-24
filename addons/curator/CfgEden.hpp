@@ -1,4 +1,4 @@
-class Cfg3den {
+class Cfg3DEN {
     class Object {
         class AttributeCategories {
             class PREFIX {

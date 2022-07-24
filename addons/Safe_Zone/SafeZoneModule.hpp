@@ -1,7 +1,7 @@
 class OETA_ModuleSafeZone: Module_F {
     scope = 2;
     displayName = "Safe Zone";
-    icon = "\z\oeta\addons\media\images\icons\Safe_Zone.paa";
+    icon = "\z\oeta\addons\common\images\icons\Safe_Zone.paa";
     category = QUOTE(PREFIX);
     function = "oeta_fnc_moduleSafeZone";
     functionPriority = 4;

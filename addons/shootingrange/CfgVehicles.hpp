@@ -2,14 +2,14 @@ class CfgVehicles {
     class ACE_Module;
     class GVAR(Module): ACE_Module {
         author = QAUTHOR;
-        category = QUOTE(PREFIX);
+        category = PREFIX;
         displayName = CSTRING(Range);
         function = QFUNC(moduleInit);
         scope = 2;
         isGlobal = 1; // Global
         isTriggerActivated = 0;
         isDisposable = 0;
-        icon = "\z\oeta\addons\media\images\Icons\icon_shooting.paa";
+        icon = "\z\oeta\addons\common\images\Icons\icon_shooting.paa";
         class Arguments {
             class Name {
                 displayName = CSTRING(Name);

@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [bob, ted] call oeta_respawn_fnc_onPlayerKilled
+ * [bob, ted] call oetaaaespawn_fnc_onPlayerKilled
  *
  * Public: No
  */
@@ -22,5 +22,6 @@ params ["_oldUnit", "_killer"];
 if (!GVAR(enabled)) exitWith {setPlayerRespawnTime TIME_DISABLED};
 
 setPlayerRespawnTime GVAR(time);
+
 
 nil

@@ -1,5 +1,4 @@
 #define COMPONENT curator
-#define COMPONENT_BEAUTIFIED Curator
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

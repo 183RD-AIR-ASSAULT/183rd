@@ -10,7 +10,7 @@ class CfgPatches {
             "oeta_main",
             "oeta_common"
         };
-        author = QAUTHOR;
+        author = "183rd";
         authors[] = {"veteran29"};
         VERSION_CONFIG;
     };

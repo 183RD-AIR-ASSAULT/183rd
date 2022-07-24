@@ -20,7 +20,8 @@ _colorsActive = [
 	[1,1,1,1],
 	[1,1,1,1]
 ];
-_colorsText = +_colorsActive; {_x set [3,0.5];} foreach _colorsText;
+_colorsText = +_colorsActive;
+{_x set [3,0.5];} foreach _colorsText;
 
 switch _mode do {
 	case "onLoad": {

@@ -29,7 +29,7 @@ Its based/inspired on/by the following projects;
 
 
 ##Its based on, and inspired by the following projects
-- https://github.com/ArmaForces/Mods  -  GNU GENERAL PUBLIC LICENSE
+- https://github.com/183rd/Mods  -  GNU GENERAL PUBLIC LICENSE
 - https://github.com/AXEmod/AXE - GNU General Public License (GPLv3)
 - https://github.com/Theseus-Aegis/Mods - GNU General Public License (GPLv2).
 - https://github.com/last-resort-gaming/LRG-Fundamentals - MIT License
@@ -47,14 +47,14 @@ you can find the 183rd Version at https://github.com/YonVclaw/183rd
 All the code in this mod is available in the 183rd Git
 
 <br/><br/>
-# This mod includes : (With permission)
+# This mod includes: (With permission)
 
 - Spyke - A3U - Arma 3 Utilities https://steamcommunity.com/sharedfiles/filedetails/?id=1560749177
 
 
 <br/><br/>
 
-# This mod includes : (per expressed permission on each mods steam page)
+# This mod includes: (per expressed permission on each mods steam page)
 
 
 Fat_Lurch's

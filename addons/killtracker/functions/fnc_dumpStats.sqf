@@ -20,7 +20,8 @@ if (GVAR(statsDumped)) exitWith {};
 GVAR(statsDumped) = true;
 
 diag_log text "------ [START_KILLTRACKER_STATS] ------";
- {
+
+{
     diag_log text _x;
 } forEach ace_killTracker_eventsArray;
 

@@ -5,11 +5,8 @@ class CfgVehicles {
     // INTERACTIONS
     class Man;
     class CAManBase: Man {
-
         // exceptions[] = {"isNotDead", "isNotUnconscious", "isNotSurrendering", "isNotHandcuffed", "isNotCarrying", "isNotDragging", "isNotEscorting", "isNotSwimming", "isNotRefueling", "isNotOnLadder", "isNotSitting", "isNotInside", "isNotInZeus", "notOnMap"};
-
         class ACE_SelfActions {
-            class ACE_Equipment {
                 class GVAR(Medical_Supplies_Action_FirstAid) {
                     displayName = "Unpack IFAK";
                     condition = "[_player] call oeta_medbags_fnc_canUnpackFirstAid";
@@ -45,7 +42,6 @@ class CfgVehicles {
                     icon = QPATHTOF(data\icons\medical_cross_ex_ca.paa);
                     showDisabled = 0;
                 };
-            };
         };
         // class ACE_MainActions {
         //     class GVAR(Medical_Supplies_Action_Take) {

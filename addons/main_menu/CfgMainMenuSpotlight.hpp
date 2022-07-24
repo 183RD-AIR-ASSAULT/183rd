@@ -4,11 +4,12 @@ class CfgMainMenuSpotlight {
     class GVAR(server1) {
         text = "183rd Air Assault Unit [183rd] Operations";
         textIsQuote = 0;
-        picture = QUOTE(\z\oeta\addons\media\images\183rd.paa);
+        picture = QUOTE(\z\oeta\addons\common\images\183rd.paa);
         action = QUOTE(_this call (uiNamespace getVariable QQFUNC(join)));
         actionText = CSTRING(SpotlightHeader);
         condition = QUOTE(true);
     };
+
     delete ApexProtocol;
     delete BootCamp;
     delete EastWind;

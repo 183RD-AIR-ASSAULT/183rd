@@ -41,7 +41,7 @@ class CfgVehicles {
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"\a3\Supplies_F_Enoch\Bags\Data\B_RadioBag_01_black_CO.paa"};
         class TransportItems {
-            MACRO_ADDITEM(ACRE_PRC117F,1);
+            
         };
     };
 
@@ -57,7 +57,7 @@ class CfgVehicles {
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"\a3\Supplies_F_Enoch\Bags\Data\B_RadioBag_01_AAF_CO.paa"};
         class TransportItems {
-            MACRO_ADDITEM(ACRE_PRC117F,1);
+            
         };
     };
 
@@ -73,7 +73,7 @@ class CfgVehicles {
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"\a3\Supplies_F_Enoch\Bags\Data\B_RadioBag_01_EAF_CO.paa"};
         class TransportItems {
-            MACRO_ADDITEM(ACRE_PRC117F,1);
+            
         };
     };
 
@@ -89,7 +89,7 @@ class CfgVehicles {
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"\a3\Supplies_F_Enoch\Bags\Data\B_RadioBag_01_gHex_CO.paa"};
         class TransportItems {
-            MACRO_ADDITEM(ACRE_PRC117F,1);
+            
         };
     };
 
@@ -105,7 +105,7 @@ class CfgVehicles {
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"\a3\Supplies_F_Enoch\Bags\Data\B_RadioBag_01_Hex_CO.paa"};
         class TransportItems {
-            MACRO_ADDITEM(ACRE_PRC117F,1);
+            
         };
     };
 
@@ -121,7 +121,7 @@ class CfgVehicles {
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"\a3\Supplies_F_Enoch\Bags\Data\B_RadioBag_01_mtp_co.paa"};
         class TransportItems {
-            MACRO_ADDITEM(ACRE_PRC117F,1);
+            
         };
     };
 
@@ -137,7 +137,7 @@ class CfgVehicles {
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"\a3\Supplies_F_Enoch\Bags\Data\B_RadioBag_01_tropic_CO.paa"};
         class TransportItems {
-            MACRO_ADDITEM(ACRE_PRC117F,1);
+            
         };
     };
 
@@ -154,7 +154,7 @@ class CfgVehicles {
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"\a3\Supplies_F_Enoch\Bags\Data\B_RadioBag_01_urban_CO.paa"};
         class TransportItems {
-            MACRO_ADDITEM(ACRE_PRC117F,1);
+            
         };
     };
 
@@ -171,7 +171,7 @@ class CfgVehicles {
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {"\a3\Supplies_F_Enoch\Bags\Data\B_RadioBag_01_WDL_CO.paa"};
         class TransportItems {
-            MACRO_ADDITEM(ACRE_PRC117F,1);
+            
         };
     };
 

@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"OETA_main", "ace_medical"};
+        requiredAddons[] = {"oeta_main", "ace_medical"};
         author = QAUTHOR;
         authors[] = {"Jonpas"};
         VERSION_CONFIG;

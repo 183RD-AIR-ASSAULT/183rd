@@ -1,5 +1,4 @@
 #define COMPONENT smoke
-#define COMPONENT_BEAUTIFIED Smoke
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

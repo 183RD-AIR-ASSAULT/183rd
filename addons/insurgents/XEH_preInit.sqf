@@ -10,10 +10,13 @@ PREP_RECOMPILE_END;
 GVAR(randomGear) = createHashMap;
 
 // init random gear from config
-private _configFile = configFile >> QGVAR(gear); {
-    private _rootConfig = _x; {
+private _configFile = configFile >> QGVAR(gear);
+{
+    private _rootConfig = _x;
+    {
         if ((_rootConfig isNotEqualTo _configFile) || {GEAR_ENABLED(configName _x)}) then {
-            LOG_1("Parsing random gear - %1",_x); {
+            LOG_1("Parsing random gear - %1",_x);
+            {
                 private _key = configName _x;
                 private _items = GVAR(randomGear) get _key;
                 if (isNil "_items") then {
@@ -22,7 +25,7 @@ private _configFile = configFile >> QGVAR(gear); {
                     GVAR(randomGear) set [_key, _items];
                 };
 
-                // add and filter unavilable classes 
+                // add and filter unavilable classes
                 {
                     if (!isNull (_x call CBA_fnc_getItemConfig)) then {
                         LOG_1("Adding '%1' to random gear pool",_x);

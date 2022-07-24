@@ -2,7 +2,6 @@
 
 
 class CfgPatches {
-
     class ADDON {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
@@ -18,7 +17,6 @@ class CfgPatches {
             "O. Jemineh"
         };
         url = URL;
-
     };
 
 };

@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * ARMA EXTENDED ENVIRONMENT
+
  * \oeta_medical\supplies\functions\fn_doUnpackDrugKit.sqf
  * by Ojemineh
  *
@@ -39,7 +39,7 @@ if (isNull _unit) exitWith {};
         playSound QGVAR(Medical_MedicKit_Open_1);
     } else {
         private _pitch = random [0.6, 1, 1.4];
-        [_unit, QGVAR(Medical_MedicKit_Open_1), [], 30, 1000, -1, _pitch] call OETA_common_fnc_play3dSound;
+        [_unit, QGVAR(Medical_MedicKit_Open_1), [], 30, 1000, -1, _pitch] call EFUNC(common,play3dSound);
     };
 
     OETA_MEDICAL_SUPPLIES_UNPACK_SUCCESS = false;
@@ -62,28 +62,22 @@ if (isNull _unit) exitWith {};
         private _order = [3,2,1];
         private _overflow = true;
 
-        [_unit, "kat_TXA", 10, _order, _overflow] call oeta_common_fnc_addItem;
-        [_unit, "kat_amiodarone", 10, _order, _overflow] call oeta_common_fnc_addItem;
-        [_unit, "kat_atropine", 10, _order, _overflow] call oeta_common_fnc_addItem;
-        [_unit, "kat_lidocaine", 10, _order, _overflow] call oeta_common_fnc_addItem;
-        [_unit, "kat_naloxone", 10, _order, _overflow] call oeta_common_fnc_addItem;
-        [_unit, "kat_nitroglycerin", 10, _order, _overflow] call oeta_common_fnc_addItem;
-        [_unit, "kat_norepinephrine", 10, _order, _overflow] call oeta_common_fnc_addItem;
-        [_unit, "kat_phenylephrine", 10, _order, _overflow] call oeta_common_fnc_addItem;
-        [_unit, "ACE_epinephrine", 10, _order, _overflow] call oeta_common_fnc_addItem;
-        [_unit, "ACE_morphine", 16, _order, _overflow] call oeta_common_fnc_addItem;
-        [_unit, "ACE_adenosine", 8, _order, _overflow] call oeta_common_fnc_addItem;
-
-
+        [_unit, "kat_TXA", 10, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_amiodarone", 10, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_atropine", 10, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_lidocaine", 10, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_naloxone", 10, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_nitroglycerin", 10, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_norepinephrine", 10, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_phenylephrine", 10, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "ACE_epinephrine", 10, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "ACE_morphine", 16, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "ACE_adenosine", 8, _order, _overflow] call EFUNC(common,addItem);
 
     };
 
     if (OETA_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {
-
-        [_unit, QGVAR(Medical_MedicKit_Open_1)] call OETA_common_fnc_stop3dSound;
-
-
-
+        [_unit, QGVAR(Medical_MedicKit_Open_1)] call EFUNC(common,stop3dSound);
     };
 
 };

@@ -53,7 +53,8 @@
 #define GUI_FONT_SYSTEM			TahomaB//Deprecated - for engine debug only (has only one size, which causes errors).
 
 //Font used by the engine as default when defined font (e.g. in description.ext) is not found
-class DefaultFont {
+class DefaultFont
+{
 	font = GUI_FONT_NORMAL;
 };
 
@@ -162,7 +163,8 @@ __EXEC( _HintsX = [1,34,67,100]; _HintsY = [87,92]; )
 __EXEC( _HintsW = 25; _HintsH = 4;)
 
 //ScrollBar used in various UI elements (ListBox, ComboBox etc.)
-class ScrollBar {
+class ScrollBar
+{
 	color[] = {1,1,1,0.6};
 	colorActive[] = {1,1,1,1};
 	colorDisabled[] = {1,1,1,0.3};

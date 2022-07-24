@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * ARMA EXTENDED ENVIRONMENT
+
  * \oeta_medical\supplies\functions\fn_doUnpackFirstAid.sqf
  * by Ojemineh
  *
@@ -23,4 +23,4 @@ params ["_unit", "_target"];
 
 _target removeItem "oeta_medbags_FirstAid";
 
-[_unit, "oeta_medbags_FirstAid", 1, _order, _overflow] call oeta_common_fnc_addItem;
+[_unit, "oeta_medbags_FirstAid", 1, _order, _overflow] call EFUNC(common,addItem);

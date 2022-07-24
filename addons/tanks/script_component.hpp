@@ -1,5 +1,4 @@
 #define COMPONENT tanks
-#define COMPONENT_BEAUTIFIED Tanks
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

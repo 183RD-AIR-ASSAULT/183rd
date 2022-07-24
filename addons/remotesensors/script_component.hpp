@@ -1,5 +1,4 @@
 #define COMPONENT remotesensors
-#define COMPONENT_BEAUTIFIED Remote Sensors
 #include "\z\oeta\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

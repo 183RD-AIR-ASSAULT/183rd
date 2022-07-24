@@ -67,9 +67,9 @@ if (!_directHit) exitWith {
 // Exit if hit by someone else
  private _starter = _controller getVariable [QGVAR(starter), nil];
 if (_shooter != _starter) exitWith {
-    private _shooterName = [_shooter, true] call ACEFUNC(common,getName);
+    private _shooterName = [_shooter, true] call ACEFUNC(core,getName);
     private _text = format ["%1<br/><br/>%2:<br/>%3", localize LSTRING(Warning), localize LSTRING(TargetHitBy), _shooterName];
-    [QACEGVAR(common,displayTextStructured), [_text, 3], [_starter, _shooter]] call CBA_fnc_targetEvent;
+    [QACEGVAR(core,displayTextStructured), [_text, 3], [_starter, _shooter]] call CBA_fnc_targetEvent;
 };
 
 

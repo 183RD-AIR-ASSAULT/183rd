@@ -2,8 +2,8 @@
 <Project name="OETA">
     <Package name="Towing">
         <Key ID="STR_OETA_Towing_DisplayName">
-            <English>183rd Air Assault Unit [183rd] - Towing</English>
-            <Polish>183rd Air Assault Unit [183rd] - Holowanie</Polish>
+            <English>183rd - Towing</English>
+            <Polish>183rd - Holowanie</Polish>
         </Key>
         <Key ID="STR_OETA_Towing_AddToHeavyDutyVehicles">
             <English>Add ropes to heavy duty vehicles</English>

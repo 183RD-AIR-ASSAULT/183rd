@@ -2,11 +2,11 @@
 <Project name="OETA">
     <Package name="Difficulty">
         <Key ID="STR_OETA_Difficulty_DifficultyName">
-            <English>183rd Difficulty</English>
+            <English>183rd Air Assault Unit [183rd]</English>
         </Key>
         <Key ID="STR_OETA_Difficulty_DifficultyDescription">
-            <English>183rd Air Assault Unit [183rd] Custom settings.</English>
-            <Polish>Własne ustawienia 183rd Air Assault Unit [183rd].</Polish>
+            <English>Custom 183rd settings.</English>
+            <Polish>Własne ustawienia 183rd.</Polish>
         </Key>
     </Package>
 </Project>

@@ -1,6 +1,6 @@
 #include "..\script_component.hpp"
 /*
- * ARMA EXTENDED ENVIRONMENT
+
  * \oeta_medical\supplies\functions\fn_canUnpackMedicKit.sqf
  * by Ojemineh
  *

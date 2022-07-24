@@ -18,14 +18,16 @@
 params [["_unit", objNull]];
 
 // Unit was given
-if (!isNull _unit) exitWith { {
+if (!isNull _unit) exitWith {
+    {
         [_x, "Canceled"] call FUNC(finishTask);
     } forEach (_unit call BIS_fnc_tasksUnit);
     true
 };
 
 // Nothing given, we need to gather all tasks for all players.
-private _allTasks = []; {
+private _allTasks = [];
+{
     private _tasks = _x call BIS_fnc_tasksUnit;
     _allTasks append _tasks;
 } forEach allPlayers;
