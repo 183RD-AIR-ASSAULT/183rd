@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * _isDown = target call OETA_shootingrange_fnc_isTargetDown;
+ * _isDown = target call oeta_shootingrange_fnc_isTargetDown;
  *
  * Public: No
  */
@@ -18,7 +18,8 @@
 params ["_target"];
 
 private _anims = _target call FUNC(getTargetAnimations);
- {
+
+{
     if (_target animationPhase _x > 0) exitWith {
         true
     };

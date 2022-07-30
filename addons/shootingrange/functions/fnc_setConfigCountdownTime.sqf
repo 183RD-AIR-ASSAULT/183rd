@@ -13,13 +13,14 @@
  * None
  *
  * Example:
- * ["range", [controller1, controller2], 9, [target1, target2]] call OETA_shootingrange_fnc_setConfigCountdownTime;
+ * ["range", [controller1, controller2], 9, [target1, target2]] call oeta_shootingrange_fnc_setConfigCountdownTime;
  *
  * Public: No
  */
 
 params ["_name", "_controllers", "_countdownTime", "_targets"];
- {
+
+{
     _x setVariable [QGVAR(countdownTime), _countdownTime, true];
 } forEach _controllers;
 

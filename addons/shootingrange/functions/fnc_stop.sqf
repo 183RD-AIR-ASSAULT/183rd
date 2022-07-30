@@ -18,7 +18,7 @@
  * None
  *
  * Example:
- * [controller, [controller1, controller2], "range", [target1, target2], [invalidTarget1, invalidTarget2]] call OETA_shootingrange_fnc_stop;
+ * [controller, [controller1, controller2], "range", [target1, target2], [invalidTarget1, invalidTarget2]] call oeta_shootingrange_fnc_stop;
  *
  * Public: No
  */
@@ -41,7 +41,7 @@ params ["_controller", "_controllers", "_name", "_targets", "_targetsInvalid", [
 
 
 // Notification
-private _playerName = [ACE_player, true] call ACEFUNC(core,getName);
+private _playerName = [ACE_player, true] call ACEFUNC(common,getName);
 [_controller, "FD_Finish_F"] call FUNC(playSoundSignal);
 
 private _scorePercentage = 0;

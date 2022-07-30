@@ -16,3 +16,5 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "ui\RscModal.hpp"
+#include "CfgSounds.hpp"
+#include "CfgUnitInsignia.hpp"

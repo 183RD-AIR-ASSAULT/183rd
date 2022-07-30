@@ -15,17 +15,49 @@ files = [
     "183rd.paa",
     ]
 
-
 exclude = ["*.psd", "*.png", "*.tga"]
 
 
 modname = "{{name}}"
 key_name = "{{prefix}}_{{version}}"
-authority = "{{prefix}}_{{version}}"
+authority = "{{prefix}}_{{version}}-{{git \"id 8\"}}"
+
+
+check = [
+    "!compile_scripts"
+]
+
+postbuild = [
+    "!remove_compiled_scripts"
+]
 
 releasebuild = [
-    "@zip 183_v{{semver.major}}.{{semver.minor}}.{{semver.patch}}.{{semver.build}}"
+    "@zip @183rd_{{version}}"
 ]
 
 [header_exts]
 version = "{{git \"id 8\"}}"
+
+
+[scripts.compile_scripts]
+steps_windows = [
+    "echo 'Compile Arma Scripts'",
+    "ArmaScriptCompiler.exe"
+]
+
+steps_linux = [
+    "echo 'Compiling Arma Scripts does not work yet on Linux'"
+]
+only_release = true
+show_output = true
+
+[scripts.remove_compiled_scripts]
+steps_windows = [
+    "echo 'remove Compiled Scripts'",
+    "powershell -Command Remove-Item './addons/*' -Recurse -Include *.sqfc"
+]
+steps_linux = [
+    "echo 'Compiling Arma Scripts does not work yet on Linux'"
+]
+only_release = true
+show_output = true

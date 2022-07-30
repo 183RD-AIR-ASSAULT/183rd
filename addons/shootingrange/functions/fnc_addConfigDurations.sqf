@@ -14,14 +14,15 @@
  * None
  *
  * Example:
- * ["range", controller, [controller1, controller2], [5, 10, 20], [target1, target2]] call OETA_shootingrange_fnc_addConfigDurations;
+ * ["range", controller, [controller1, controller2], [5, 10, 20], [target1, target2]] call oeta_shootingrange_fnc_addConfigDurations;
  *
  * Public: No
  */
 
 params ["_name", "_controller", "_controllers", "_durations", "_targets"];
 
-private _actions = []; {
+private _actions = [];
+{
     _actions pushBack [
         [
             format [QGVAR(RangeConfigDuration%1), _forEachIndex + 1],
@@ -29,7 +30,10 @@ private _actions = []; {
                 localize LSTRING(Infinite),
                 format ["%1 %2", _x, localize LSTRING(Seconds)]
             ] select (_x > 0),
-            "", {(_this select 2) call FUNC(setConfigDuration)}, {true}, {},
+            "",
+            {(_this select 2) call FUNC(setConfigDuration)},
+            {true},
+            {},
             [_name, _controllers, _x, _targets]
         ] call ACEFUNC(interact_menu,createAction),
         [],

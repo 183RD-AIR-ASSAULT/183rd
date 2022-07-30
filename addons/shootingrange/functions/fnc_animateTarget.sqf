@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [target, 0] call OETA_shootingrange_fnc_animateTarget;
+ * [target, 0] call oeta_shootingrange_fnc_animateTarget;
  *
  * Public: No
  */

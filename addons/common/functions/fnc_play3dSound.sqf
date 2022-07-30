@@ -19,7 +19,7 @@
  * nothing
  *
  * Example:
- * [player, "AlarmBell", [], -1, -1, 6] call OETA_common_fnc_play3dSound;
+ * [player, "AlarmBell", [], -1, -1, 6] call FUNC(play3dSound);
  *
  */
 
@@ -43,4 +43,4 @@ if (_soundClass isEqualTo "") exitWith {};
 
 // -------------------------------------------------------------------------------------------------
 
-[_object, _soundClass, _position, _distance, _maxDistance, _duration, _pitch, _isSpeech] remoteExecCall ["OETA_common_fnc_play3dSoundLocal", 0, false];
+[_object, _soundClass, _position, _distance, _maxDistance, _duration, _pitch, _isSpeech] remoteExecCall ["FUNC(play3dSoundLocal)", 0, false];

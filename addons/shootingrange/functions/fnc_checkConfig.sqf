@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [controller, "range", [target1, target2]] call OETA_shootingrange_fnc_checkConfig;
+ * [controller, "range", [target1, target2]] call oeta_shootingrange_fnc_checkConfig;
  *
  * Public: No
  */
@@ -73,4 +73,4 @@ if (_mode == 4) then {
     _size = _size - 0.5;
 };
 
-[_text, _size] call ACEFUNC(core,displayTextStructured);
+[_text, _size] call ACEFUNC(common,displayTextStructured);

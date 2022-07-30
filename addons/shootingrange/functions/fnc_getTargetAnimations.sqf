@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * _anims = target call OETA_shootingrange_fnc_getTargetAnimations;
+ * _anims = target call oeta_shootingrange_fnc_getTargetAnimations;
  *
  * Public: No
  */
