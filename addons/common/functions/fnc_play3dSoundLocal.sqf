@@ -19,7 +19,7 @@
  * nothing
  *
  * Example:
- * [player, "AlarmBell", [], -1, -1, 6] call OETA_common_fnc_play3dSoundLocal;
+ * [player, "AlarmBell", [], -1, -1, 6] call FUNC(play3dSoundLocal);
  *
  */
 
@@ -46,14 +46,14 @@ if (isNull _object) exitWith {};
 if (_soundClass isEqualTo "") exitWith {};
 
 if (_position isEqualTo []) then {_position = [0,0,0];};
-if (_distance <= 0) then {_distance = [_soundClass] call OETA_common_fnc_getSoundDistance;};
+if (_distance <= 0) then {_distance = [_soundClass] call FUNC(getSoundDistance);};
 if (_distance <= 0) then {_distance = 100;};
 //if ((_maxDistance > 0) && ((player distance _object) > _maxDistance)) exitWith {};
 
-if (_duration <= 0) then {_duration = [_soundClass] call OETA_common_fnc_getSoundDuration;};
+if (_duration <= 0) then {_duration = [_soundClass] call FUNC(getSoundDuration);};
 if (_duration <= 0) exitWith {};
 
-if (_pitch <= 0) then {_pitch = [_soundClass] call OETA_common_fnc_getSoundPitch;};
+if (_pitch <= 0) then {_pitch = [_soundClass] call FUNC(getSoundPitch);};
 if (_pitch <= 0) then {_pitch = 1;};
 
 // -------------------------------------------------------------------------------------------------
@@ -71,9 +71,9 @@ if (count _soundArray > 0) then { {
 if (_soundInUse) exitWith {
     [_object, _soundClass, _position, _distance, _maxDistance, _duration, _pitch, _isSpeech] spawn {
         params ["_object", "_soundClass", "_position", "_distance", "_maxDistance", "_duration", "_pitch", "_isSpeech"];
-        [_object, _soundClass] call OETA_common_fnc_stop3dSoundLocal;
+        [_object, _soundClass] call FUNC(stop3dSoundLocal);
         sleep 0.1;
-        [_object, _soundClass, _position, _distance, _maxDistance, _duration, _pitch, _isSpeech] call OETA_common_fnc_play3dSoundLocal;
+        [_object, _soundClass, _position, _distance, _maxDistance, _duration, _pitch, _isSpeech] call FUNC(play3dSoundLocal);
     };
 };
 
@@ -88,10 +88,10 @@ _object setVariable ["OETA_sound3d", _soundArray];
 
 private _handler = [_object, _soundObject, _soundClass, _distance, _maxDistance, _duration, _pitch, _isSpeech] spawn {
     params ["_object", "_soundObject", "_soundClass", "_distance", "_maxDistance", "_duration", "_pitch", "_isSpeech"];
-    [_soundObject, _soundClass, _distance, _maxDistance, _pitch, _isSpeech] call OETA_common_fnc_say3dLocal;
+    [_soundObject, _soundClass, _distance, _maxDistance, _pitch, _isSpeech] call FUNC(ay3dLocal);
     private _time = CBA_missionTime + _duration;
     waitUntil {if (!(alive _object) || (isNull _soundObject) || (_time < CBA_missionTime)) exitWith {true}; false};
-    [_object, _soundClass] call OETA_common_fnc_stop3dSoundLocal;
+    [_object, _soundClass] call FUNC(top3dSoundLocal);
 };
 
 _handler;

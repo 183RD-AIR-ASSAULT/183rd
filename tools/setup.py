@@ -13,7 +13,7 @@ import winreg
 
 ######## GLOBALS #########
 MAINDIR = "z"
-PROJECTDIR = "OETA"
+PROJECTDIR = "oeta"
 ##########################
 
 def main():

@@ -14,19 +14,23 @@
  * None
  *
  * Example:
- * ["range", controller, [controller1, controller2], [6, 9], [target1, target2]] call OETA_shootingrange_fnc_addConfigCountdownTimes;
+ * ["range", controller, [controller1, controller2], [6, 9], [target1, target2]] call oeta_shootingrange_fnc_addConfigCountdownTimes;
  *
  * Public: No
  */
 
 params ["_name", "_controller", "_controllers", "_countdownTimes", "_targets"];
 
-private _actions = []; {
+private _actions = [];
+{
     _actions pushBack [
         [
             format [QGVAR(RangeConfigCountdownTime%1), _forEachIndex + 1],
             format ["%1 %2", _x, localize LSTRING(Seconds)],
-            "", {(_this select 2) call FUNC(setConfigCountdownTime)}, {true}, {},
+            "",
+            {(_this select 2) call FUNC(setConfigCountdownTime)},
+            {true},
+            {},
             [_name, _controllers, _x, _targets]
         ] call ACEFUNC(interact_menu,createAction),
         [],

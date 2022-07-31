@@ -7,9 +7,9 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"oeta_main"};
-        author = QAUTHOR;
+        author = ECSTRING(main,Author);
         authors[] = {"Jonpas"};
-        url = URL;
+        url = ECSTRING(main,URL);
         VERSION_CONFIG;
     };
 };

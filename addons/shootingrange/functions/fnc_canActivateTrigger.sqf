@@ -11,11 +11,14 @@
  * Can Stop Range <BOOL>
  *
  * Example:
- * [controller, target] call OETA_shootingrange_fnc_canActivateTrigger;
+ * [controller, target] call oeta_shootingrange_fnc_canActivateTrigger;
  *
  * Public: No
  */
 
 params ["_controller", "_target"];
 
-(_controller getVariable [QGVAR(running), false]) && {(_controller getVariable [QGVAR(starter), objNull]) in thisList} && {!isNil QGVAR(targetGroup) && {_target in GVAR(targetGroup)}} && {GVAR(firstRun)}
+(_controller getVariable [QGVAR(running), false]) &&
+{(_controller getVariable [QGVAR(starter), objNull]) in thisList} &&
+{!isNil QGVAR(targetGroup) && {_target in GVAR(targetGroup)}} &&
+{GVAR(firstRun)}

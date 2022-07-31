@@ -19,3 +19,4 @@ class CfgPatches {
 #include "CfgWorlds.hpp"
 #include "CfgFactionClasses.hpp"
 #include "CfgMarkers.hpp"
+#include "CfgRespawnTemplates.hpp"

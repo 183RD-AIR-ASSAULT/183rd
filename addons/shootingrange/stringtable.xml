@@ -2,259 +2,259 @@
 <Project name="OETA">
     <Package name="ShootingRange">
         <Key ID="STR_OETA_ShootingRange_Range">
-            <Original>Shooting Range</Original>
+            <English>Shooting Range</English>
             <German>Schießstand</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_ModuleDesc">
-            <Original>This module allows you to set up a Shooting Range.</Original>
+            <English>This module allows you to set up a Shooting Range.</English>
             <German>Dieses Modul erlaubt dir einen Schießstand einzurichten.</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Name">
-            <Original>Name</Original>
+            <English>Name</English>
             <German>Name</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_NameDesc">
-            <Original>Name of the current range.</Original>
+            <English>Name of the current range.</English>
             <German>Name des aktuellen Schießstands.</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Targets">
-            <Original>Targets</Original>
+            <English>Targets</English>
             <German>Ziele</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_TargetsDesc">
-            <Original>List of object names used as targets, separated by commas. Can be synchronized objects.</Original>
+            <English>List of object names used as targets, separated by commas. Can be synchronized objects.</English>
             <German>Liste der Objektnamen, die als Ziele benutzt werden. Durch Kommas trennen. Die Objekte können synchronisiert sein.</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_TargetsInvalid">
-            <Original>Invalid Targets</Original>
+            <English>Invalid Targets</English>
             <German>Ungültige Ziele</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_TargetsInvalidDesc">
-            <Original>List of object names used as invalid targets, separated by commas. Must be same amount as targets when used in Trigger mode, fill empty slots with 'nil'.</Original>
+            <English>List of object names used as invalid targets, separated by commas. Must be same amount as targets when used in Trigger mode, fill empty slots with 'nil'.</English>
             <German>Liste der Objektnamen, die als ungültige Ziele genutzt werden. Durch Kommas trennen. Muss die selbe Anzahl wie die Zahl der Ziele haben, wenn es im Auslöser-Modus genutzt werden soll. Leere Slots mit 'nil' füllen.</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Controllers">
-            <Original>Controllers</Original>
+            <English>Controllers</English>
             <German>Regler</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_ControllersDesc">
-            <Original>List of object names used as controllers, separated by commas.</Original>
+            <English>List of object names used as controllers, separated by commas.</English>
             <German>Liste der Objektnamen, die als Regler genutzt werden. Durch Kommas trennen.</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_SoundSources">
-            <Original>Sound Sources</Original>
+            <English>Sound Sources</English>
             <German>Soundquellen</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_SoundSourcesDesc">
-            <Original>List of object names used as sound sources (in addition to controllers), separated by commas.</Original>
+            <English>List of object names used as sound sources (in addition to controllers), separated by commas.</English>
             <German>Liste der Objektnamen, die als Soundquelle (zusätzlich zu Reglern)  genutzt werden. Durch Kommas trennen.</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Mode">
-            <Original>Mode</Original>
+            <English>Mode</English>
             <German>Modus</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_ModeDesc">
-            <Original>Time and Hit require Duration, Trigger requires Trigger Markers. Default: Timed</Original>
+            <English>Time and Hit require Duration, Trigger requires Trigger Markers. Default: Timed</English>
             <German>Zeit- und Treffermodus benötigen Zeit. Auslösermodus benötigt Auslöser-Markierungen. Standard: Zeitmodus</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Durations">
-            <Original>Durations</Original>
+            <English>Durations</English>
             <German>Laufzeiten</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_DurationsDesc">
-            <Original>List of available shooting durations in seconds, separated by commas. Only used in Timed, Hit (Time Limited) and Rampage Modes. Default: 0, 30, 60, 150, 300</Original>
+            <English>List of available shooting durations in seconds, separated by commas. Only used in Timed, Hit (Time Limited) and Rampage Modes. Default: 0, 30, 60, 150, 300</English>
             <German>Liste der möglichen Standardzeiten für einen Durchgang. Durch Kommas trennen. Wird nur im Auf Zeit, Treffer (Zeitlimit) und Amoklauf Modus genutzt. Standard: 0, 30, 60, 150, 300</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_DefaultDuration">
-            <Original>Default Duration</Original>
+            <English>Default Duration</English>
             <German>Standardzeit</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_DefaultDurationDesc">
-            <Original>Default shooting duration in seconds. Only used in Timed, Hit (Time Limited) and Rampage Modes. Default: 60</Original>
+            <English>Default shooting duration in seconds. Only used in Timed, Hit (Time Limited) and Rampage Modes. Default: 60</English>
             <German>Standardzeit, die für einen Durchgang genutzt wird. Wird nur im Auf Zeit, Treffer (Zeitlimit) und Amoklauf Modus genutzt. Standard: 60</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_TargetAmounts">
-            <Original>Target Amounts</Original>
+            <English>Target Amounts</English>
             <German>Anzahl der Ziele</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_TargetAmountsDesc">
-            <Original>List of available number of target pop-ups, separated by commas. Only used in Hit (Target Limited) Mode. Default: 5, 10, 15, 30, 45</Original>
+            <English>List of available number of target pop-ups, separated by commas. Only used in Hit (Target Limited) Mode. Default: 5, 10, 15, 30, 45</English>
             <German>Liste der möglichen Zahl aufklappbarer Ziele. Durch Kommas trennen. Wird nur im Treffermodus (Ziellimit) genutzt. Standard: 15</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_DefaultTargetAmount">
-            <Original>Default Target Amount</Original>
+            <English>Default Target Amount</English>
             <German>Standard Anzahl an Zielen</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_DefaultTargetAmountDesc">
-            <Original>Default amount of target pop-ups. Only used in Hit (Target Limited) Mode. Default: 15</Original>
+            <English>Default amount of target pop-ups. Only used in Hit (Target Limited) Mode. Default: 15</English>
             <German>Standard Anzahl an aufklappbaren Ziele. Wird nur im Treffermodus (Ziellimit) genutzt. Standard: 15</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_PauseDurations">
-            <Original>Pause Durations</Original>
+            <English>Pause Durations</English>
             <German>Pausenlängen</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_PauseDurationsDesc">
-            <Original>List of available pause durations during target pop-ups in seconds, separated by commas. Only used in Timed Mode. Default: 1, 2, 3, 4, 5</Original>
+            <English>List of available pause durations during target pop-ups in seconds, separated by commas. Only used in Timed Mode. Default: 1, 2, 3, 4, 5</English>
             <German>Liste der möglichen Pausen für aufklappende Ziele. Durch Kommas trennen. Wird nur im Zeitmodus genutzt. Standard: 1, 2, 3, 4, 5</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_DefaultPauseDuration">
-            <Original>Default Pause Duration</Original>
+            <English>Default Pause Duration</English>
             <German>Standard-Pausenlänge</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_DefaultPauseDurationDesc">
-            <Original>Default pause duration during target pop-ups in seconds. Default: 3</Original>
+            <English>Default pause duration during target pop-ups in seconds. Default: 3</English>
             <German>Standard-Pausenlänge während Ziele aufklappen in Sekunden. Standard: 3</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_CountdownTimes">
-            <Original>Countdown Times</Original>
+            <English>Countdown Times</English>
             <German>Countdown-Zeiten</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_CountdownTimesDesc">
-            <Original>List of times it takes from pressing start to first target pop-up (lowest: 5). Default: 6, 9, 12, 15</Original>
+            <English>List of times it takes from pressing start to first target pop-up (lowest: 5). Default: 6, 9, 12, 15</English>
             <German>Liste der Zeiten, die nach dem Drücken von Start vergehen können, bis das erste Ziel aufklappt (niedrigste: 5). Standard: 6, 9, 12, 15</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_DefaultCountdownTime">
-            <Original>Default Countdown Time</Original>
+            <English>Default Countdown Time</English>
             <German>Standard Countdown-Zeit</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_DefaultCountdownTimeDesc">
-            <Original>Default time it takes from pressing start to first target pop-up (lowest: 5). Default: 9</Original>
+            <English>Default time it takes from pressing start to first target pop-up (lowest: 5). Default: 9</English>
             <German>Standardzeit, die nach dem Drücken von Start vergeht, bis das erste Ziel aufklappt (niedrigste: 5). Standard: 9</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_TriggerMarkers">
-            <Original>Trigger Markers</Original>
+            <English>Trigger Markers</English>
             <German>Auslöser-Markierungen</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_TriggerMarkersDesc">
-            <Original>List of trigger markers (triggers will be generated) or triggers used for controlled target pop-ups, separated by commas. Must be in order with targets. Available in Trigger Mode only.</Original>
+            <English>List of trigger markers (triggers will be generated) or triggers used for controlled target pop-ups, separated by commas. Must be in order with targets. Available in Trigger Mode only.</English>
             <German>Liste der Auslöser-Markierungen (Auslöser werden generiert) oder der Auslöser zur Kontrolle der aufklappenden Ziele. Durch Kommas trennen. Muss in der Reihenfolge der Ziele sein. Nur im Auslöser-Modus verfügbar.</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_PopOnTriggerExit">
-            <Original>Pop on Trigger Exit</Original>
+            <English>Pop on Trigger Exit</English>
             <German>Abklappen, wenn Auslöserbereich verlassen</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_PopOnTriggerExitDesc">
-            <Original>Pop targets down when exiting the trigger. Available in Trigger Mode only.</Original>
+            <English>Pop targets down when exiting the trigger. Available in Trigger Mode only.</English>
             <German>Klappt Ziele ab, wenn der Auslöserbereich verlassen wird. Nur im Auslöser-Modus verfügbar.</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Timed">
-            <Original>Timed</Original>
+            <English>Timed</English>
             <German>Auf Zeit</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Hit">
-            <Original>Hit</Original>
+            <English>Hit</English>
             <German>Treffer</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_HitTimeLimit">
-            <Original>Hit (Time Limit)</Original>
+            <English>Hit (Time Limit)</English>
             <German>Treffer (Zeitlimit)</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_HitTargetLimit">
-            <Original>Hit (Target Limit)</Original>
+            <English>Hit (Target Limit)</English>
             <German>Treffer (Ziellimit)</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Trigger">
-            <Original>Trigger</Original>
+            <English>Trigger</English>
             <German>Auslöser</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Rampage">
-            <Original>Rampage</Original>
+            <English>Rampage</English>
             <German>Amoklauf</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Start">
-            <Original>Start</Original>
+            <English>Start</English>
             <German>Start</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Stop">
-            <Original>Stop</Original>
+            <English>Stop</English>
             <German>Stop</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Configure">
-            <Original>Configure</Original>
+            <English>Configure</English>
             <German>Konfigurieren</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Configuration">
-            <Original>Configuration</Original>
+            <English>Configuration</English>
             <German>Einstellungen</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Check">
-            <Original>Check</Original>
+            <English>Check</English>
             <German>Prüfen</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Seconds">
-            <Original>Seconds</Original>
+            <English>Seconds</English>
             <German>Sekunden</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Started">
-            <Original>Started</Original>
+            <English>Started</English>
             <German>Gestartet</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Stopped">
-            <Original>Stopped</Original>
+            <English>Stopped</English>
             <German>Gestoppt</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Failed">
-            <Original>Failed</Original>
+            <English>Failed</English>
             <German>Fehlgeschlagen</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Finished">
-            <Original>Finished</Original>
+            <English>Finished</English>
             <German>Beendet</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Duration">
-            <Original>Duration</Original>
+            <English>Duration</English>
             <German>Dauer</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_TargetAmount">
-            <Original>Target Amount</Original>
+            <English>Target Amount</English>
             <German>Anzahl der Ziele</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_PauseDuration">
-            <Original>Pause Duration</Original>
+            <English>Pause Duration</English>
             <German>Pausenlänge</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_CountdownTime">
-            <Original>Countdown Time</Original>
+            <English>Countdown Time</English>
             <German>Countdown-Zeit</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Infinite">
-            <Original>Infinite</Original>
+            <English>Infinite</English>
             <German>Unendlich</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_GetReady">
-            <Original>Get Ready!</Original>
+            <English>Get Ready!</English>
             <German>Bereit machen!</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Go">
-            <Original>Go!</Original>
+            <English>Go!</English>
             <German>Los!</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Warning">
-            <Original>Warning!</Original>
+            <English>Warning!</English>
             <German>Warnung!</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_Accuracy">
-            <Original>Accuracy</Original>
+            <English>Accuracy</English>
             <German>Genauigkeit</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_TimeElapsed">
-            <Original>Time Elapsed</Original>
+            <English>Time Elapsed</English>
             <German>Zeit vergangen</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_By">
-            <Original>By</Original>
+            <English>By</English>
             <German>Von</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_TargetHitBy">
-            <Original>Target hit by</Original>
+            <English>Target hit by</English>
             <German>Ziel getroffen von</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_TargetsHit">
-            <Original>Targets Hit</Original>
+            <English>Targets Hit</English>
             <German>Ziele getroffen</German>
         </Key>
         <Key ID="STR_OETA_ShootingRange_InvalidTargetHit">
-            <Original>Invalid Target Hit</Original>
+            <English>Invalid Target Hit</English>
             <German>Ungültiges Ziel getroffen</German>
         </Key>
     </Package>

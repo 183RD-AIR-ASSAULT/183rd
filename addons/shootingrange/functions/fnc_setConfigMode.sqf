@@ -14,13 +14,14 @@
  * None
  *
  * Example:
- * ["range", controller, [controller1, controller2], 1, [target1, target2]] call OETA_shootingrange_fnc_setConfigMode;
+ * ["range", controller, [controller1, controller2], 1, [target1, target2]] call oeta_shootingrange_fnc_setConfigMode;
  *
  * Public: No
  */
 
 params ["_name", "_controller", "_controllers", "_mode", "_targets"];
- {
+
+{
     _x setVariable [QGVAR(mode), _mode, true];
 } forEach _controllers;
 

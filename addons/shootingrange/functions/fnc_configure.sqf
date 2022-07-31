@@ -16,7 +16,7 @@
  * Successfully Configured <BOOL>
  *
  * Example:
- * [controller, "Name", 1, [target1, target2], [invalidTarget1, invalidTarget2]] call OETA_shootingrange_fnc_configure;
+ * [controller, "Name", 1, [target1, target2], [invalidTarget1, invalidTarget2]] call oeta_shootingrange_fnc_configure;
  *
  * Public: Yes
  */
@@ -71,12 +71,16 @@ if (!(_targetsNew isEqualTo []) && {count (_allTargetsNew select {!(_x in _allTa
     false
 };
 
-private _allTargetsNewControllers = []; { {
+private _allTargetsNewControllers = [];
+{
+    {
         _allTargetsNewControllers pushBackUnique _x;
     } forEach (_x getVariable [QGVAR(controllers), []]);
 } forEach _allTargetsNew;
 
-private _allTargetsOldControllers = []; { {
+private _allTargetsOldControllers = [];
+{
+    {
         _allTargetsOldControllers pushBackUnique _x;
     } forEach (_x getVariable [QGVAR(controllers), []]);
 } forEach _allTargetsOld;

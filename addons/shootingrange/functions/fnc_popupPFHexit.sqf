@@ -21,7 +21,7 @@
  * None
  *
  * Example:
- * [idPFH, controller, [controller1, controller2], "range", [target1, target2], [invalidTarget1, invalidTarget2], 1, true] call OETA_shootingrange_fnc_popupPFHexit;
+ * [idPFH, controller, [controller1, controller2], "range", [target1, target2], [invalidTarget1, invalidTarget2], 1, true] call oeta_shootingrange_fnc_popupPFHexit;
  *
  * Public: No
  */
@@ -49,7 +49,8 @@ if (_mode > 1) then {
         GVAR(firedEHid) = nil;
     };
 
-    if (_mode == 4) then { {
+    if (_mode == 4) then {
+        {
             _x enableSimulation false;
         } forEach _triggers;
 

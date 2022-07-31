@@ -21,7 +21,7 @@
  * None
  *
  * Example:
- * [target, shooter, nil, [0, 0, 0], nil, ["target"], nil, nil, nil, nil, true] call OETA_shootingrange_fnc_handleHitPart;
+ * [target, shooter, nil, [0, 0, 0], nil, ["target"], nil, nil, nil, nil, true] call oeta_shootingrange_fnc_handleHitPart;
  *
  * Public: No
  */
@@ -61,15 +61,15 @@ if !(_target in _targets) exitWith {
 
 // Exit if not direct hit (does not seem to count bullet bouncing)
 if (!_directHit) exitWith {
-    hint "[183RD] Debug: Indirect Hit";
+    hint "[183rd] Debug: Indirect Hit";
 };
 
 // Exit if hit by someone else
  private _starter = _controller getVariable [QGVAR(starter), nil];
 if (_shooter != _starter) exitWith {
-    private _shooterName = [_shooter, true] call ACEFUNC(core,getName);
+    private _shooterName = [_shooter, true] call ACEFUNC(common,getName);
     private _text = format ["%1<br/><br/>%2:<br/>%3", localize LSTRING(Warning), localize LSTRING(TargetHitBy), _shooterName];
-    [QACEGVAR(core,displayTextStructured), [_text, 3], [_starter, _shooter]] call CBA_fnc_targetEvent;
+    [QACEGVAR(common,displayTextStructured), [_text, 3], [_starter, _shooter]] call CBA_fnc_targetEvent;
 };
 
 
