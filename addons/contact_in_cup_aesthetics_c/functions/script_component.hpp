@@ -1,0 +1,1 @@
+#include "\z\oeta\addons\contact_in_cup_aesthetics_c\script_component.hpp"
