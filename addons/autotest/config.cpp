@@ -1,10 +1,8 @@
 #include "script_component.hpp"
 
-class cfgPatches
-{
-    class ADDON
-    {
-        name = COMPONENT_NAME;
+class cfgPatches {
+    class ADDON {
+        name = QUOTE(COMPONENT_NAME);
         author = QAUTHOR;
         url = URL;
         units[] = {};

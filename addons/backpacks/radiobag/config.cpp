@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class OETA_Backpacks_RadioBag {
-        name = COMPONENT_NAME;
+        name = QUOTE(COMPONENT_NAME);
         addonRootClass = "oeta_backpacks";
         requiredVersion = REQUIRED_VERSION;
         requiredaddons[] = {

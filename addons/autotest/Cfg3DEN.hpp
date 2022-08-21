@@ -2,83 +2,69 @@
 #include "\a3\3DEN\UI\macros.inc"
 #include "\a3\3DEN\UI\resincl.inc"
 
-
 class ctrlDefault;
-class ctrlDefaultText;// : ctrlDefault;
-class ctrlStatic;// : ctrlDefaultText;
-class ctrlListNBox;// : ctrlDefaultText;
-class ctrlTree;// : ctrlDefaultText;
-class ctrlEdit;// : ctrlDefaultText;
+class ctrlDefaultText;
+class ctrlStatic;
+class ctrlListNBox;
+class ctrlTree;
+class ctrlEdit;
 
 class RscButtonMenu;
 class RscText;
 class RscPicture;
 
 /*
-class cfgScriptPaths
-{
+class cfgScriptPaths {
     OETA_briefing = "z\oeta\addons\briefing\ui_scripts\";
 };
 */
 
-class Cfg3DEN
-{
-    class Mission
-    {
-        class GVAR(Attributes) // Custom section class, everything inside will be opened in one window (MySection)
-        {
+class Cfg3DEN {
+    class Mission {
+        class GVAR(Attributes) {
             displayName = "OETA Autotest"; // Text visible in the window title as "Edit <displayName>"
             //display = "Display3DENEditAttributesPreview"; // Optional - display for attributes window. Must have the same structure and IDCs as the default Display3DENEditAttributes
-            class AttributeCategories
-            {
-                class GVAR(FakeSettings)
-                {
+            class AttributeCategories {
+                class GVAR(FakeSettings) {
                     displayName = "OETA: Autotest settings"; // Category name visible in Edit Attributes window
                     collapsed = 0; // When 1, the category is collapsed by default
-                    class Attributes
-                    {
-                        class GVAR(MissionName)
-                        {
+                    class Attributes {
+                        class GVAR(MissionName) {
                             property = QGVAR(MissionName);
                             displayName = "Mission name";
                             //tooltip = "Create briefing section that contains a list of all equipment of everyone in the players group and theirself.";
                             control = QGVAR(missionName);
                             defaultValue = "true";
                         };
-                        class GVAR(MissionSummary)
-                        {
+                        class GVAR(MissionSummary) {
                             property = QGVAR(MissionSummary);
                             displayName = "Mission description";
                             tooltip = "Checks a mission description has been set. Throws a warning if it does not include the word slot, as you may have forgotten slotting instructions.";
                             control = QGVAR(missionSummary);
                             defaultValue = "true";
                         };
-                        class GVAR(Author)
-                        {
+                        class GVAR(Author) {
                             property = QGVAR(Author);
                             displayName = "Author";
                             tooltip = "Checks the author field has your arma profile in it.";
                             control = QGVAR(Author);
                             defaultValue = "true";
                         };
-                        class GVAR(MinPlayer)
-                        {
+                        class GVAR(MinPlayer) {
                             property = QGVAR(MinPlayer);
                             displayName = "Min Players";
                             //tooltip = "Create briefing section that contains a list of all equipment of everyone in the players group and theirself.";
                             control = QGVAR(minPlayer);
                             defaultValue = "true";
                         };
-                        class GVAR(MaxPlayer)
-                        {
+                        class GVAR(MaxPlayer) {
                             property = QGVAR(MaxPlayer);
                             displayName = "Max Players";
                             //tooltip = "Create briefing section that contains a list of all equipment of everyone in the players group and theirself.";
                             control = QGVAR(maxPlayer);
                             defaultValue = "true";
                         };
-                        class GVAR(Test)
-                        {
+                        class GVAR(Test) {
                             property = QGVAR(Test);
                             displayName = "Max Players";
                             //tooltip = "Create briefing section that contains a list of all equipment of everyone in the players group and theirself.";
@@ -101,19 +87,15 @@ class Cfg3DEN
    // "Scenario" get3DENMissionAttribute "Author"
     //"Scenario" get3DENMissionAttribute "IntelBriefingName"
 
-    class Attributes
-    {
+    class Attributes {
 
         class Default;
-        class Title : Default
-        {
-            class Controls
-            {
+        class Title: Default {
+            class Controls {
                 class Title;
             };
         };
-        class GVAR(missionName) : Title
-        {
+        class GVAR(missionName): Title {
             attributeLoad = QUOTE(                                                                        \
                 _value = 'Scenario' get3DENMissionAttribute 'IntelBriefingName';                          \
                 (_this controlsGroupCtrl 100) ctrlSetText _value;                                         \
@@ -124,11 +106,9 @@ class Cfg3DEN
                 };                                                                                        \
             );
             attributeSave = "true";
-            class Controls : Controls
-            {
-                class Title : Title {};
-                class Value : ctrlEdit
-                {
+            class Controls: Controls {
+                class Title: Title {};
+                class Value: ctrlEdit {
                     idc = 100;
                     type = CT_EDIT; // Type
                     colorBackground[] = {COLOR_OVERLAY_RGBA}; // Background color
@@ -145,8 +125,7 @@ class Cfg3DEN
                     w = (ATTRIBUTE_CONTENT_W -(1.5* SIZE_M)) * GRID_W;
 
                 };
-                class Picture : RscPicture
-                {
+                class Picture: RscPicture {
                     text = QPATHTOEF(briefing,UI\check_small_ca.paa); // Default
                     idc = 101;
                     y = 0;
@@ -156,8 +135,7 @@ class Cfg3DEN
                 };
             };
         };
-        class GVAR(missionSummary) : Title
-        {
+        class GVAR(missionSummary): Title {
             attributeLoad = QUOTE(                                                                            \
                 _value = 'Multiplayer' get3DENMissionAttribute 'IntelOverviewText';                           \
                 (_this controlsGroupCtrl 100) ctrlSetText _value;                                             \
@@ -172,11 +150,9 @@ class Cfg3DEN
                 };                                                                                            \
             );
             attributeSave = "true";
-            class Controls : Controls
-            {
-                class Title : Title {};
-                class Value : ctrlEdit
-                {
+            class Controls: Controls {
+                class Title: Title {};
+                class Value: ctrlEdit {
                     idc = 100;
                     type = CT_EDIT; // Type
                     colorBackground[] = {COLOR_OVERLAY_RGBA}; // Background color
@@ -193,8 +169,7 @@ class Cfg3DEN
                     w = (ATTRIBUTE_CONTENT_W -(1.5* SIZE_M)) * GRID_W;
 
                 };
-                class Picture : RscPicture
-                {
+                class Picture: RscPicture {
                     text = QPATHTOEF(briefing,UI\check_small_ca.paa); // Default
                     idc = 101;
                     y = 0;
@@ -204,8 +179,7 @@ class Cfg3DEN
                 };
             };
         };
-        class GVAR(Author) : Title
-        {
+        class GVAR(Author): Title {
             attributeLoad = QUOTE(                                                                        \
                 _value = 'Scenario' get3DENMissionAttribute 'Author';                                     \
                 (_this controlsGroupCtrl 100) ctrlSetText _value;                                         \
@@ -216,11 +190,9 @@ class Cfg3DEN
                 };                                                                                        \
             );
             attributeSave = "true";
-            class Controls : Controls
-            {
-                class Title : Title {};
-                class Value : ctrlEdit
-                {
+            class Controls: Controls {
+                class Title: Title {};
+                class Value: ctrlEdit {
                     idc = 100;
                     type = CT_EDIT; // Type
                     colorBackground[] = {COLOR_OVERLAY_RGBA}; // Background color
@@ -236,8 +208,7 @@ class Cfg3DEN
                     h = SIZE_M * GRID_H;
                     w = (ATTRIBUTE_CONTENT_W -(1.5* SIZE_M)) * GRID_W;
                 };
-                class Picture : RscPicture
-                {
+                class Picture: RscPicture {
                     text = QPATHTOEF(briefing,UI\check_small_ca.paa); // Default
                     idc = 101;
                     x = (ATTRIBUTE_TITLE_W+ATTRIBUTE_CONTENT_W - (1.5*SIZE_M)) * GRID_W;
@@ -247,8 +218,7 @@ class Cfg3DEN
                 };
             };
         };
-        class GVAR(minPlayer) : Title
-        {
+        class GVAR(minPlayer): Title {
             attributeLoad = QUOTE(                                                                        \
                 _value = 'Multiplayer' get3DENMissionAttribute 'minplayers';                              \
                 _playerCount = (playableUnits + switchableUnits + [player]) - [objNull];                  \
@@ -261,11 +231,9 @@ class Cfg3DEN
                 };                                                                                        \
             );
             attributeSave = "true";
-            class Controls : Controls
-            {
-                class Title : Title {};
-                class Value : ctrlEdit
-                {
+            class Controls: Controls {
+                class Title: Title {};
+                class Value: ctrlEdit {
                     idc = 100;
                     type = CT_EDIT; // Type
                     colorBackground[] = {COLOR_OVERLAY_RGBA}; // Background color
@@ -281,8 +249,7 @@ class Cfg3DEN
                     h = SIZE_M * GRID_H;
                     w = (ATTRIBUTE_CONTENT_W -(1.5* SIZE_M)) * GRID_W;
                 };
-                class Picture : RscPicture
-                {
+                class Picture: RscPicture {
                     text = QPATHTOEF(briefing,UI\check_small_ca.paa); // Default
                     idc = 101;
                     x = (ATTRIBUTE_TITLE_W+ATTRIBUTE_CONTENT_W - (1.5*SIZE_M)) * GRID_W;
@@ -292,8 +259,7 @@ class Cfg3DEN
                 };
             };
         };
-        class GVAR(maxPlayer) : Title
-        {
+        class GVAR(maxPlayer): Title {
             attributeLoad = QUOTE(                                                                                  \
                 _value = 'Multiplayer' get3DENMissionAttribute 'maxplayers';                                        \
                 _playerCount = (playableUnits + switchableUnits + [player]) - [objNull];                            \
@@ -307,11 +273,9 @@ class Cfg3DEN
                 };                                                                                                  \
             );
             attributeSave = "true";
-            class Controls : Controls
-            {
-                class Title : Title {};
-                class Value : ctrlEdit
-                {
+            class Controls: Controls {
+                class Title: Title {};
+                class Value: ctrlEdit {
                     idc = 100;
                     type = CT_EDIT; // Type
                     colorBackground[] = {COLOR_OVERLAY_RGBA}; // Background color
@@ -327,8 +291,7 @@ class Cfg3DEN
                     h = SIZE_M * GRID_H;
                     w = (ATTRIBUTE_CONTENT_W -(1.5* SIZE_M)) * GRID_W;
                 };
-                class Picture : RscPicture
-                {
+                class Picture: RscPicture {
                     text = QPATHTOEF(briefing,UI\check_small_ca.paa); // Default
                     idc = 101;
                     x = (ATTRIBUTE_TITLE_W+ATTRIBUTE_CONTENT_W - (1.5*SIZE_M)) * GRID_W;
@@ -341,16 +304,14 @@ class Cfg3DEN
 
         class Toolbox; //class Toolbox: Title
 
-        class GVAR(Test) : Toolbox {
+        class GVAR(Test): Toolbox {
             attributeLoad = QUOTE(_this call FUNC(autotest));
             attributeSave = "true";
 
             w = (ATTRIBUTE_TITLE_W + ATTRIBUTE_CONTENT_W) * GRID_W;
             h = 24 * SIZE_M * GRID_H;
-            class Controls
-            {
-                class ActionTitle : ctrlStatic
-                {
+            class Controls {
+                class ActionTitle: ctrlStatic {
                     text = "List of findings:";
                     style = ST_RIGHT;
                     w = ATTRIBUTE_TITLE_W * GRID_W;
@@ -360,8 +321,7 @@ class Cfg3DEN
                     colorBackground[] = {0,0,0,0};
                     tooltip = "";
                 };
-                class ActionListBackground : ctrlStatic
-                {
+                class ActionListBackground: ctrlStatic {
                     idc = -1;
                     x = SIZE_M * GRID_H;
                     y = 1 * SIZE_M * GRID_H;
@@ -369,8 +329,7 @@ class Cfg3DEN
                     h = 23 * SIZE_M * GRID_H;
                     colorBackground[] = {0.33,0.33,0.33,1};
                 };
-                class ActionList: ctrlListNBox
-                {
+                class ActionList: ctrlListNBox {
                     idc = 101;
                     x = SIZE_M * GRID_H;
                     y = 1 * SIZE_M * GRID_H;

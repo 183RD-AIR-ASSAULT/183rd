@@ -38,6 +38,7 @@ Its based/inspired on/by the following projects;
 - https://github.com/quies-in-proelium/qipTPL - Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 - https://github.com/Katalam/KNB - GNU General Public License (GPLv3)
 - https://github.com/SzwedzikPL/SimpleSuppress/releases - MIT License
+- https://github.com/johnb432/Zeus-Additions - MIT License
 
 
 you can find the 183rd Version at https://github.com/YonVclaw/183rd

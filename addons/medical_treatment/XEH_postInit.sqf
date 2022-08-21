@@ -1,5 +1,49 @@
 #include "script_component.hpp"
 
+
+// Add ability to examine unconcscious and determine cause of not waking up (should be temporary?)
+DFUNC(vitalsStableExamine) = {
+    params ["_unit", "_return"];
+
+    private _status = call {
+        // based on ace_medical_status_fnc_hasStableVitals
+        if (_unit getVariable ["ace_medical_inCardiacArrest", false]) exitWith { "Unstable: Cardiac Arrest" };
+        if ((_unit getVariable ["ace_medical_bloodVolume", 6.0 ]) < 5.100 ) exitWith { "Unstable: Low Blood Volume" };
+
+        private _cardiacOutput = [_unit] call ace_medical_status_fnc_getCardiacOutput;
+        private _bloodLoss = ([_unit] call ace_medical_status_fnc_getBloodLoss);
+        if (_bloodLoss > (0.5  * _cardiacOutput) / 2) exitWith { "Unstable: Bleeding" };
+
+        private _bloodPressure = ([_unit] call ace_medical_status_fnc_getBloodPressure);
+        _bloodPressure params ["_bloodPressureL", "_bloodPressureH"];
+        if (_bloodPressureL < 50 || {_bloodPressureH < 60}) exitWith { "Unstable: Blood Pressure" };
+
+        private _heartRate = (_unit getVariable ["ace_medical_heartRate", 80]);
+        if (_heartRate < 40) exitWith { "Unstable: Heart Rate" };
+        "Stable: Should eventually wakeup"
+    };
+
+    TRACE_3("vitalsStableExamine",_unit,_return,_status);
+    private _name = if (isPlayer _unit) then { name _unit } else { "AI" };
+    [QGVAR(sLog), ["_checkUnconc", format ["%1 [VitalsStableExamine: %2] [Checker: %3]", _name, _status, name _return]]] call CBA_fnc_serverEvent;
+    ["ace_common_displayTextStructured", [_status, 2, _return], [_return]] call CBA_fnc_targetEvent;
+};
+DFUNC(checkUnconcStatement) = {
+    params ["_target", "_player"];
+    TRACE_2("checkUnconcStatement",_target,_player);
+    [QGVAR(vitalsStableExamine), [_target, _player], [_target]] call CBA_fnc_targetEvent;
+};
+DFUNC(checkUnconcCondition) = {
+    params ["_target", "_player"];
+    (alive _target) && {_target getVariable ["ace_isUnconscious", false]}
+};
+
+[QGVAR(vitalsStableExamine), {call FUNC(vitalsStableExamine)}] call CBA_fnc_addEventHandler;
+if (hasInterface) then {
+    private _action = [QGVAR(checkUncon), "Check why unconcscious","\A3\ui_f\data\igui\cfg\simpleTasks\types\unknown_ca.paa",{call FUNC(checkUnconcStatement)},{call FUNC(checkUnconcCondition)}] call ace_interact_menu_fnc_createAction;
+    ["CaManBase", 0, ["ACE_Head"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+};
+
 // overpressure from explosions
 // helper functions. all from https://www.researchgate.net/publication/309610420_Review_of_Analytical_and_Empirical_Estimations_for_Incident_Blast_Pressure
 FUNC(calculateTNTEquivalent) = {

@@ -2,14 +2,14 @@
 
 class CfgPatches {
     class ADDON {
-        name = COMPONENT_NAME;
+        name = QUOTE(COMPONENT_NAME);
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"oeta_main"};
-        author = ECSTRING(main,Author);
+        author = QAUTHOR;
         authors[] = {"veteran29"};
-        url = ECSTRING(main,URL);
+        url = URL;
         VERSION_CONFIG;
     };
 };

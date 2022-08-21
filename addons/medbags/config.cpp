@@ -3,7 +3,7 @@
 class CfgPatches {
     class ADDON {
         author = QAUTHOR;
-        name = COMPONENT_NAME;
+        name = QUOTE(COMPONENT_NAME);
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "a3_props_f_orange"

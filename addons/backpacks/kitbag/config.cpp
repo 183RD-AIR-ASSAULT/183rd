@@ -3,7 +3,7 @@
 class CfgPatches {
 
     class GVAR(Backpacks_Kitbag) {
-         name = COMPONENT_NAME;
+         name = QUOTE(COMPONENT_NAME);
         addonRootClass = "oeta_backpacks";
         requiredVersion = REQUIRED_VERSION;
         requiredaddons[] = {

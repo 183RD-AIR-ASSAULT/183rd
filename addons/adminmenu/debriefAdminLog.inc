@@ -15,6 +15,6 @@
 
 class oeta_adminlog
 {
-    title = "OETA Log";
+    title = "183rd Log";
     variable = "oeta_adminmenu_debrief";
 };

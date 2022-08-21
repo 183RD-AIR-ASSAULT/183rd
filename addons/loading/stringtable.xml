@@ -2,7 +2,7 @@
 <Project name="OETA">
     <Package name="Loading">
         <Key ID="STR_OETA_Loading_Author">
-            <Original>Author: %1</Original>
+            <Original>Screen Shot by: %1</Original>
             <Polish>Autor: %1</Polish>
         </Key>
     </Package>

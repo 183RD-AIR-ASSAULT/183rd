@@ -137,7 +137,7 @@ params["_fullmapWindow"];
                 (vehicle _x) setVariable ["f_cam_icon",_icon];
             };
 
-            private _color = (side _x) call oeta_common_fnc_sideToColor;
+            private _color = (side _x) call EFUNC(common,sideToColor);
 
             private _pos = getPos _x;
             private _sizeX = 20;
