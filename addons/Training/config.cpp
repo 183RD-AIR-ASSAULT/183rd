@@ -1,10 +1,9 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class OETA_Training {
-
+    class ADDON {
         author = QAUTHOR;
-        name = COMPONENT_NAME;
+        name = QUOTE(COMPONENT_NAME);
         url = URL;
         units[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -15,8 +14,5 @@ class CfgPatches {
     };
 };
 
-class CfgFunctions {
 
-    #include "CfgFunctions.hpp"
-};
-
+#include "CfgEventHandlers.hpp"

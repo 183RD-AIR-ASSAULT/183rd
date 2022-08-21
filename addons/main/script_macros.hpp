@@ -16,6 +16,7 @@
 #define ACE_ADDON(module) DOUBLES(ACE_PREFIX,module)
 #define ACEGVAR(module,var)         TRIPLES(ACE_PREFIX,module,var)
 #define QACEGVAR(module,var)        QUOTE(ACEGVAR(module,var))
+#define DACEFUNC(var1,var2) TRIPLES(DOUBLES(ACE_PREFIX,var1),fnc,var2)
 
 #define ACEFUNC(module,function)    TRIPLES(DOUBLES(ACE_PREFIX,module),fnc,function)
 #define QACEFUNC(module,function)   QUOTE(ACEFUNC(module,function))

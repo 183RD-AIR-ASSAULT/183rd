@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class GVAR(qip) {
-        name = COMPONENT_NAME;
+        name = QUOTE(COMPONENT_NAME);
         units[] = {
             QGVAR(talon_kitbag_coyote),
             QGVAR(talon_kitbag_winter),

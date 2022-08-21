@@ -39,28 +39,28 @@ _mapObjects = _location nearObjects ["BUILDING", _radius];
 
 if (_debug) then
 {
-	_objClassnames = [];
-	{
-		_objClassnames = _objClassnames + [typeOf _x];
-	} forEach _mapObjects;
-	hint format ["%1", _objClassnames];
+    _objClassnames = [];
+    {
+        _objClassnames = _objClassnames + [typeOf _x];
+    } forEach _mapObjects;
+    hint format ["%1", _objClassnames];
 };
 
 {
-	_obj = typeOf _x;
-	_index = _oldBuildings find _obj;
-	
-	if (_index > -1) then
-	{
-		//if Object found replace object
-		_pos = getPosWorld _x;
-		_dir = getDir _x;
-		_pitchBank = _x call BIS_fnc_getPitchBank;
-		_x hideObjectGlobal true;
+    _obj = typeOf _x;
+    _index = _oldBuildings find _obj;
+    
+    if (_index > -1) then
+    {
+        //if Object found replace object
+        _pos = getPosWorld _x;
+        _dir = getDir _x;
+        _pitchBank = _x call BIS_fnc_getPitchBank;
+        _x hideObjectGlobal true;
 
-		_new = (_newBuildings select _index) createVehicle _pos;
-		_new setPosWorld _pos;
-		_new setDir _dir;
-		[_new, _pitchBank select 0, _pitchBank select 1] call BIS_fnc_setPitchBank;
-	};
+        _new = (_newBuildings select _index) createVehicle _pos;
+        _new setPosWorld _pos;
+        _new setDir _dir;
+        [_new, _pitchBank select 0, _pitchBank select 1] call BIS_fnc_setPitchBank;
+    };
 } forEach _mapObjects;

@@ -2,7 +2,7 @@
 #include "script_component.hpp"
     class CfgPatches {
         class ADDON {
-            name = QUOTE(COMPONENT);
+            name = QUOTE(COMPONENT_NAME);
             units[] = {};
             weapons[] = {};
             requiredVersion = REQUIRED_VERSION;

@@ -3,7 +3,7 @@
 class CfgPatches {
     class ADDON {
         author = QAUTHOR;
-        name = COMPONENT_NAME;
+        name = QUOTE(COMPONENT_NAME);
         url = URL;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

@@ -146,12 +146,12 @@ class Controls {
         onButtonClick = QUOTE([ARR_2(QUOTE(QFUNC(modal_message)),ctrlText (_this select 0))] call FUNC(modal););
         y = "12.1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
     };
-    // class ButtonQuickRespawn: ButtonSelectAll {
-    //     idc = IDC_OETA_ADMINMENU_PMAN_QRESPAWN;
-    //     text = "Quick Respawn";
-    //     onButtonClick = QUOTE([ARR_2(QUOTE(QFUNC(utility_quickRespawn)),ctrlText (_this select 0))] call FUNC(utility););
-    //     y = "13.2 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-    // };
+    class ButtonQuickRespawn: ButtonSelectAll {
+        idc = IDC_OETA_ADMINMENU_PMAN_QRESPAWN;
+        text = "Quick Respawn";
+        onButtonClick = QUOTE([ARR_2(QUOTE(QFUNC(utility_quickRespawn)),ctrlText (_this select 0))] call FUNC(utility););
+        y = "13.2 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
+    };
     class ButtonRunCode: ButtonSelectAll {
         idc = IDC_OETA_ADMINMENU_PMAN_RUNCODE;
         text = "Run Code On";
