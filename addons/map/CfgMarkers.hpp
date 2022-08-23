@@ -5,8 +5,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconcasbp {
@@ -15,8 +15,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconcascp {
@@ -25,8 +25,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconcasop {
@@ -35,8 +35,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconcasip {
@@ -45,8 +45,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconcascck {
@@ -55,8 +55,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconcasep {
@@ -65,8 +65,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconcasdz {
@@ -75,8 +75,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconcasilz {
@@ -85,8 +85,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconcaselz {
@@ -95,8 +95,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconcasflz {
@@ -105,8 +105,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconassultd {
@@ -115,8 +115,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconsupportd {
@@ -125,8 +125,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconXMARKx {
@@ -135,8 +135,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconXMARKnrp {
@@ -145,8 +145,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconXMARKnsp {
@@ -155,8 +155,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconXMARKnnp {
@@ -165,8 +165,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconXMARKdive {
@@ -175,8 +175,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconXMARKsurface {
@@ -185,8 +185,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };
     class iconXMARKland {
@@ -195,8 +195,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     };   
     class iconXMARKacrew {
@@ -205,8 +205,8 @@ class CfgMarkers {
         size = 24;
         shadow = False;
         scope=2;
-		scopeCurator=2;
-		markerClass="xmark_assets";
+        scopeCurator=2;
+        markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     }; 
     class hd_dot {

@@ -36,7 +36,7 @@ switch (GVAR(medicalSystem)) do {
         switch (_unitState) do {
             case "Default": {_lifestate = "HEALTHY";};
             case "Unconscious": {_lifestate = "INCAPACITATED";};
-			case "FatalInjury";
+            case "FatalInjury";
             case "CardiacArrest";
             case "Injured": {_lifestate = "INJURED";};
             case "Dead";
