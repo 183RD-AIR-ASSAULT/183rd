@@ -19,5 +19,4 @@ class CfgPatches {
 #include "DisplayEden.hpp"
 #include "CfgWorlds.hpp"
 #include "CfgFactionClasses.hpp"
-#include "CfgMarkers.hpp"
 #include "CfgRespawnTemplates.hpp"

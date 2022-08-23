@@ -7,6 +7,7 @@ class CfgVehicles {
 
     class GVAR(vtx_MH60M): vtx_MH60M {
         scope=2;
+        scopeCurator = 2;
         #include "edenAttributes.hpp"
         hiddenSelectionsTextures[]= {
             "",  //DNU (Do not Use)
@@ -45,6 +46,7 @@ class CfgVehicles {
 
     class GVAR(uh60M_DAP): vtx_MH60M_DAP {
         scope=2;
+        scopeCurator = 2;
         #include "edenAttributes.hpp"
         hiddenSelectionsTextures[]= {
             "",  //DNU (Do not Use)
@@ -83,6 +85,7 @@ class CfgVehicles {
 
     class GVAR(uh60M_med): vtx_MH60M {
         scope=2;
+        scopeCurator = 2;
         #include "edenAttributes.hpp"
         hiddenSelectionsTextures[]= {
             "",  //DNU (Do not Use)

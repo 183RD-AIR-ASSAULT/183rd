@@ -1,20 +1,18 @@
 class CfgMarkerColors {
     class Default;
     class ColorRed: Default {
-        name = CSTRING(ColorRed);
+        color[] = {1, 0.502, 0.502, 1};
     };
     class ColorBlue: Default {
-        name = CSTRING(ColorBlue);
+        color[] = {0.502, 0.878, 1, 1};
     };
     class ColorGreen: Default {
-        name = CSTRING(ColorGreen);
+        color[] = {0.667, 1, 0.667, 1};
     };
     class ColorOrange: Default {
-        name = CSTRING(ColorOrange);
         scope = 2;
     };
     class ColorPink: Default {
-        name = CSTRING(ColorPink);
         scope = 2;
         color[] = {1, 0, 1, 1};
     };

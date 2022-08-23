@@ -535,29 +535,54 @@ force KNB_panel_aceAction = true;
 // OETA
 oeta_autotest_outputToRPT = false;
 
-// OETA - AdminMenu
+// 183RD - AdminMenu
 oeta_adminMenu_endLogToRPT = false;
 oeta_adminMenu_printToChat = 1;
 
-// OETA - ai_disembark
+// 183RD - ai_disembark
 force oeta_ai_disembark_enabled = true;
 force oeta_ai_disembark_stayInImmobileChance = 0.2927;
 
-// OETA - back_to_game
+// 183RD - back_to_game
 force oeta_back_to_game_enableAddon = false;
 force oeta_back_to_game_removeBody = true;
 force oeta_back_to_game_teleportToLeader = false;
 force oeta_back_to_game_teleportToVehicle = false;
 
-// OETA - Backpack on Chest
+// 183RD - Backpack on Chest
 force oeta_boc_disabled = false;
 force oeta_boc_forceWalk = false;
 force oeta_boc_removeKilledPlayerChestpack = true;
 
-// OETA - Bodybag
+// 183rd - BluForce Tracker
+FORCE FORCE oeta_bft_bftEnabled = true;
+FORCE FORCE oeta_bft_friendlySides_CIVILIAN = [0,2];
+FORCE FORCE oeta_bft_friendlySides_EAST = [3];
+FORCE FORCE oeta_bft_friendlySides_RESISTANCE = [1,3];
+FORCE FORCE oeta_bft_friendlySides_WEST = [2];
+FORCE FORCE oeta_bft_friendlySidesDynamic = true;
+FORCE FORCE oeta_bft_groupIconsInteraction = "hover";
+FORCE FORCE oeta_bft_medicalSystem = "ACE";
+FORCE FORCE oeta_bft_requireItemGPS = true;
+FORCE FORCE oeta_bft_showAIGroups = true;
+FORCE FORCE oeta_bft_showAINames = true;
+FORCE FORCE oeta_bft_showCivilians = false;
+FORCE FORCE oeta_bft_showGroupIcons = true;
+FORCE FORCE oeta_bft_showGroupText = true;
+FORCE FORCE oeta_bft_showLifeState = true;
+FORCE FORCE oeta_bft_showOwnFactionOnly = false;
+FORCE FORCE oeta_bft_showOwnGroup = true;
+FORCE FORCE oeta_bft_showOwnGroupUnits = true;
+FORCE FORCE oeta_bft_showPlayerNames = true;
+FORCE FORCE oeta_bft_showUnitNames = true;
+FORCE FORCE oeta_bft_teamColors = "ACE";
+FORCE FORCE oeta_bft_updateInterval = 0
+
+
+// 183RD - Bodybag
 force oeta_bodybag_destroyChance = 20;
 
-// OETA - Channels
+// 183RD - Channels
 force oeta_Channels_CommandDuration = 0;
 force oeta_Channels_CommandText = true;
 force oeta_Channels_CommandVoice = false;
@@ -577,31 +602,31 @@ force oeta_Channels_VehicleDuration = 0;
 force oeta_Channels_VehicleText = true;
 force oeta_Channels_VehicleVoice = false;
 
-// OETA - Cuecard
+// 183RD - Cuecard
 force QGVAR(CueCards) = true;
 
-// OETA - fatigue
+// 183RD - fatigue
 force oeta_fatigue_highJogCoef = 0.9;
 force oeta_fatigue_highJogCoefEnabled = false;
 
-// OETA - friendly_fire
+// 183RD - friendly_fire
 force oeta_friendly_fire_loggingEnabled = true;
 
-// OETA - fries
+// 183RD - fries
 force oeta_fries_autoAdd = true;
 
-// OETA - grass
+// 183RD - grass
 force oeta_grass_enabled = false;
 
-// OETA - insurgents
+// 183RD - insurgents
 force oeta_insurgents_enabled_CUP = true;
 force oeta_insurgents_enabled_Vanilla = true;
 
-// OETA - respawn
+// 183RD - respawn
 force oeta_respawn_enabled = true;
 force oeta_respawn_time = 6;
 
-// OETA - spectator
+// 183RD - spectator
 force oeta_spectator_allowAI = false;
 force oeta_spectator_allowAIUnconscious = false;
 force oeta_spectator_allowUnconscious = false;
@@ -616,7 +641,7 @@ force oeta_spectator_TPPCamera = false;
 force oeta_spectator_TPPCameraUnconscious = false;
 force oeta_spectator_unconsciousDelay = 30;
 
-// OETA - Suppress
+// 183RD - Suppress
 force oeta_suppress_checkLOS = true;
 force oeta_suppress_overlayFadeoutTime = 10;
 force oeta_suppress_overlayOpacity = 0.96;
@@ -624,18 +649,18 @@ force oeta_suppress_overlayTexture = 0;
 force oeta_suppress_projectileMaxDistance = 9;
 force oeta_suppress_shooterMinDistance = 0;
 
-// OETA - tagging
+// 183RD - tagging
 force oeta_tagging_enabled = true;
 
 
-// OETA - TFAR Setter
+// 183RD - TFAR Setter
 oeta_tfar_setter_Layout = false;
 oeta_tfar_setter_Shortcut = false;
 oeta_tfar_setter_ShowLR = true;
 oeta_tfar_setter_ShowSR = true;
 oeta_tfar_setter_ShowVLR = true;
 
-// OETA - towing
+// 183RD - towing
 force oeta_towing_addToCars = true;
 force oeta_towing_addToHeavyDutyVehicles = true;
 
