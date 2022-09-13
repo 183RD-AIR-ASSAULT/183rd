@@ -42,6 +42,12 @@ class GVAR(authorized_players) {
     class RESJA {
             uid = "76561198058838936";
         };
+    class LANCASTER {
+            uid = "76561198167076082";
+        };
+    class SCHMIDT {
+            uid = "76561197965231284";
+        };
 };
 
 #include "CfgFunctions.hpp"

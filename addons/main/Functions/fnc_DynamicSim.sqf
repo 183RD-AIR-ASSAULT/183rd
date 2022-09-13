@@ -1,6 +1,6 @@
 #include "../script_component.hpp"
 /*
-Function: derp_fnc_AIOccupyBuilding OETA_fnc_DynamicSim
+Function: FUNC(AIOccupyBuilding) OETA_fnc_DynamicSim
 
 Description:
     Globally enables or disables dynamic simulation and sets proper parameters.

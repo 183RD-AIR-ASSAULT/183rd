@@ -10,8 +10,14 @@ class CfgPatches {
             "oeta_main"
         };
         author = "183rd";
-        authors[] = {"veteran29"};
+        authors[] = {"veteran29", "YonV"};
         VERSION_CONFIG;
+    };
+};
+
+class CfgMarkerClasses {
+    class xmark_assets {
+        displayName="183rd Markers";
     };
 };
 

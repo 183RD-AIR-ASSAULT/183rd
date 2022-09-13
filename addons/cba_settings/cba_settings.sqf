@@ -1,3 +1,14 @@
+// 183rd - Role
+force Roles_comm = """76561198000002705"",""76561198020655265"",""76561198058838936"",""76561198167076082"",""76561198135204306"",""76561198300692603""";
+force Roles_eng = "";
+force Roles_medic = """76561198227272616"",""76561199276306489"",""76561199226125452"",""76561198158138010"",""76561198024469454"",""76561198982480726"",""76561198193671702"",""76561198283975252"",""76561198352762857"",""76561198058838936"",""76561198084572170""";
+force Roles_srcomm = """76561198000002705""";
+force Roles_sreng = "";
+force Roles_srmedic = "";
+
+//----------------------------------------------------------------------------//
+
+
 // ACE Advanced Ballistics
 force ace_advanced_ballistics_ammoTemperatureEnabled = true;
 force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
@@ -8,7 +19,7 @@ force ace_advanced_ballistics_simulationInterval = 0.05;
 
 // ACE Advanced Fatigue
 force ace_advanced_fatigue_enabled = true;
-force ace_advanced_fatigue_enableStaminaBar = true;
+force ace_advanced_fatigue_enableStaminaBar = true;       
 force ace_advanced_fatigue_loadFactor = 0;
 force ace_advanced_fatigue_performanceFactor = 5;
 force ace_advanced_fatigue_recoveryFactor = 5;
