@@ -1,6 +1,6 @@
 #define MAINPREFIX z
 #define PREFIX oeta
-
+#define QPREFIX "oeta"
 #include "script_version.hpp"
 
 #define VERSION     MAJOR.MINOR

@@ -9,7 +9,9 @@ cba_settings_whitelist[] = {
         ADMIN_FOX,
         ADMIN_FORESTER,
         ADMIN_IROH,
-        ADMIN_RESJA
+        ADMIN_RESJA,
+        ADMIN_LANCASTER,
+        ADMIN_SCHMIDT
 };
 
 enableDebugConsole[] = {

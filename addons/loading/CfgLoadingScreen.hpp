@@ -43,5 +43,7 @@ class GVAR(CfgLoadingScreen) {
         LOADING_SCREEN_CLASS(iroh9,U. Iroh);
         LOADING_SCREEN_CLASS(iroh10,U. Iroh);
         LOADING_SCREEN_CLASS(ghost1,T. Ghost);
+        LOADING_SCREEN_CLASS(luda_1,M. Luda);
+        LOADING_SCREEN_CLASS(shafur_1,A. Shafur);
     };
 };
