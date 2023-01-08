@@ -75,9 +75,4 @@ if (isNull _unit) exitWith {};
         [_unit, "ACE_adenosine", 8, _order, _overflow] call EFUNC(common,addItem);
 
     };
-
-    if (OETA_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {
-        [_unit, QGVAR(Medical_MedicKit_Open_1)] call EFUNC(common,stop3dSound);
-    };
-
 };
