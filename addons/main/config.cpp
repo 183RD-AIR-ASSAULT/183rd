@@ -7,8 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "cba_main",
-            "lingor_objects"
+            "cba_main"
         };
         author = "183rd";
         VERSION_CONFIG;

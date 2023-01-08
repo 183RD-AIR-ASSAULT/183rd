@@ -20,5 +20,4 @@ class CfgPatches {
     };
 };
 
-#include "edenAttributes.hpp"
 #include "CfgVehicles.hpp"
